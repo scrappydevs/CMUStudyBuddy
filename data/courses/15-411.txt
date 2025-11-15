@@ -1,0 +1,283 @@
+Course Code: 15-411
+Course Name: 15-411 Compiler Design
+Course URL: https://www.cs.cmu.edu/~15411/
+
+BOOKS:
+None found
+
+PDFS:
+Overview
+URL: https://www.cs.cmu.edu/~15411/slides/01-overview.pptx.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/01-inddef.pdf
+
+Register Allocation
+URL: https://www.cs.cmu.edu/~15411/slides/s25-02-registerallocation.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/02-regalloc.pdf
+
+Recitation: Lab 1 Intro
+URL: https://www.cs.cmu.edu/~15411/rec/00.pdf
+
+Register Allocation / Intro to SSA
+URL: https://www.cs.cmu.edu/~15411/slides/s25-03-registerallocation.pdf
+
+Instruction Selection
+URL: https://www.cs.cmu.edu/~15411/slides/s25-04-instruction-selection.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/04-instsel.pdf
+
+Recitation: Instruction Selection
+URL: https://www.cs.cmu.edu/~15411/rec/01.pdf
+
+SSA
+URL: https://www.cs.cmu.edu/~15411/slides/s25-05-ssa-1.pdf
+
+SSA II
+URL: https://www.cs.cmu.edu/~15411/slides/s25-06-ssa-2.pdf
+
+Recitation: SSA
+URL: https://www.cs.cmu.edu/~15411/rec/02.pdf
+
+Middle End
+URL: https://www.cs.cmu.edu/~15411/slides/s25-07-middle-end.pdf
+
+IR-tree, Liveness, Lexing
+URL: https://www.cs.cmu.edu/~15411/slides/s25-08-tran-live-lex.pdf
+
+liveness note
+URL: https://www.cs.cmu.edu/~15411/lectures/05-liveness.pdf
+
+ir-tree notes
+URL: https://www.cs.cmu.edu/~15411/lectures/06-irtrees.pdf
+
+Recitation: Static Semantics
+URL: https://www.cs.cmu.edu/~15411/rec/03.pdf
+
+Top-down Parsing
+URL: https://www.cs.cmu.edu/~15411/slides/s25-09-parse1.pdf
+
+context-free grammar
+URL: https://www.cs.cmu.edu/~15411/lectures/08-parsing.pdf
+
+shift-reduce parsing
+URL: https://www.cs.cmu.edu/~15411/lectures/09-predictive.pdf
+
+Shift-reduce Parsing
+URL: https://www.cs.cmu.edu/~15411/lectures/10-parsing-2.pdf
+
+Type Checking
+URL: https://www.cs.cmu.edu/~15411/lectures/11-typecheck-1.pdf
+
+Recitation: Lexing and Parsing
+URL: https://www.cs.cmu.edu/~15411/rec/04.pdf
+
+Calling Conventions
+URL: https://www.cs.cmu.edu/~15411/slides/s25-11-calling.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/11-calling.pdf
+
+Dataflow Analysis
+URL: https://www.cs.cmu.edu/~15411/slides/s25-12-dataflow.pdf
+
+Recitation: Calling Conventions
+URL: https://www.cs.cmu.edu/~15411/rec/05.pdf
+
+Dataflow Analysis II
+URL: https://www.cs.cmu.edu/~15411/slides/s25-13-dataflow-theory.pdf
+
+Dynamic Semantics
+URL: https://www.cs.cmu.edu/~15411/slides/s25-14-dyn-sem.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/14-dynamics.pdf
+
+Recitation: Dynamic Semantics
+URL: https://www.cs.cmu.edu/~15411/rec/06.pdf
+
+Mutable Stores
+URL: https://www.cs.cmu.edu/~15411/slides/s25-15-mutable.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/15-mutable.pdf
+
+Structs
+URL: https://www.cs.cmu.edu/~15411/slides/s25-16-structs.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/16-structs.pdf
+
+Recitation: Memory
+URL: https://www.cs.cmu.edu/~15411/rec/07.pdf
+
+Optimization I
+URL: https://www.cs.cmu.edu/~15411/slides/s25-17-opts1.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15411/lectures/17-peepsub.pdf
+
+Recitation: Optimizations I
+URL: https://www.cs.cmu.edu/~15411/rec/08.pdf
+
+Optimization II
+URL: https://www.cs.cmu.edu/~15411/slides/s25-18-opt2.pdf
+
+Dependence Analysis
+URL: https://www.cs.cmu.edu/~15411/slides/s25-19-loop-trans.pdf
+
+Recitation: Optimizations II
+URL: https://www.cs.cmu.edu/~15411/rec/09.pdf
+
+Loop/Locality Optimizations
+URL: https://www.cs.cmu.edu/~15411/slides/s25-20-locality.pdf
+
+Partial Redundancy Elimination
+URL: https://www.cs.cmu.edu/~15411/slides/s25-22-pre.pdf
+
+Alias Analysis/Load-Store Elimination
+URL: https://www.cs.cmu.edu/~15411/slides/s25-23-alias.pdf
+
+GVN/Inlining
+URL: https://www.cs.cmu.edu/~15411/slides/s25-24-gvn-inlining.pdf
+
+Tail duplication/Scheduling
+URL: https://www.cs.cmu.edu/~15411/slides/s25-25-cfg-opt.pdf
+
+Lab 1 Intro
+URL: https://www.cs.cmu.edu/~15411/rec/00.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/00-solutions.pdf
+
+Instruction Selection
+URL: https://www.cs.cmu.edu/~15411/rec/01.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/01-solutions.pdf
+
+SSA
+URL: https://www.cs.cmu.edu/~15411/rec/02.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/02-solutions.pdf
+
+Static Semantics
+URL: https://www.cs.cmu.edu/~15411/rec/03.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/03-solutions.pdf
+
+Lexing and Parsing
+URL: https://www.cs.cmu.edu/~15411/rec/04.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/04-solutions.pdf
+
+Calling Conventions
+URL: https://www.cs.cmu.edu/~15411/rec/05.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/05-solutions.pdf
+
+Dynamic Semantics
+URL: https://www.cs.cmu.edu/~15411/rec/06.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/06-solutions.pdf
+
+Memory
+URL: https://www.cs.cmu.edu/~15411/rec/07.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/07-solutions.pdf
+
+Optimizations I
+URL: https://www.cs.cmu.edu/~15411/rec/08.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/08-solutions.pdf
+
+Optimizations II
+URL: https://www.cs.cmu.edu/~15411/rec/09.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/09-solution.pdf
+
+Optimization III
+URL: https://www.cs.cmu.edu/~15411/rec/10.pdf
+
+Sol
+URL: https://www.cs.cmu.edu/~15411/rec/10-solution.pdf
+
+Straight Line Code
+URL: https://www.cs.cmu.edu/~15411/labs/lab1.pdf
+
+Checkpoint
+URL: https://www.cs.cmu.edu/~15411/labs/lab1-checkpoint.pdf
+
+Control
+URL: https://www.cs.cmu.edu/~15411/labs/lab2.pdf
+
+Functions
+URL: https://www.cs.cmu.edu/~15411/labs/lab3.pdf
+
+Memory
+URL: https://www.cs.cmu.edu/~15411/labs/lab4.pdf
+
+Optimizations
+URL: https://www.cs.cmu.edu/~15411/labs/lab5.pdf
+
+Backend
+URL: https://www.cs.cmu.edu/~15411/writtens/assignment1.pdf
+
+Statics
+URL: https://www.cs.cmu.edu/~15411/writtens/assignment2.pdf
+
+Parsing & SSA
+URL: https://www.cs.cmu.edu/~15411/writtens/assignment3.pdf
+
+Dynamics
+URL: https://www.cs.cmu.edu/~15411/writtens/assignment4.pdf
+
+VIDEOS:
+None found
+
+LINKS:
+Piazza
+URL: https://piazza.com/class/m4mwr4jclmu2hc
+
+Gradescope
+URL: https://www.gradescope.com/courses/937862
+
+this form
+URL: https://docs.google.com/forms/d/1xAma8q9xvSV-lfNc2tGEMN2FMoRbg9WdaMEP8b858wU/edit
+
+DH
+URL: https://goo.gl/maps/rkFrUs2WCCFuWchp9
+
+Seth Goldstein
+URL: http://www.cs.cmu.edu/~seth/
+
+Ben Titzer
+URL: https://s3d.cmu.edu/people/core-faculty/titzer-ben.html
+
+GHC::4102
+URL: https://goo.gl/maps/sPHtggCis7pFi937A
+
+WEH::5312
+URL: https://goo.gl/maps/neu8CfqvkmRXrFSTA
+
+Jane Street
+Capital
+URL: https://www.janestreet.com/
+
+Teaming Questionnaire
+URL: https://forms.gle/UVQ2mffJEoxmPmUv8
+
+IMAGES:
+None found
+

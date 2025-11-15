@@ -1,0 +1,73 @@
+Course Code: 11-785
+Course Name: 11-785 Deep Learning
+Course URL: https://www.cs.cmu.edu/~11785/
+
+BOOKS:
+None found
+
+PDFS:
+slides
+URL: https://www.cs.cmu.edu/~11785/slides/lec4.learning.pdf
+
+slides
+URL: https://www.cs.cmu.edu/~11785/slides/lec5.convergence.pdf
+
+slides
+URL: https://www.cs.cmu.edu/~11785/slides/lec6.stochastic_gradient.pdf
+
+slides
+URL: https://www.cs.cmu.edu/~11785/slides/lec7.cnn.pdf
+
+slides
+URL: https://www.cs.cmu.edu/~11785/slides/lec8.cnn.pdf
+
+VIDEOS:
+None found
+
+LINKS:
+Schedule
+URL: https://docs.google.com/spreadsheets/d/1Obt9FdeUlXHyGXtbjj-BqXw9ME2FjgTkBc4ISwDw8Ss/edit?usp=sharing
+
+Here is the link
+URL: https://piazza.com/class/jhyyudofj9u4za
+
+here
+URL: http://www.datasciencecentral.com/profiles/blogs/concise-visual-summary-of-deep-learning-architectures
+
+Kaggle
+URL: https://www.kaggle.com/
+
+University Policy on Academic Integrity and Plagiarism
+URL: http://www.cmu.edu/policies/documents/Cheating.html
+
+Deep Learning
+URL: http://deeplearning.cs.cmu.edu/data/DeepLearningBook.zip
+
+Neural Networks and Deep Learning
+URL: http://neuralnetworksanddeeplearning.com/
+
+Deep Learning with Python
+URL: https://machinelearningmastery.com/deep-learning-with-python/
+
+Deep Learning Step by Step with Python: A Very Gentle Introduction to Deep Neural Networks for Practical Data Science
+URL: https://www.amazon.com/Deep-Learning-Step-Python-Introduction/dp/1535410264
+
+Parallel Distributed Processing
+URL: https://mitpress.mit.edu/books/parallel-distributed-processing
+
+IMAGES:
+Deep Learning
+URL: https://www.cs.cmu.edu/~11785/img/Goodfellow.jpg
+
+Neural Networks and Deep Learning
+URL: https://www.cs.cmu.edu/~11785/img/Nielsen.png
+
+Deep Learning with Python
+URL: https://www.cs.cmu.edu/~11785/img/Brownlee.png
+
+Deep Learning Step by Step with Python
+URL: https://www.cs.cmu.edu/~11785/img/Lewis.jpg
+
+Parallel Distributed Processing
+URL: https://www.cs.cmu.edu/~11785/img/Rumelhart.jpg
+
