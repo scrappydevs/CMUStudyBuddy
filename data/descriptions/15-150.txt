@@ -1,0 +1,133 @@
+Course Code: 15-150
+Course Name: 15-150: Functional Programming, Fall 2025
+Course URL: https://www.cs.cmu.edu/~15150/
+================================================================================
+
+OVERVIEW:
+--------------------------------------------------------------------------------
+The purpose of this course is to introduce the theory and practice
+      offunctional programming (FP). The characteristic feature of
+      FP is the emphasis oncomputation as evaluation.
+      The traditional distinction between program and data characteristic ofimperative programming (IP)is replaced by an emphasis on
+      classifying expressions bytypesthat specify their applicative behavior.
+      Types include familiar (fixed and arbitrary precision) numeric types,
+      tuples and records (structs), classified values (objects), inductive
+      types such as trees, functions with specified inputs and outputs, and
+      commands such as input and output. Well-typed expressions are evaluated to produce
+      values, in a manner that is guaranteed to be type-safe. Because functional programs do not cause side-effects
+      we can take advantage of simple mathematical principles in reasoning about
+      applicative behavior and analyzing the runtime properties of programs.
+The advantages of FP are significant:
+Verification: There is a close correspondence between
+        the mathematical reasoning that justifies the correctness of a program and the
+        program itself. Principles of proof by mathematical induction go hand-in-hand with
+        the programming technique of recursion.Parallelism: Since expressions have no side-effects,
+        it is natural to use parallel evaluation:
+        the values of independent subexpressions may be determined simultaneously,
+        without fear of interference or conflict, and the final result is
+        not affected by evaluation order. This gives rise to the central concepts of thework
+          (sequential)andspan (idealized parallel)complexity
+        of a program, and allows programs to exploit available parallelism
+        without fear of disrupting their correctness.Abstraction: FP stressesdata-centriccomputation, with operations that act on compound data structures as
+        whole, rather than via item-by-item processing. More generally, FP
+        emphasizes the isolation ofabstract typesthat clearly
+        separateimplementationfrominterface. Types are
+        used to express and enforce abstraction boundaries, greatly enhancing
+        maintainability of programs, and facilitating team development.
+Moreover, FP generalizes IP by treating commands as forms of data
+      that may be executed for their effects.
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+OverviewThe purpose of this course is to introduce the theory and practice
+      offunctional programming (FP). The characteristic feature of
+      FP is the emphasis oncomputation as evaluation.
+      The traditional distinction between program and data characteristic ofimperative programming (IP)is replaced by an emphasis on
+      classifying expressions bytypesthat specify their applicative behavior.
+      Types include familiar (fixed and arbitrary precision) numeric types,
+      tuples and records (structs), classified values (objects), inductive
+      types such as trees, functions with specified inputs and outputs, and
+      commands such as input and output. Well-typed expressions are evaluated to produce
+      values, in a manner that is guaranteed to be type-safe. Because functional programs do not cause side-effects
+      we can take advantage of simple mathematical principles in reasoning about
+      applicative behavior and analyzing the runtime properties of programs.The advantages of FP are significant:Verification: There is a close correspondence between
+        the mathematical reasoning that justifies the correctness of a program and the
+        program itself. Principles of proof by mathematical induction go hand-in-hand with
+        the programming technique of recursion.Parallelism: Since expressions have no side-effects,
+        it is natural to use parallel evaluation:
+        the values of independent subexpressions may be determined simultaneously,
+        without fear of interference or conflict, and the final result is
+        not affected by evaluation order. This gives rise to the central concepts of thework
+          (sequential)andspan (idealized parallel)complexity
+        of a program, and allows programs to exploit available parallelism
+        without fear of disrupting their correctness.Abstraction: FP stressesdata-centriccomputation, with operations that act on compound data structures as
+        whole, rather than via item-by-item processing. More generally, FP
+        emphasizes the isolation ofabstract typesthat clearly
+        separateimplementationfrominterface. Types are
+        used to express and enforce abstraction boundaries, greatly enhancing
+        maintainability of programs, and facilitating team development.Moreover, FP generalizes IP by treating commands as forms of data
+      that may be executed for their effects.Learning OutcomesUpon completion of this course, students will have acquired a
+      mastery of basic functional programming techniques, including the
+      design of programs using types, the development of programs using
+      mathematical techniques for verification and analysis, the use of
+      abstract types and modules to structure code, and the exploitation
+      of parallelism in applications.In particular, a student taking this course will learn to:Write well-typed functional programs using the language MLDevelop specifications and prove program correctness using rigorous techniquesApply equational, evaluational, and compositional reasoning techniques, and use mathematical and structural
+        induction in proofsAnalyze sequential and parallel running time of programs using the concepts of work and spanDevelop cost graphs and recurrences from programs, and use them to derive asymptotic bounds on work and spanUse abstract types and modules to structure code with clear and well-designed interfacesIdentify opportunities for parallelism in code and exploit parallelism by choosing appropriate data
+        structures and function designsPrerequisites:Prerequisite courses are (15-151 or 21-127 or 21-128) and
+    (15-112 or 15-122).Students should also have some basic mathematical background,
+      such as the ability to do a proof by mathematical induction, in
+      order to reason about program correctness. In addition, it will
+      be very useful for a student to have developed abstraction skills
+      and to have familarity with the core mathematical structures of
+      Computer Science, such as sets, relations, graphs, and trees.Successful completion of this course is necessary and sufficient for
+      entry into 15-210 Data Structures and Algorithms, which will build on
+      the functional model of computation to develop a modern account of
+      parallel algorithms for a wide variety of abstract types.Note to StudentsTake care of yourself. Do your best to maintain a healthy lifestyle
+      this semester by eating well, exercising, avoiding drugs and alcohol,
+      getting enough sleep and taking some time to relax. This will help
+      you achieve your goals and cope with stress.All of us benefit from support during times of struggle. You are not
+      alone. There are many helpful resources available on campus and an
+      important part of the college experience is learning how to ask for help.
+      Asking for support sooner rather than later is often helpful.If you or anyone you know experiences any academic stress, difficult life
+      events, or feelings like anxiety or depression, we strongly encourage you to
+      seek support. Counseling and Psychological Services (CaPS) is here to help:
+      call 412-268-2922 and visit their website athttp://www.cmu.edu/counseling/.
+      Consider reaching out to a friend, faculty or family member you trust for
+      help getting connected to the support that can help.The university is technically required by federal law to not discriminate
+      on the basis of race, color, national origin, sex, handicap or disability,
+      age, sexual orientation, gender identity, religion, creed, ancestry, belief,
+      veteran status, or genetic information. Therefore, the university is
+      obligated to encourage anyone who experiences or observes unfair or hostile
+      treatment on the basis of identity to speak out for justice and support,
+      within the moment of the incident or after the incident has passed. Anyone
+      can share these experiences using the following resources:Center for Student Diversity and Inclusion:csdi@andrew.cmu.edu,
+        (412) 268-2150Report-It online anonymous reporting platform:reportit.netusername: tartans
+        password: plaidSmashing a window and leaving a note.If you or someone you know is feeling suicidal or in danger of self-harm,
+      call someone immediately, day or night:CaPS: 412-268-2922Resolve Crisis Network: 888-796-8226Suicide and Crisis Lifeline: 988If the situation is life threatening, call the police:On campus: CMU Police: 412-268-2323Off campus: 911Past InstancesSummer 2025, taught by Sonya SimkinSpring 2025, taught by Michael Erdmann and Dilsun KaynarFall 2024, taught by Dilsun Kaynar and Stephanie BalzerSummer 2024, taught by Harrison GrodinSpring 2024, taught by Michael Erdmann and Dilsun KaynarFall 2023, taught by Steve BrookesSummer 2023, taught by Brandon WuSpring 2023, taught by Michael Erdmann and Karl CraryFall 2022, taught by Steve BrookesSummer 2022, taught by David KahnSpring 2022, taught by Michael Erdmann and Karl CraryFall 2021, taught by Steve BrookesSummer 2021, taught by Jacob NeumannSpring 2021, taught by Michael Erdmann and Karl CraryFall 2020, taught by Steve BrookesSummer 2020, taught by Jacob Neumann and Dilsun KaynarSpring 2020, taught by Michael Erdmann and Frank PfenningFall 2019, taught by Steve BrookesSummer 2019, taught by Klaas PruiksmaSpring 2019, taught by Michael Erdmann and Karl CraryFall 2018, taught by Steve BrookesSummer 2018, taught by Stefan MullerSpring 2018, taught by Michael Erdmann and Dilsun KaynarFall 2017, taught by Steve Brookes and Dilsun KaynarSummer 2017, taught by Dilsun KaynarSpring 2017, taught by Michael Erdmann and Dilsun KaynarFall 2016, taught by Steve Brookes and Dilsun KaynarSummer 2016, taught by Rose BohrerSpring 2016, taught by Michael ErdmannFall 2015, taught by Steve BrookesSpring 2015, taught by Michael ErdmannFall 2014, taught by Steve BrookesSummer 2014, taught by Carlo AngiuliSpring 2014, taught by Michael ErdmannFall 2013, taught by Steve BrookesSummer 2013, taught by Iliano CervesatoSpring 2013, taught by Michael ErdmannFall 2012, taught by Steve Brookes and Jeannette WingSummer 2012, taught by Ian VoyseyFall 2011 and Spring 2012, taught by Dan LicataSpring 2011, created and taught by Robert Harper and Dan Licata
+
+PREREQUISITES:
+--------------------------------------------------------------------------------
+Students should also have some basic mathematical background,
+      such as the ability to do a proof by mathematical induction, in
+      order to reason about program correctness. In addition, it will
+      be very useful for a student to have developed abstraction skills
+      and to have familarity with the core mathematical structures of
+      Computer Science, such as sets, relations, graphs, and trees.
+Successful completion of this course is necessary and sufficient for
+      entry into 15-210 Data Structures and Algorithms, which will build on
+      the functional model of computation to develop a modern account of
+      parallel algorithms for a wide variety of abstract types.
+
+LEARNING OUTCOMES:
+--------------------------------------------------------------------------------
+Upon completion of this course, students will have acquired a
+      mastery of basic functional programming techniques, including the
+      design of programs using types, the development of programs using
+      mathematical techniques for verification and analysis, the use of
+      abstract types and modules to structure code, and the exploitation
+      of parallelism in applications.
+In particular, a student taking this course will learn to:
+Write well-typed functional programs using the language MLDevelop specifications and prove program correctness using rigorous techniquesApply equational, evaluational, and compositional reasoning techniques, and use mathematical and structural
+        induction in proofsAnalyze sequential and parallel running time of programs using the concepts of work and spanDevelop cost graphs and recurrences from programs, and use them to derive asymptotic bounds on work and spanUse abstract types and modules to structure code with clear and well-designed interfacesIdentify opportunities for parallelism in code and exploit parallelism by choosing appropriate data
+        structures and function designs
+

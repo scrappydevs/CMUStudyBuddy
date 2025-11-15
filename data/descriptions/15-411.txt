@@ -1,0 +1,94 @@
+Course Code: 15-411
+Course Name: 15-411 Compiler Design
+Course URL: https://www.cs.cmu.edu/~15411/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+15-411 Compiler DesignThis course covers the design and implementation of compiler and
+runtime systems for high-level languages, and examines the interaction
+between language design, compiler design, and runtime
+organization. Topics covered include lexical and syntactic analysis,
+type-checking, program analysis, code generation and optimization,
+memory management, and runtime organization.PiazzaFor student without Piazza access fill out your andrew id inthis formLecturesTue/Thu 09:30AM – 10:50AM (ET)In-person atDHA302Instructors:Seth GoldsteinandBen TitzerRecitationsRecitation A: Fri 1:00 - 1:50 PM (ET) atGHC::4102Recitation B: Fri 2:00 - 2:50 PM (ET) atBH::235ARecitation C: Fri 4:00 - 4:50 PM (ET) atWEH::5312Recitation D: Fri 1:00 - 1:50 PM (ET) atGHC::4301Office HoursIn-person, see Google Calendar andstaff pagefor schedule.Course CalendarLearning ObjectivesDistinguish the main phases of a state-of-the-art compilerUnderstand static and dynamic semantics of an imperative languageDevelop parsers and lexers using parser generators and combinatorsPerform semantic analysisTranslate abstract syntax trees to intermediate representations and static single assignment formAnalyze the dataflow in an imperative languagePerform standard compiler optimizationsGenerate efficient assembly code for a modern architectureAllocate registers using a graph-coloring algorithmUnderstand opportunities and limitations of compiler optimizationsAppreciate design tradeoffs how representation affects optimizationsAutomatically manage memory using garbage collectionDevelop complex software following high-level specificationsPlease see the calendar for the lecture topics and links to the
+references and notes. The schedule is subject to change during the
+course of the semester.Sponsoring15-411/611 Compiler Design is supported byJane Street
+Capital.
+
+LEARNING OBJECTIVES:
+--------------------------------------------------------------------------------
+Distinguish the main phases of a state-of-the-art compilerUnderstand static and dynamic semantics of an imperative languageDevelop parsers and lexers using parser generators and combinatorsPerform semantic analysisTranslate abstract syntax trees to intermediate representations and static single assignment formAnalyze the dataflow in an imperative languagePerform standard compiler optimizationsGenerate efficient assembly code for a modern architectureAllocate registers using a graph-coloring algorithmUnderstand opportunities and limitations of compiler optimizationsAppreciate design tradeoffs how representation affects optimizationsAutomatically manage memory using garbage collectionDevelop complex software following high-level specifications
+Please see the calendar for the lecture topics and links to the
+references and notes. The schedule is subject to change during the
+course of the semester.
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+15-411 Compiler DesignThis course covers the design and implementation of compiler and
+runtime systems for high-level languages, and examines the interaction
+between language design, compiler design, and runtime
+organization. Topics covered include lexical and syntactic analysis,
+type-checking, program analysis, code generation and optimization,
+memory management, and runtime organization.PiazzaFor student without Piazza access fill out your andrew id inthis formLecturesTue/Thu 09:30AM – 10:50AM (ET)In-person atDHA302Instructors:Seth GoldsteinandBen TitzerRecitationsRecitation A: Fri 1:00 - 1:50 PM (ET) atGHC::4102Recitation B: Fri 2:00 - 2:50 PM (ET) atBH::235ARecitation C: Fri 4:00 - 4:50 PM (ET) atWEH::5312Recitation D: Fri 1:00 - 1:50 PM (ET) atGHC::4301Office HoursIn-person, see Google Calendar andstaff pagefor schedule.Course CalendarLearning ObjectivesDistinguish the main phases of a state-of-the-art compilerUnderstand static and dynamic semantics of an imperative languageDevelop parsers and lexers using parser generators and combinatorsPerform semantic analysisTranslate abstract syntax trees to intermediate representations and static single assignment formAnalyze the dataflow in an imperative languagePerform standard compiler optimizationsGenerate efficient assembly code for a modern architectureAllocate registers using a graph-coloring algorithmUnderstand opportunities and limitations of compiler optimizationsAppreciate design tradeoffs how representation affects optimizationsAutomatically manage memory using garbage collectionDevelop complex software following high-level specificationsPlease see the calendar for the lecture topics and links to the
+references and notes. The schedule is subject to change during the
+course of the semester.Sponsoring15-411/611 Compiler Design is supported byJane Street
+Capital.
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+15-411 Compiler Design
+This course covers the design and implementation of compiler and
+runtime systems for high-level languages, and examines the interaction
+between language design, compiler design, and runtime
+organization. Topics covered include lexical and syntactic analysis,
+type-checking, program analysis, code generation and optimization,
+memory management, and runtime organization.
+Piazza
+For student without Piazza access fill out your andrew id in
+this form
+Lectures
+Tue/Thu 09:30AM – 10:50AM (ET)
+In-person at
+DH
+A302
+Instructors:
+Seth Goldstein
+and
+Ben Titzer
+Recitations
+Recitation A: Fri 1:00 - 1:50 PM (ET) at
+GHC::4102
+Recitation B: Fri 2:00 - 2:50 PM (ET) at
+BH::235A
+Recitation C: Fri 4:00 - 4:50 PM (ET) at
+WEH::5312
+Recitation D: Fri 1:00 - 1:50 PM (ET) at
+GHC::4301
+Office Hours
+In-person, see Google Calendar and
+staff page
+for schedule.
+Course Calendar
+Learning Objectives
+Distinguish the main phases of a state-of-the-art compiler
+Understand static and dynamic semantics of an imperative language
+Develop parsers and lexers using parser generators and combinators
+Perform semantic analysis
+Translate abstract syntax trees to intermediate representations and static single assignment form
+Analyze the dataflow in an imperative language
+Perform standard compiler optimizations
+Generate efficient assembly code for a modern architecture
+Allocate registers using a graph-coloring algorithm
+Understand opportunities and limitations of compiler optimizations
+Appreciate design tradeoffs how representation affects optimizations
+Automatically manage memory using garbage collection
+Develop complex software following high-level specifications
+Please see the calendar for the lecture topics and links to the
+references and notes. The schedule is subject to change during the
+course of the semester.
+Sponsoring
+15-411/611 Compiler Design is supported by
+Jane Street
+Capital
+.
+

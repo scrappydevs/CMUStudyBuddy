@@ -1,0 +1,17 @@
+Course Code: 16-385
+Course Name: 16-385 Computer Vision, Spring 2020
+Course URL: https://www.cs.cmu.edu/~16385/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+Course DescriptionThis course provides a comprehensive introduction to computer vision. 	Major topics include image processing, detection and recognition, geometry-based and physics-based vision and video analysis. Students will learn basic concepts of computer vision as well as hands on experience to solve real-life vision problems.
+
+PREREQUISITES:
+--------------------------------------------------------------------------------
+PrerequisitesThis course requires familarity with linear algebra, calculus, basic probability, as well as programming. In particular, the following courses serve as prerequisite:"Mathematical Foundations of Electrical Engineering" (18-202) and "Principles of Imperative Computation" (15-122) (OR)"Matrix Algebra with Applications" (21-240) and "Matrices and Linear Transformations" (21-241) and "Calculus in Three Dimensions" (21-259) and "Principles of Imperative Computation" (15-122)Matlab will be used for project assignments and will be covered as part of the introduction to the course.
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Course DescriptionThis course provides a comprehensive introduction to computer vision. 	Major topics include image processing, detection and recognition, geometry-based and physics-based vision and video analysis. Students will learn basic concepts of computer vision as well as hands on experience to solve real-life vision problems.
+

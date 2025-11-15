@@ -1,0 +1,234 @@
+Course Code: 15-462
+Course Name: Computer Graphics : Spring 2018
+Course URL: https://www.cs.cmu.edu/~15462/
+================================================================================
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+[Home]
+[Feed]
+[Lectures]
+[Assignments]
+[Course Info]
+[Login]
+Computer Graphics
+(CMU 15-462/662)
+Basic Info
+Mon/Wed 10:30-11:50pm
+NSH 1305
+Instructor:
+Nancy Pollard
+See the
+course info
+page for more info on policies and logistics.
+Spring 2018 Schedule
+Jan 15
+No Class (CMU MLK holiday)
+Jan 17
+Course Introduction
+Jan 22
+Math Review Part I (Linear Algebra)
+Assignment 0.0 OUT
+Jan 24
+Math Review Part II (Vector Calculus)
+Assignment 0.5 OUT
+Jan 29
+Drawing a Triangle
+Assignment 0.0 DUE
+Assignment 1 OUT
+Jan 30
+OpenGL tutorial
+Jan 31
+Coordinate Spaces and Transformations
+Assignment 0.5 DUE
+Feb 5
+3D Rotations and Complex Representations
+Feb 7
+Perspective Projection and Texture Mapping
+Feb 12
+The Rasterization Pipeline
+Assignment 1 DUE (Feb 13)
+Feb 14
+Introduction to Geometry
+Assignment 2 OUT
+Feb 19
+Meshes and Manifolds
+Feb 21
+Digital Geometry Processing
+Feb 26
+Geometric Queries
+Feb 28
+Accelerating Geometric Queries
+Assignment 2 DUE (Mar 3)
+Mar 5
+Midterm Review
+Mar 7
+MIDTERM EXAM
+Mar 12
+SPRING BREAK
+Mar 14
+SPRING BREAK
+Mar 19
+Midterm Recap
+Mar 21
+Color
+Assignment 3 OUT
+Mar 26
+Radiometry
+Mar 28
+The Rendering Equation
+Apr 2
+Numerical Integration
+Apr 4
+Monte Carlo Ray Tracing
+Apr 9
+Review / Project 3
+Apr 11
+Variance Reduction
+Assignment 3 DUE (Thursday), Assignment 4 OUT
+Apr 16
+Introduction to Animation
+Apr 18
+Dynamics, Integration, and Optimization (Part 1)
+Apr 23
+Project 4 Overview
+Apr 25
+Optimization, Animation, and PDEs
+Apr 30
+Final Review
+Assignment 4 DUE
+May 2
+Project Showcase
+May 11
+Final Exam:  1-4pm, BH A51
+Assignments and Projects
+(Due 1/29)
+Assignment 0.0: Linear Algebra Review/Preview
+(Due 1/31)
+Assignment 0.5: Vector Calculus Review/Preview
+(Due 2/12)
+Assignment 1: DrawSVG
+(Due 3/3)
+Assignment 2: MeshEdit
+(Due 4/9)
+Assignment 3: PathTracer
+(Due 4/30)
+Assignment 4: Animation
+Acknowledgments
+Thanks to past course contributors: Kayvon Fatahalian, Stelian Coros, Michael Choquette, Se-Joon Chung, Sky Gao, Qiuyi Jia, Nick Sharp, Zach Shearer, Bryce Summers.
+Copyright 2018 Carnegie Mellon University
+
+COURSE CONTENT:
+--------------------------------------------------------------------------------
+[Home]
+[Feed]
+[Lectures]
+[Assignments]
+[Course Info]
+[Login]
+Computer Graphics
+(CMU 15-462/662)
+Basic Info
+Mon/Wed 10:30-11:50pm
+NSH 1305
+Instructor:
+Nancy Pollard
+See the
+course info
+page for more info on policies and logistics.
+Spring 2018 Schedule
+Jan 15
+No Class (CMU MLK holiday)
+Jan 17
+Course Introduction
+Jan 22
+Math Review Part I (Linear Algebra)
+Assignment 0.0 OUT
+Jan 24
+Math Review Part II (Vector Calculus)
+Assignment 0.5 OUT
+Jan 29
+Drawing a Triangle
+Assignment 0.0 DUE
+Assignment 1 OUT
+Jan 30
+OpenGL tutorial
+Jan 31
+Coordinate Spaces and Transformations
+Assignment 0.5 DUE
+Feb 5
+3D Rotations and Complex Representations
+Feb 7
+Perspective Projection and Texture Mapping
+Feb 12
+The Rasterization Pipeline
+Assignment 1 DUE (Feb 13)
+Feb 14
+Introduction to Geometry
+Assignment 2 OUT
+Feb 19
+Meshes and Manifolds
+Feb 21
+Digital Geometry Processing
+Feb 26
+Geometric Queries
+Feb 28
+Accelerating Geometric Queries
+Assignment 2 DUE (Mar 3)
+Mar 5
+Midterm Review
+Mar 7
+MIDTERM EXAM
+Mar 12
+SPRING BREAK
+Mar 14
+SPRING BREAK
+Mar 19
+Midterm Recap
+Mar 21
+Color
+Assignment 3 OUT
+Mar 26
+Radiometry
+Mar 28
+The Rendering Equation
+Apr 2
+Numerical Integration
+Apr 4
+Monte Carlo Ray Tracing
+Apr 9
+Review / Project 3
+Apr 11
+Variance Reduction
+Assignment 3 DUE (Thursday), Assignment 4 OUT
+Apr 16
+Introduction to Animation
+Apr 18
+Dynamics, Integration, and Optimization (Part 1)
+Apr 23
+Project 4 Overview
+Apr 25
+Optimization, Animation, and PDEs
+Apr 30
+Final Review
+Assignment 4 DUE
+May 2
+Project Showcase
+May 11
+Final Exam:  1-4pm, BH A51
+Assignments and Projects
+(Due 1/29)
+Assignment 0.0: Linear Algebra Review/Preview
+(Due 1/31)
+Assignment 0.5: Vector Calculus Review/Preview
+(Due 2/12)
+Assignment 1: DrawSVG
+(Due 3/3)
+Assignment 2: MeshEdit
+(Due 4/9)
+Assignment 3: PathTracer
+(Due 4/30)
+Assignment 4: Animation
+Acknowledgments
+Thanks to past course contributors: Kayvon Fatahalian, Stelian Coros, Michael Choquette, Se-Joon Chung, Sky Gao, Qiuyi Jia, Nick Sharp, Zach Shearer, Bryce Summers.
+Copyright 2018 Carnegie Mellon University

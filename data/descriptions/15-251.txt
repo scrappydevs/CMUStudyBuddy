@@ -1,0 +1,373 @@
+Course Code: 15-251
+Course Name: 15-251 Great Ideas in Theoretical Computer Science
+Course URL: https://www.cs.cmu.edu/~15251/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+Fall 2018Welcome to 15-251, Great Ideas in Theoretical Computer Science.This course is about the rigorous study of computation, which can be described as the process of manipulating information. Computation is a fundamental component of minds, civilizations, nature and the universe. Therefore, having the right language and tools to reason about computation is an important goal. This course teaches the mathematical underpinnings of computation and explores some of the central results and questions regarding the nature of computation.
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+15-251 Fall 2018
+15-251 Great Ideas in Theoretical Computer Science
+Home
+Diderot
+Course Info
+Schedule
+Calendar
+Weekly Planner
+Notes
+Staff
+Schedule
+Week
+Date
+Day
+Topic
+Notes
+1
+Aug
+28
+T
+Introduction
+Slides [
+PDF
+]
+How to succeed in 251
+Proof checklist
+Induction pitfalls
+Homework 1
+Aug
+29
+W
+On proofs + How to succeed in 251
+Slides [
+PDF
+]
+Aug
+30
+R
+Strings and encodings
+Handout slides [
+PDF
+]
+Aug
+31
+F
+Recitation 1
+Solutions
+2
+Sep
+4
+T
+DFAs 1
+Handout slides [
+PDF
+]
+Homework 2
+Automata Tutor
+Sep
+6
+R
+DFAs 2
+Handout slides [
+PDF
+]
+Sep
+7
+F
+Recitation 2
+Solutions
+3
+Sep
+11
+T
+Turing Machines
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Midterm 1 practice problems
+Turing's paper
+TM simulator
+A Universal TM
+Sep
+13
+R
+Church-Turing Thesis, Universality, Decidability
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Sep
+14
+F
+Recitation 3
+Solutions
+4
+Sep
+18
+T
+Midterm 1
+Homework 3
+Sep
+20
+R
+Turing's Legacy Continues: Undecidability
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Sep
+21
+F
+Recitation 4
+Solutions
+5
+Sep
+25
+T
+Time Complexity 1
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Homework 4
+Sep
+27
+R
+Time Complexity 2
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Sep
+28
+F
+Recitation 5
+Solutions
+6
+Oct
+2
+T
+Graphs I: The Basics
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Midterm 2 Practice Problems
+Oct
+4
+R
+Graphs II: Basic Graph Algorithms
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Oct
+5
+F
+Recitation 6
+Solutions
+7
+Oct
+9
+T
+Graphs III: Matchings and Bipartite Graphs
+Handout slides [
+PDF
+]
+Homework 5
+Oct
+11
+R
+Graphs IV: Stable Matchings
+Handout slides [
+PDF
+]
+Oct
+12
+F
+Recitation 7
+Solutions
+8
+Oct
+16
+T
+Boolean Circuits
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Homework 6
+Oct
+18
+R
+NP and NP-completeness 1
+Handout slides [
+PDF
+]
+Oct
+19
+F
+Recitation 8
+Solutions
+9
+Oct
+23
+T
+NP and NP-completeness 2
+Handout slides [
+PDF
+]
+Homework 7
+Oct
+25
+R
+Approximation Algorithms
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Oct
+26
+F
+Recitation 9
+Solutions
+10
+Oct
+30
+T
+Introduction to Randomness and Probability Theory Review
+Handout slides [
+PDF
+]
+Midterm 3 Practice Problems
+Nov
+1
+R
+Randomized Algorithms 1
+Handout slides [
+PDF
+]
+Nov
+2
+F
+Recitation 10
+Solutions
+11
+Nov
+6
+T
+Randomized Algorithms 2
+Handout slides [
+PDF
+]
+Homework 8
+Nov
+8
+R
+Modular Arithmetic
+Handout notes [
+PDF
+]
+Nov
+9
+F
+Recitation 11
+Solutions
+12
+Nov
+13
+T
+Group Theory
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Homework 9
+Nov
+15
+R
+Fields and Polynomials
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Nov
+16
+F
+Recitation 12
+Solutions
+13
+Nov
+20
+T
+Quantum Computation
+Handout slides [
+PDF
+]
+Nov
+22
+R
+No Class: Thanksgiving
+Nov
+23
+F
+No Recitation: Thanksgiving
+14
+Nov
+27
+T
+Cryptography
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Homework 10
+Nov
+29
+R
+Interactive Proofs
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Nov
+30
+F
+Recitation 14
+Solutions
+15
+Dec
+4
+T
+Gödel's Incompleteness Theorems
+Lecture slides [
+1 per page
+|
+3 per page
+]
+Final Exam Practice Problems
+Dec
+6
+R
+Epilogue: Guest Speakers
+Dec
+7
+F
+No recitation
+

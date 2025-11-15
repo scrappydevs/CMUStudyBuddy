@@ -1,0 +1,229 @@
+Course Code: 15-414
+Course Name: Bug Catching: Automated Program Verification
+Course URL: https://www.cs.cmu.edu/~15414/
+================================================================================
+
+OVERVIEW:
+--------------------------------------------------------------------------------
+High-profile bugs continue to plague the software industry, leading to major problems in the reliability, safety,
+      and security of systems.  This course teaches students how to write bug-free code through the process of software
+      verification, which aims to prove the correctness of a program with respect to a mathematical specification.
+      Along the way, students will learn how to:Specify correct program behaviorProve the correctness of their codeUse formal semantics to reason about the soundness of proof rulesWrite practical and efficient verified codeUse decision procedures and model checkers to reduce verification effortStudents will learn the principles and algorithms behind automated verification tools, and understand their
+      practical limitations while gaining experience writing verified, machine-checked code that solves real problems.
+Lectures: Tue Thu 2:00-3:20pm, DH A302
+Matt Fredriksonmfredrik@cmuOH: Wednesdays @ 4pm CIC 2126
+Carson PiehlAarrya SarafNichole Zhang
+Software: This course will teach students how to use theWhy3deductive verification platform. See the notes oninstallation and editing.
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+Bug Catching: Automated Program VerificationCourse OverviewHigh-profile bugs continue to plague the software industry, leading to major problems in the reliability, safety,
+      and security of systems.  This course teaches students how to write bug-free code through the process of software
+      verification, which aims to prove the correctness of a program with respect to a mathematical specification.
+      Along the way, students will learn how to:Specify correct program behaviorProve the correctness of their codeUse formal semantics to reason about the soundness of proof rulesWrite practical and efficient verified codeUse decision procedures and model checkers to reduce verification effortStudents will learn the principles and algorithms behind automated verification tools, and understand their
+      practical limitations while gaining experience writing verified, machine-checked code that solves real problems.Lectures: Tue Thu 2:00-3:20pm, DH A302Instructors:Matt Fredriksonmfredrik@cmuOH: Wednesdays @ 4pm CIC 2126TAs:Carson PiehlAarrya SarafNichole ZhangOffice HoursTuesdays @ 4pm Gates Commons Table 2Wednesdays @ 4pm CIC 2126Thursdays @ 11am Gates Commons Table 5Fridays @ 2pm Gates Commons Table 3Software: This course will teach students how to use theWhy3deductive verification platform. See the notes oninstallation and editing.
+
+LEARNING OBJECTIVES:
+--------------------------------------------------------------------------------
+Identify and formalize program correctness.In order to reason about the existence of bugs in code, and
+        ultimately justify their absence, we need to state what it means for the code to be correct. Students will learn
+        how to formalize correctness using logical specifications that give precise meaning to the program's intended
+        behavior.
+Understand how to write correct software from the ground up.Writing good specifications of program
+        correctness is essential to showing that there aren't any bugs in the code, but it is also useful for writing
+        good code from the start. Students will develop experience reasoning about correctness as they implement
+        functionality, learning how to write code that establishes and preserves properties and invariants needed to
+        meet a target specification.
+Apply rigorous reasoning to program correctness.Program verificationis the process of
+        mathematically proving that all possible behaviors of a given program adhere to its specification. Students will
+        learn how to use deductive reasoning and state space exploration to realize this goal, and gain experience
+        verifying their own code against logical correctness specifications.
+Learn to use automated tools to aid in verification.Formally verifying real code is challenging, but
+        given the scale of modern software, can also be tedious and labor-intensive. A number of tools exist for
+        automating key parts of the verification process, notably deductive verification tools and model
+        checkers. Students will learn how to use these tools when developing correct software, and gain experience
+        applying them to non-trivial implementations.
+Understand how verification tools work.Verification tools are not perfect, and will never be able to
+        scale universally to all software development needs. Understanding the principles and techniques that these
+        tools use is necessary for evaluating when it is appropriate to use a particular tool, and for addressing a
+        tool's limitations when they arise in practice.
+
+PREREQUISITES:
+--------------------------------------------------------------------------------
+SyllabusCourse textbookThere is no textbook for this class, and detailed lecture notes will be posted to the websitewithin a few
+      days after each class.  Keep in mind that lecture notes may not contain everything we cover in class.
+      Comments and corrections are welcome, please give them to the course staff on Piazza.Course scheduleConsult theonline schedulefor up-to-date information.Learning objectivesIdentify and formalize program correctness.In order to reason about the existence of bugs in code, and
+        ultimately justify their absence, we need to state what it means for the code to be correct. Students will learn
+        how to formalize correctness using logical specifications that give precise meaning to the program's intended
+        behavior.Understand how to write correct software from the ground up.Writing good specifications of program
+        correctness is essential to showing that there aren't any bugs in the code, but it is also useful for writing
+        good code from the start. Students will develop experience reasoning about correctness as they implement
+        functionality, learning how to write code that establishes and preserves properties and invariants needed to
+        meet a target specification.Apply rigorous reasoning to program correctness.Program verificationis the process of
+        mathematically proving that all possible behaviors of a given program adhere to its specification. Students will
+        learn how to use deductive reasoning and state space exploration to realize this goal, and gain experience
+        verifying their own code against logical correctness specifications.Learn to use automated tools to aid in verification.Formally verifying real code is challenging, but
+        given the scale of modern software, can also be tedious and labor-intensive. A number of tools exist for
+        automating key parts of the verification process, notably deductive verification tools and model
+        checkers. Students will learn how to use these tools when developing correct software, and gain experience
+        applying them to non-trivial implementations.Understand how verification tools work.Verification tools are not perfect, and will never be able to
+        scale universally to all software development needs. Understanding the principles and techniques that these
+        tools use is necessary for evaluating when it is appropriate to use a particular tool, and for addressing a
+        tool's limitations when they arise in practice.LecturesWe enjoy seeing you in class, so please come to the lectures unless you have an unavoidable conflict, in which
+        case you are expected to follow up with what you have missed in class on your own. Although class participation
+        is not formally part of your score, for students close to grade cutoffs we will take class participation into
+        account, which includes questions and answers during lecture and participation on Piazza and office hours.
+        Active participation is an important part of the learning experience!Assignments, exams, and gradingGrading will be based on homework assignments (which have written and programming components) and two
+       mini-projects.  Grade thresholds will be decided by the course staff at the end of semester based on the
+       difficulty of assignments and projects, but we guarantee an A for over 90%, B for over 80%, C for over 70% and D
+       for over 60%.Assignments(500 pts)Assignments generally have two components: a written part and a programming part.Written Homework.The goal of the written homework is to help you refine the fundamental skills,
+              and better understand the theoretical underpinnings, that you will need in order to do well on the labs
+              and exams. Grading for these assignments is based on the correctness of your answer, and the presentation
+              of your reasoning. You should strive for clarity and conciseness, while making sure to show each step of
+              your reasoning. Categorical answers with no explanation will not even receive partial credit, but lucid
+              explanations of your attempt to find the answer will.Sample homework assignments can be found by visiting the course website for previous years' offerings.Written homework will be handed in in PDF format via Gradescope, and should preferably be typeset in
+              LaTeX.  We provide LaTeX templates and lecture notes to aid typesetting.Programming Homework.The programming homework is designed to give you hands-on experience writing bug-free code with the help
+              of formal verification tools. We will make extensive use of theWhy3deductive verification platform, which consists of a general-purpose specification language and collection
+              of decision procedures to automate proofs. In general, we will ask you to implement some interesting
+              functionality, such as a SAT solver or fault-tolerant communication protocol, provide a formal
+              specification of what it means for that functionality to be correct, and use the appropriate tool to
+              verify that you have implemented it correctly. For many this is likely to be the most challenging part of
+              the course, but it will also be rewarding. The experience of writing a complex program, proving it
+              correct, and having it workexactlyas intended on the first execution (and all subsequent ones) is
+              exhilarating!The most important criterion with respect to grading programs is correctness. An ideal program attempt
+              contains concise, correct specifications and sufficient proof annotations for the automated verifier to
+              certify correctness. This will receive full credit, in addition to pleasing the course staff as the
+              verifier will do most of the work in grading. However, it may be the case that your specification is
+              incorrect, or too complicated for the grader to fully understand. Verification cannot be fully automated,
+              and finding the right annotations to provide to the tool can be challenging, so it can happen that you do
+              not provide a solution that the verifier can certify (even if you implemented the functionality
+              correctly). In these cases, you will receive partial credit, so it is also important that the code you
+              hand in be clean and well-commented, as course staff cannot assign points to solutions that they do not
+              understand.Programs will be also handed in on Gradescope.  Instructions are provided in the individual assignments.Mini-Projects(150 pts MP1)(150 pts MP2)Chere will be two mini-projects, one (MP1) before
+            the midterm break and one (MP2) near the end of the semester.  A mini-project consists of a verified
+            implementation of an algorithm or data structure together with a writeup guiding the reader through your
+            program and explaining and analyzing interesting aspects of the specification or code.  You will be able to
+            choose from 2-3 options for each of the mini-projects.  Mini-projects will be graded based on correctness,
+            like the written and programming assignments, but also on the depth and completeness of the solution and its
+            analysis.  This may include aspects such as asymptotic complexity of the code or coverage of the
+            specification.  You will have the option to pair up for each mini-project.Final Exam(200 pts)We will have only a final exam and no midterm. The content of the exams will more closely resemble the
+            written homework, but some questions may rely on, or make reference to, key parts of the programming
+            assignments.  The exam will be "closed book" (i.e., you may not reference our lecture notes), but students
+            will be given a "cheat sheet" containing any important proof rules and identities needed on the exam.For special accommodations on exams, students should submit an accommodations letter to the course staff
+              at least one week before. For extra time on exams we then ask that you arrange it to be proctored through
+              the disability services office (assuming you have given us the form) for each exam separately. We will
+              work with them to get them a copy of the exam. For other issues please contact the instructor. No make up
+              exams are given, except for medical reasons. To schedule a make-up exam, ask your academic advisor to
+            contact the instructors. Please do not email the course staff personally.ParticipationActive class participation will be taking into account for students near grad boundaries.  In addition
+            to lecture participation, this also includes posing and answering questions on Piazza.Late AssignmentsYou will have a total of 5 late days to use throughout the semester, but you may use at most 2 for any given
+        assignment.  Due to grade submission deadlines, you are not allowed to use late days on some specific assignment
+        or mini-projects, which will be announced when the are released.Regrade RequestsRegrade requests are to be submitted through Gradescope.CommunicationWhen you need help from the course staff, please use Piazza and office hours or hang around after lecture.  For
+        issues requiring privacy, please feel free to email the course instructors.How to use Piazza:We will post announcements, clarifications, corrections, and hints on Piazza, and in
+        certain cases to the course webpage. When using Piazza for discussion of labs and homework, please resist the
+        temptation to ask every question that you might have.  The best way to learn this material is to spend time
+        thinking through the details yourself, and exploring various alternative solutions. Asking others for too many
+        hints contradicts that process, and will leave you less well-prepared for future assignment and mini-projects.Please make your Piazza questions public and use your name instead of posting anonymously. Chances are that
+        other students have similar questions to the one you're asking, and marking it private will likely require the
+        course staff to spend unnecessary time posting responses to several minor variations of the same question.  Use
+        private questions when you would give away part of an answer to a problem, although in our experience office
+        hour is often the more suitable venue for such questions.Academic IntegrityStudents are expected to complete each assignment on their own, and should be able to explain all of the work
+        that they hand in. Copying code or proof material from other students, from online sources, or from prior
+        instances of this course is not allowed.  However, you are encouraged to discuss assignments with each other at
+        a sufficiently high level to avoid the risk of duplicating implementation or proof. Examples of this would be
+        discussing algorithms and properties referred to in the assignment, helping other students with questions about
+        a programming language or tool required to complete the assignment, discussing a general proof technique, or
+        referring to an online source with useful information. Similarly, you may consult online sources, tutorials, and
+        public libraries regarding the Why3 language and the theorem provers it uses.  If you find specifically helpful
+        material it is critical that you (a)do not copy the code or proof, but study it as a guide and then do your
+        own work, and (b)cite the source with a suitable URL in your solution.If you have questions about
+        whether something might be permissible, contact the course staff before you proceed. Please refer to theCommunity Standards & Integrity Codefor
+        information about university policies regarding academic conduct.AccessibilityCarnegie Mellon University makes every effort to provide accessible facilities and programs for individuals with
+        disabilities. If you have a disability and require accommodations, contact the Office of Disability Resources ataccess@andrew.cmu.edu. Please let the instructors know
+        early in the semester so that your needs may be appropriately met.Take Care of YourselfAll of us benefit from support during times of struggle. You are not alone. There are many helpful resources
+      available on campus and an important part of the college experience is learning how to ask for help. You should
+      ask sooner rather than later.
+
+      Should you find yourself or a friend in serious trouble, take it seriously: your classes can wait. For emergencies
+      call UPMC's re:solve Crisis Network at1-888-796-8226. Counseling and Psychological Services (CaPS)
+      is here to help: call412-268-2922and visit their website athttp://www.cmu.edu/counseling/.
+
+      Also consider reaching out to a friend, faculty or family member you trust for help getting connected to the
+      support that can help.
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Consult theonline schedulefor up-to-date information.
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+15-414 Bug Catching: Automated Program Verification and Testing
+Assignments
+Unless otherwise stated, all homework assignments and mini-projects are due at 11:59pm.
+        All homework should be submitted through Gradescope.
+You have a total of 5 late days to use throughout the semester, but no more than 2 on any given assignments. You
+        cannot use late days on mini-projects due to the midterm and final grade submission deadlines.
+In order to submit on Gradescope, your written homework will need to be in PDF format. You are highly encouraged
+        to typeset your solutions in LaTeX, and you will find appropriate templates for each assignment below. Your
+        graders strongly prefer LaTeX-typeset solutions, as your work is much more likely to be clear and legible, as
+        well as consistent with the formatting they expect to see. We recognize that certain types of answers, such as
+        those that involve graphical figures or structured formatting, can be difficult or tedious to typeset. In those
+        cases, the template will sometimes give an example in the comments that you are encouraged to emulate, but it is
+        fine to scan a handwritten solution to include in your latex code as a graphic.
+Programming portions of the assignment should be submitted on Gradescope with the relevant assignment.
+        Instructions will be provided with the individual assignments.
+Relevant Links
+Why3 installation instructions
+Documentation for Why3, version 1.4.0
+Standard libraries for Why3, version 1.4.0
+assignment
+due date
+handout
+template
+Asst0
+Why3 Mechanics
+Fri 9/5
+[pdf]
+[zip]
+Asst1
+Twists on a Theme
+Fri 9/12
+[pdf]
+[zip]
+Asst2
+Verification at Every Tern
+Fri 9/19
+[pdf]
+[zip]
+Asst3
+Dynamic Duo
+Fri 9/26
+[pdf]
+[zip]
+MP1
+Hybrid Data Structures (Checkpoint)
+Fri 10/3 (Checkpoint)
+Fri 10/10 (Final)
+[pdf]
+[zip]
+Asst4
+Proofs and Refutations
+Fri 10/24
+[pdf]
+[zip]
+Asst5
+Equality & Certificates
+Fri 10/31
+[pdf]
+[zip]
+Asst6
+Just in (Linear) Time
+Fri 11/7
+[pdf]
+[zip]
+MP2
+Verification with Certificates (Checkpoint)
+Fri 11/14 (Checkpoint)
+Tue 11/25 (Final)
+[pdf]
+[zip]
+

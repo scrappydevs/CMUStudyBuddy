@@ -1,0 +1,420 @@
+Course Code: 15-750
+Course Name: 15-750: Algorithms in the Real World, Fall 2025
+Course URL: https://www.cs.cmu.edu/~15750/
+================================================================================
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+15-750: CMU Algorithms in the Real World, Fall 2025
+15-750: Algorithms in the Real World, Fall 2025
+Lecturer
+:
+Jason Li
+(jmli@cs).
+TA
+: Meredith Pan (shiqip@andrew).
+Office hours:
+Meredith Thursdays 4-5pm, Gates 5th floor commons (subject to change); Jason Tuesdays 2-3pm, Gates 5011
+Contacting us:
+Please use private messages on Piazza instead of emailing the course staff; this helps messages to not get lost.
+Lecture location:
+Wean 5415, Tue/Thu 11:00-12:20.
+Piazza:
+Link
+Gradescope:
+entry code
+42EVZR
+Course Details and Policies
+Please read the
+course policies
+carefully!!!
+Links
+      to resources
+to help brush up on your background.
+The course page will develop more as we proceed through the lectures.
+Homeworks
+Homework 1
+(due Friday, Sep 12)
+Homework 2
+(due Friday, Sep 26)
+Homework 3
+(due Friday, Nov 7)
+Homework 4
+(due Friday, Nov 21)
+Lectures
+Lecture 1 (Aug 26).  Introduction, Triangle Counting, Strassen's Algorithm
+(notes)
+Chapter 1 of Anupam's notes
+Some resources from previous iterations of the course:
+older
+            handwritten
+            notes
+Handout
+on big-O and recurrences from 15-451/651.
+Chapter 1
+from Kozen (WebISO access only).
+Optional:
+	  Strassen's
+paper
+,
+	  some intuition for his formulas
+	  (
+1
+,
+2
+,
+3
+),
+CACM
+	    article
+on low-communication MatMult (and
+video
+)
+Lecture 2 (Aug 28). Minimum Spanning Trees and Amortized Analysis
+(notes)
+Chapter 2 of Anupam's notes (MST)
+,
+          (
+older handwritten notes
+)
+Chapter 3 of Anupam's
+            notes (amortized analysis)
+Optional:
+Basic animations
+of Kruskal/Prim's algorithms
+Lecture 3 (Sept 2). The analysis of Union-Find
+(notes)
+Log* analysis of Union-Find (451, Spr 19)
+Chapter 3 of Anupam's notes
+(amortized analysis)
+451 (Fall 23) Lecture on Union-Find
+(log log n bound using a potential function)
+Lecture 4 (Sept 4). Shortest paths: Dijkstra, Bellman-Ford, Floyd-Warshall
+(notes)
+older handwritten
+            notes
+, some slides
+          animating
+Dijkstra
+Lecture
+            notes
+from 15-451 on shortest-path algorithms.
+Optional: Kevin Wayne's original
+            slides on
+binary
+              and binomial
+              heaps
+and
+Fibonacci
+              heaps
+.
+Lecture 5 (Sept 9). Dynamic Programming
+(notes)
+Notes
+Sections 4.1, 4.2, 4.5, 4.6
+	  were covered in lecture.
+451 notes on DP
+Sections 2 and 3 were covered in lecture.
+Kleinberg-Tardos has many fun examples of solving problems using DP (see the
+slides1
+,
+slides2
+by Kevin Wayne).
+Lecture 5 (Sept 11). Hashing 1: Hashing with SUHA, analysis of collisions
+(notes)
+Chapter 5 of Anupam's notes (which includes topics discussed in this lecture).
+Lecture 6 (Sept 16). Hashing 2: Two-level hashing, hash function constructions, Load balancing - 1
+(notes)
+Chapter 5 of Anupam's notes (which includes topics discussed in this lecture).
+Notes
+on load-balancing (which includes topics discussed in this lecture).
+Lecture 7 (Sept 18). Hashing 3: Load balancing - 2
+(notes)
+Notes
+on load-balancing.
+(Additional reading) Some detailed
+examples/exercises
+on Chernoff bounds (which includes topics discussed in this lecture).
+Lecture 8 (Sept 23). Data Streaming. Frequency Estimator.
+(notes from 15-850)
+, we covered up to page 4
+Chapter 5 of Anupam's notes (which includes notes on Bloom Filters).
+Chapter 7 of Anupam's notes (which includes topics discussed on streaming).
+Lecture 9 (Sept 25). Dimensionality Reduction: Preserving pairwise distances (JL Transform)
+(notes from 15-850)
+SciKit's
+random projection implementation.
+Lecture notes
+on JL Transform from a previous year.
+(Optional) Proofs of Johnson-Lindenstrauss:
+Indyk/Motwani
+,
+Dasgupta/Gupta
+,
+Achlioptas
+.
+(Optional) Fast JL transforms:
+Ailon-Chazelle
+,
+Ailon-Liberty
+.
+Lecture 10 (Sept 30). Trie and Suffix Tree
+(Meredith's notes)
+451 notes on suffix trees (see sections 1 and 2)
+Lecture 11 (Oct 2). Construction of Suffix Arrays
+(Meredith's notes)
+The O(n log n)	surrogate algorithm (451 notes)
+The O(n) Skew Algorithm.
+The O(n) Skew Algorithm, original paper.
+Lecture 12 (Oct 7). Singular Value Decomposition (SVD)
+(notes)
+Lecture notes
+on SVD from a CMU course.
+Chapter
+					11
+(and
+slides
+)
+				from the Mining Massive Datasets book by Leskovec, Rajaraman, and Ullman.
+(Optional) Chapter 3
+from the Blum-Hopcroft-Kannan book.
+Midterm Exam
+(Oct 9).
+Lecture 13 (Oct 21). Optimization I: Flows and Matchings
+(notes)
+Notes
+from 15-451
+Part of the flow chapter
+from the Kleinberg-Tardos book.
+Animations
+of some basic max-flow algorithms (Ford-Fulkerson, Edmonds-Karp, Dinics)
+Lecture 14 (Oct 23). Optimization II: Min Cost Flows
+(notes)
+Notes
+from 15-451
+Lecture 15 (Oct 28). Optimization III: Linear Programs
+(notes)
+Anupam's notes on Linear Programming
+Carl Kingsford's Simplex Slides
+Notes about LPs
+from our 15-451 course.
+Understanding and Using Linear	Programming
+by Matousek/Gaertner is excellent (free from CMU). Chapters:
+Introduction
+,
+Examples
+,
+LP Basics
+.
+An
+online LP solver
+: it's useful to play with, especially if you haven't seen LPs before.
+More serious so
+
+COURSE CONTENT:
+--------------------------------------------------------------------------------
+15-750: CMU Algorithms in the Real World, Fall 2025
+15-750: Algorithms in the Real World, Fall 2025
+Lecturer
+:
+Jason Li
+(jmli@cs).
+TA
+: Meredith Pan (shiqip@andrew).
+Office hours:
+Meredith Thursdays 4-5pm, Gates 5th floor commons (subject to change); Jason Tuesdays 2-3pm, Gates 5011
+Contacting us:
+Please use private messages on Piazza instead of emailing the course staff; this helps messages to not get lost.
+Lecture location:
+Wean 5415, Tue/Thu 11:00-12:20.
+Piazza:
+Link
+Gradescope:
+entry code
+42EVZR
+Course Details and Policies
+Please read the
+course policies
+carefully!!!
+Links
+      to resources
+to help brush up on your background.
+The course page will develop more as we proceed through the lectures.
+Homeworks
+Homework 1
+(due Friday, Sep 12)
+Homework 2
+(due Friday, Sep 26)
+Homework 3
+(due Friday, Nov 7)
+Homework 4
+(due Friday, Nov 21)
+Lectures
+Lecture 1 (Aug 26).  Introduction, Triangle Counting, Strassen's Algorithm
+(notes)
+Chapter 1 of Anupam's notes
+Some resources from previous iterations of the course:
+older
+            handwritten
+            notes
+Handout
+on big-O and recurrences from 15-451/651.
+Chapter 1
+from Kozen (WebISO access only).
+Optional:
+	  Strassen's
+paper
+,
+	  some intuition for his formulas
+	  (
+1
+,
+2
+,
+3
+),
+CACM
+	    article
+on low-communication MatMult (and
+video
+)
+Lecture 2 (Aug 28). Minimum Spanning Trees and Amortized Analysis
+(notes)
+Chapter 2 of Anupam's notes (MST)
+,
+          (
+older handwritten notes
+)
+Chapter 3 of Anupam's
+            notes (amortized analysis)
+Optional:
+Basic animations
+of Kruskal/Prim's algorithms
+Lecture 3 (Sept 2). The analysis of Union-Find
+(notes)
+Log* analysis of Union-Find (451, Spr 19)
+Chapter 3 of Anupam's notes
+(amortized analysis)
+451 (Fall 23) Lecture on Union-Find
+(log log n bound using a potential function)
+Lecture 4 (Sept 4). Shortest paths: Dijkstra, Bellman-Ford, Floyd-Warshall
+(notes)
+older handwritten
+            notes
+, some slides
+          animating
+Dijkstra
+Lecture
+            notes
+from 15-451 on shortest-path algorithms.
+Optional: Kevin Wayne's original
+            slides on
+binary
+              and binomial
+              heaps
+and
+Fibonacci
+              heaps
+.
+Lecture 5 (Sept 9). Dynamic Programming
+(notes)
+Notes
+Sections 4.1, 4.2, 4.5, 4.6
+	  were covered in lecture.
+451 notes on DP
+Sections 2 and 3 were covered in lecture.
+Kleinberg-Tardos has many fun examples of solving problems using DP (see the
+slides1
+,
+slides2
+by Kevin Wayne).
+Lecture 5 (Sept 11). Hashing 1: Hashing with SUHA, analysis of collisions
+(notes)
+Chapter 5 of Anupam's notes (which includes topics discussed in this lecture).
+Lecture 6 (Sept 16). Hashing 2: Two-level hashing, hash function constructions, Load balancing - 1
+(notes)
+Chapter 5 of Anupam's notes (which includes topics discussed in this lecture).
+Notes
+on load-balancing (which includes topics discussed in this lecture).
+Lecture 7 (Sept 18). Hashing 3: Load balancing - 2
+(notes)
+Notes
+on load-balancing.
+(Additional reading) Some detailed
+examples/exercises
+on Chernoff bounds (which includes topics discussed in this lecture).
+Lecture 8 (Sept 23). Data Streaming. Frequency Estimator.
+(notes from 15-850)
+, we covered up to page 4
+Chapter 5 of Anupam's notes (which includes notes on Bloom Filters).
+Chapter 7 of Anupam's notes (which includes topics discussed on streaming).
+Lecture 9 (Sept 25). Dimensionality Reduction: Preserving pairwise distances (JL Transform)
+(notes from 15-850)
+SciKit's
+random projection implementation.
+Lecture notes
+on JL Transform from a previous year.
+(Optional) Proofs of Johnson-Lindenstrauss:
+Indyk/Motwani
+,
+Dasgupta/Gupta
+,
+Achlioptas
+.
+(Optional) Fast JL transforms:
+Ailon-Chazelle
+,
+Ailon-Liberty
+.
+Lecture 10 (Sept 30). Trie and Suffix Tree
+(Meredith's notes)
+451 notes on suffix trees (see sections 1 and 2)
+Lecture 11 (Oct 2). Construction of Suffix Arrays
+(Meredith's notes)
+The O(n log n)	surrogate algorithm (451 notes)
+The O(n) Skew Algorithm.
+The O(n) Skew Algorithm, original paper.
+Lecture 12 (Oct 7). Singular Value Decomposition (SVD)
+(notes)
+Lecture notes
+on SVD from a CMU course.
+Chapter
+					11
+(and
+slides
+)
+				from the Mining Massive Datasets book by Leskovec, Rajaraman, and Ullman.
+(Optional) Chapter 3
+from the Blum-Hopcroft-Kannan book.
+Midterm Exam
+(Oct 9).
+Lecture 13 (Oct 21). Optimization I: Flows and Matchings
+(notes)
+Notes
+from 15-451
+Part of the flow chapter
+from the Kleinberg-Tardos book.
+Animations
+of some basic max-flow algorithms (Ford-Fulkerson, Edmonds-Karp, Dinics)
+Lecture 14 (Oct 23). Optimization II: Min Cost Flows
+(notes)
+Notes
+from 15-451
+Lecture 15 (Oct 28). Optimization III: Linear Programs
+(notes)
+Anupam's notes on Linear Programming
+Carl Kingsford's Simplex Slides
+Notes about LPs
+from our 15-451 course.
+Understanding and Using Linear	Programming
+by Matousek/Gaertner is excellent (free from CMU). Chapters:
+Introduction
+,
+Examples
+,
+LP Basics
+.
+An
+online LP solver
+: it's useful to play with, especially if you haven't seen LPs before.
+More serious so

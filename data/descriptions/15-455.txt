@@ -1,0 +1,18 @@
+Course Code: 15-455
+Course Name: Undergraduate Complexity Theory
+Course URL: https://www.cs.cmu.edu/~15455/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+The Marxen-Buntrock 5-state busy beaver. Running on an initially
+          empty tape, the machine appears to be caught in some kind of loop, Yet, it halts
+          after an absolutely astonishing 47,176,870 steps.This course provides a gentle introduction into complexity theory,
+        the theory of computations that are restricted by various
+        resource bounds, in particular time and space.
+        We start with a brief tour of the computational universe at
+        large (aka classical recursion theory) and then home in on the
+        low complexity classes that
+        are most relevant in theoretical computer science such as
+        P, NP, PSPACE. LOG,NLOG, BPP, RP and circuit-based classes.
+

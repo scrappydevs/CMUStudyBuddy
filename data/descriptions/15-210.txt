@@ -1,0 +1,51 @@
+Course Code: 15-210
+Course Name: Parallel and Sequential Data Structures and Algorithms
+Course URL: https://www.cs.cmu.edu/~15210/
+================================================================================
+
+OVERVIEW:
+--------------------------------------------------------------------------------
+15-210 aims to teach methods for designing, analyzing, and programming
+    sequential and parallel algorithms and data structures. The emphasis is on
+    teaching fundamental concepts applicable across a wide variety of problem
+    domains, and transferable across a reasonably broad set of programming
+    languages and computer architectures. This course also includes a
+    significant programming component in which students will program concrete
+    examples from domains such as engineering, scientific computing, graphics,
+    data mining, and information retrieval (web search).
+Unlike a traditional
+    introduction to algorithms and data structures, this course puts an emphasis
+    onparallel thinking— i.e., thinking about how algorithms
+    can do multiple things at once instead of one at a time. The course follows
+    up on material learned in 15-122 and 15-150 but goes into significantly more
+    depth on algorithmic issues. Concepts covered in this class include:
+Problem vs. AlgorithmAproblemdefines an interface while analgorithmdefines a particular method to solve the problem. For example, quicksort
+        is an algorithm to solve the sorting problem. Being able to cleanly define
+        a problem is key in the process of putting together large programs and in
+        reusing their components.Asymptotic AnalysisIn this class, we analyze performance in terms of work,
+        span, and space usingbig-Oanalysis. We cover a variety of
+        techniques for analyzing asymptotic performance including solving
+        recurrences, randomized analysis, and various counting arguments.Techniques in Algorithm DesignWe cover techniques that play a key role in the design of most algorithms
+        and data structures, including: collections (sets, sequences, priority
+        queues, ...), divide-and-conquer, contraction, the greedy method,
+        balanced trees, hashing, sparse matrices, and dynamic programming.
+The development of this course was supported in part by generous gifts from
+  Intel's Higher Education Program, Microsoft Research, and IBM Research.
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+15-210 aims to teach methods for designing, analyzing, and programming
+    sequential and parallel algorithms and data structures. The emphasis is on
+    teaching fundamental concepts applicable across a wide variety of problem
+    domains, and transferable across a reasonably broad set of programming
+    languages and computer architectures. This course also includes a
+    significant programming component in which students will program concrete
+    examples from domains such as engineering, scientific computing, graphics,
+    data mining, and information retrieval (web search).
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Course discussion and questions are available
+    onEdfor students in the class.  This is also where the syllabus (class
+    policies), labs, and recitation notes are kept.
+

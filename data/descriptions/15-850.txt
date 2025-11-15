@@ -1,0 +1,18 @@
+Course Code: 15-850
+Course Name: 15-850: Advanced Algorithms, Spring 2024
+Course URL: https://www.cs.cmu.edu/~15850/
+================================================================================
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Lecture 26.(Mar 25) Sparsest Cut, Leighton-Rao Rounding Algorithm, Expanders
+	(draft
+      	notes)Lecture notesfrom Anupam Gupta's approximation algorithms class.TheLeighton-Raopaper.Chapter 8 of [Williamson Shmoys] talks about region growing in detail.A survey
+				  onApproximations
+					  for Cut Problemsby David Shmoys gives the history, and discusses divide-and-conquer applications.Some notes on the Leighton-Rao Rounding fromRajmohan
+	      Rajaraman.Lecture 27.(Mar 27) Dynamic Connectivity, Kapron-King-Mountjoy Graph Sketching Algorithm, Nanongkai-Saranurak Expander Decomposition Algorithm
+	   (draft
+      	     notes)We followed Chapter 3.4 of thecourse notesThe original Kapron-King-MountjoypaperWe followed Thatchaphol Saranurak'slecture noteson dynamic connectivity for expandersThe original Nanongkai-SaranurakpaperLecture 28.(Mar 29) The Sum-of-Squares Method. Goemans-Williamson Rounding Algorithm for Max-Cut.
+       (draft
+		   notes)We followed Ankur Moitra'slecture noteson Sum-of-Squares for Max-CutNotesfrom the CMU course on "Proofs vs Algorithms: The Sum-of-Squares Method".Online noteson Sum-of-Squares Method.Chapter 6 (and section 6.1) of [Williamson-Shmoys] covers the semi-definite programming approach to max-cutThe original Goemans-Williamsonpaper.Lower bounds on linear programs for Max-Cut:Chan, Lee, Raghavendra, SteurerandKothari, Meka, Raghavendra.
+

@@ -1,0 +1,17 @@
+Course Code: 15-355
+Course Name: Symbolic Computation
+Course URL: https://www.cs.cmu.edu/~15355/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+The Carrez automaton for the language a+ b+ c+ and the Conway factor matrix.JUST A STUB, MORE LATER.This course covers a number of basic topics in symbolic computation:
+        summation, factoring, Groebner bases,
+        automatic sequences, automatic groups, regular model checking.
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+The Carrez automaton for the language a+ b+ c+ and the Conway factor matrix.JUST A STUB, MORE LATER.This course covers a number of basic topics in symbolic computation:
+        summation, factoring, Groebner bases,
+        automatic sequences, automatic groups, regular model checking.
+

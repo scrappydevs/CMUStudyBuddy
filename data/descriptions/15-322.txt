@@ -1,0 +1,51 @@
+Course Code: 15-322
+Course Name: 15-322/622 Intro to Computer Music
+Course URL: https://www.cs.cmu.edu/~15322/
+================================================================================
+
+OVERVIEW:
+--------------------------------------------------------------------------------
+Chris Donahueis the Dannenberg Assistant Professor in the Computer Science Department (CSD) at Carnegie Mellon University, and a part-time Research Scientist at Google DeepMind working on theGoogle Magentateam. At CMU, Chris leads the Generative Creativity Lab (G-CLef), with a mission toempower and enrich human creativity with generative AI. This primarily involves work at the intersection of music and AI, though also includes work on other applications such as code, gaming, and language. Chris’s research has been featured in live performances by professional musicians likeThe Flaming Lips, and also empowers hundreds of daily users to convert their favorite music into interactive content through his websiteBeat Sage. His work has also received coverage from MIT Tech Review, The Verge, Business Insider, and Pitchfork. Before CMU, Chris was a postdoctoral scholar in the CS department at Stanford advised by Percy Liang. Chris holds a PhD from UC San Diego where he was jointly advised by Miller Puckette (music) and Julian McAuley (CS).
+This course builds heavily on material from Roger Dannenberg (the original course designer) and more recent instructors Tom Cortina, Tom Sullivan, and Jesse Stiles.
+Roger B. Dannenberg(Course Designer, Professor Emeritus in CSD) is an internationally known researcher, composer, and performer specializing in Computer Music. His invention of computer accompaniment led to the creation of the SmartMusic product used by thousands of music students every day. His work on real-time techniques and software synthesis have influenced the design of many systems in use today. Dr. Dannenberg designed the programming language Nyquist, the scripting language of Audacity, a popular audio editor he also designed with his student Dominic Mazzoni.Tom Cortina(Teaching Professor in CSD, SCS Associate Dean) has been teaching computer science for over 34 years, including versions of computer music courses at his two prior universities, Stony Brook University and Polytechnic University (now the NYU Tandon School of Engineering).Tom Sullivan(Teaching Professor in ECE, Lecturer in Music)Jesse Stiles(Associate Professor, U Michigan School of Art & Design)
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+Have you ever wondered what is actually happening on your computer when you press play to listen to a song? Or how the audio effects in your favorite music production software were programmed? Or how machine learning can be used to understand or generate music? If so, this course is for you!
+Welcome toIntro to Computer Music(15-322/15-622). Here you will learn thefundamentals of representing, synthesizing, and processing music and audio with a computer. This course is both technical and creative—think of it as themusic/audio equivalent to a course on computer graphics. This course may help directly prepare you for potential careers in music and audio programming, or may be indirectly useful throughout a diverse set of career paths in engineering, science, or the arts.
+In-class instruction will belecture-basedwithrequired attendance / participation(seebelow). A significant amount of the work for this course will involvecompleting programming projects in Python. You will be asked to exercise both your technical and creative sides in the projects, though grading will be based on technical correctness and ambition, not aesthetics (no music background required). Additional information on format and learning resources:
+Lectureswill teach computer music concepts at a high level using both programming examples and the underlying mathematicsProjectswill involve building a variety of music software tools and using those tools to accomplish creative goalsIn-class participationin interactive exercises and participation questionsReadingswill complement the conceptual material in the lectures
+
+LEARNING OBJECTIVES:
+--------------------------------------------------------------------------------
+By the end of this course, students will be able to:
+Understand the fundamental principles of digital audio and audio programmingImplement music sound synthesis and processing algorithms at a low levelSynthesize or manipulate music sound in real timeImplementinteractivecomputer music applicationsLearn the basics of computer musiccompositionAnalyze and extract information from musical sound
+
+PREREQUISITES:
+--------------------------------------------------------------------------------
+The only formal course prerequisite is that you have takensomeintroductory programming course (e.g. 15-112 or equivalent), or have the permission of the instructor. Below we also list a few additional informal prerequisites for the course:
+Requirements. Somebasic programming abilitiesare required. If you can write simple programs in any language (e.g., Python, Java, JavaScript, C/C++), you should be able to follow the course. Additionally, you will need alaptoprunning macOS, Windows, or Linux.
+Recommended. A solid understanding of calculus and trigonometry is recommended to follow the underlying mathematics behind computer music (if your calc/trig is a bit rusty, that's okay), especially for the units around the frequency domain. A basic understanding of probability would be helpful for some units related to machine learning or algorithmic composition.
+Not required. This course doesnotassume that students have any formal musical training. You do not need to know how to read music. You also do not need to know signal processing (you will learn some basic signal processing in this course).
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Please visit thesyllabusandaboutpages to learn more.
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+Welcome to CMU/SCS
+Intro to Computer Music, Spring 2025 edition
+, co-taught by
+Chris Donahue
+and
+Tom Cortina
+, and previously designed by
+Roger B. Dannenberg
+!
+Please visit the
+syllabus
+and
+about
+pages to learn more.
+

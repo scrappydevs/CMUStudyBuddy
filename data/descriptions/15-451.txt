@@ -1,0 +1,122 @@
+Course Code: 15-451
+Course Name: 15-451 Design and Analysis of Algorithms
+Course URL: https://www.cs.cmu.edu/~15451/
+================================================================================
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+15-451
+15-451 Design and Analysis of Algorithms
+This page links to the individual websites for various
+instances of this course.
+Fall 2025
+Taught by Daniel Anderson and Danny Sleator
+Spring 2025
+Taught by Daniel Anderson and David Woodruff
+Fall 2024
+Taught by Daniel Anderson and Jason Li
+Spring 2024
+Taught by David Woodruff and Daniel Anderson
+Fall 2023
+Taught by Danny Sleator and Daniel Anderson
+Spring 2023
+Taught by Danny Sleator and Elaine Runting Shi
+Fall 2022
+Taught by Daniel Anderson and David Woodruff
+Spring 2022
+Taught by Danny Sleator and Elaine Runting Shi
+Fall 2021
+Taught by Danny Sleator and David Woodruff
+Spring 2021
+Taught by Danny Sleator and David Woodruff
+Fall 2020
+Taught by Gary Miller and Klaus Sutner
+Spring 2020
+Taught by Danny Sleator and David Woodruff
+Fall 2019
+Taught by Gary Miller and Danny Sleator
+Spring 2019
+Taught by Anupam Gupta and David Woodruff
+Fall 2018
+Taught by Carl Kingsford and Danny Sleator
+Spring 2018
+Taught by Anupam Gupta and David Woodruff
+Fall 2017
+Taught by Carl Kingsford and Danny Sleator
+Spring 2017
+Taught by Anupam Gupta and Danny Sleator
+Fall 2016
+Taught by Carl Kingsford and Danny Sleator
+Spring 2016
+Taught by Anupam Gupta and Danny Sleator
+Fall 2015
+Taught by Avrim Blum and Anupam Gupta
+Spring 2015
+Taught by Victor Adamchik and Danny Sleator
+Fall 2014
+Taught by Anupam Gupta and Danny Sleator
+Spring 2014
+Taught by Victor Adamchik and Gary Miller
+Fall 2013
+Taught by Avrim Blum and Anupam Gupta
+Danny Sleator
+Last modified: Friday June 7, 2024
+
+COURSE CONTENT:
+--------------------------------------------------------------------------------
+15-451
+15-451 Design and Analysis of Algorithms
+This page links to the individual websites for various
+instances of this course.
+Fall 2025
+Taught by Daniel Anderson and Danny Sleator
+Spring 2025
+Taught by Daniel Anderson and David Woodruff
+Fall 2024
+Taught by Daniel Anderson and Jason Li
+Spring 2024
+Taught by David Woodruff and Daniel Anderson
+Fall 2023
+Taught by Danny Sleator and Daniel Anderson
+Spring 2023
+Taught by Danny Sleator and Elaine Runting Shi
+Fall 2022
+Taught by Daniel Anderson and David Woodruff
+Spring 2022
+Taught by Danny Sleator and Elaine Runting Shi
+Fall 2021
+Taught by Danny Sleator and David Woodruff
+Spring 2021
+Taught by Danny Sleator and David Woodruff
+Fall 2020
+Taught by Gary Miller and Klaus Sutner
+Spring 2020
+Taught by Danny Sleator and David Woodruff
+Fall 2019
+Taught by Gary Miller and Danny Sleator
+Spring 2019
+Taught by Anupam Gupta and David Woodruff
+Fall 2018
+Taught by Carl Kingsford and Danny Sleator
+Spring 2018
+Taught by Anupam Gupta and David Woodruff
+Fall 2017
+Taught by Carl Kingsford and Danny Sleator
+Spring 2017
+Taught by Anupam Gupta and Danny Sleator
+Fall 2016
+Taught by Carl Kingsford and Danny Sleator
+Spring 2016
+Taught by Anupam Gupta and Danny Sleator
+Fall 2015
+Taught by Avrim Blum and Anupam Gupta
+Spring 2015
+Taught by Victor Adamchik and Danny Sleator
+Fall 2014
+Taught by Anupam Gupta and Danny Sleator
+Spring 2014
+Taught by Victor Adamchik and Gary Miller
+Fall 2013
+Taught by Avrim Blum and Anupam Gupta
+Danny Sleator
+Last modified: Friday June 7, 2024
