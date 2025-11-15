@@ -38,8 +38,7 @@ try:
     if ANTHROPIC_API_KEY:
         try:
             anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-            # Test the client with a simple call to verify it works
-        print("✅ Anthropic client initialized")
+            print("✅ Anthropic client initialized")
         except Exception as e:
             anthropic_client = None
             print(f"⚠️ Anthropic API key found but client initialization failed: {e}")
@@ -96,6 +95,22 @@ def load_metadata():
 def save_metadata(metadata):
     with open(METADATA_FILE, 'w') as f:
         json.dump(metadata, f, indent=2)
+
+def get_recitation_number(pdf_name):
+    """Safely extract recitation number from PDF filename"""
+    try:
+        pdf_lower = pdf_name.lower()
+        if 'rec' in pdf_lower:
+            parts = pdf_lower.split('rec', 1)
+            if len(parts) > 1:
+                after_rec = parts[1]
+                # Extract digits after 'rec'
+                import re
+                match = re.search(r'\d+', after_rec)
+                return match.group(0) if match else ''
+        return ''
+    except:
+        return ''
 
 # Request/Response models
 class ChatRequest(BaseModel):
@@ -160,15 +175,64 @@ async def chat(request: ChatRequest):
             response_text = ""
             tool_details = []
             
-            # Check for course mentions - prioritize 15-213 for demo
-            for course in loader.courses.values():
-                if course.code.lower() in message_lower or course.id in message_lower:
-                    course_id = course.id
-                    break
+            # Fast course lookup - check for 15-213 first (most common)
+            if "213" in message_lower or "15-213" in message_lower:
+                course_id = "213"
+            else:
+                # Quick check for other course codes
+                for course in loader.courses.values():
+                    if course.code.lower() in message_lower or course.id in message_lower:
+                        course_id = course.id
+                        break
             
             # Default to 15-213 if no course mentioned and query is about labs/PDFs
             if not course_id and ("lab" in message_lower or "pdf" in message_lower or "recitation" in message_lower or "bomb" in message_lower):
                 course_id = "213"  # Focus on 15-213 for demo
+            
+            # Early return for simple 15-213 queries (most common)
+            if course_id == "213" and not any(keyword in message_lower for keyword in ["cache", "lab", "bomb", "malloc", "example", "problem", "recitation"]):
+                course = loader.get_course("213")
+                pdfs = loader.course_pdfs.get("213", [])
+                from urllib.parse import quote
+                
+                # Quick PDF organization
+                recitation_pdfs = [p for p in pdfs if isinstance(p, str) and "rec" in p.lower()][:11]
+                bootcamp_pdfs = [p for p in pdfs if isinstance(p, str) and ("bootcamp" in p.lower() or "cprogramming" in p.lower())][:5]
+                
+                pdf_sections = ""
+                if bootcamp_pdfs:
+                    pdf_sections += "\n\n**📚 Bootcamp Materials:**\n" + "\n".join([f"- [{pdf}](/api/pdfs/{quote(pdf, safe='')})" for pdf in bootcamp_pdfs])
+                if recitation_pdfs:
+                    pdf_sections += f"\n\n**📖 Recitation Slides ({len(recitation_pdfs)} available):**\n" + "\n".join([f"- [Recitation {get_recitation_number(pdf)}](/api/pdfs/{quote(pdf, safe='')}) - {pdf}" for pdf in recitation_pdfs])
+                
+                response_text = f"""**15-213 - Introduction to Computer Systems**
+
+{course.description or 'Introduction to computer systems from a programmer\'s perspective.'}
+
+**Core Topics:**
+- **Machine-Level Code**: Understanding x86-64 assembly language
+- **Memory Organization**: Stack, heap, data segments, and memory layout
+- **Caching**: Cache organization, locality, and performance optimization
+- **Linking**: Static and dynamic linking, symbol resolution
+- **Concurrency**: Processes, threads, synchronization
+- **C Programming**: Advanced C concepts, pointers, memory management
+
+**Course Structure:**
+- **Lectures**: Cover fundamental systems concepts
+- **Recitations**: Hands-on practice with assembly, debugging, and systems programming
+- **Labs**: Bomb Lab, Cache Lab, and Malloc Lab
+
+{pdf_sections}
+
+Ask me about specific topics like 'Tell me about cache' or 'What is the Bomb Lab?'"""
+            
+            return ChatResponse(
+                response=response_text,
+                session_id=request.session_id or "default_session",
+                    course_id="213",
+                    tool_calls=1,
+                    tool_details=[{"tool": "get_course_details", "status": "completed", "message": "Loaded course 15-213"}]
+                )
             
             # Simulate tool calls for textbook/content queries
             if ("cache" in message_lower or "textbook" in message_lower or "example" in message_lower or "problem" in message_lower or "lab" in message_lower or "malloc" in message_lower or "bomb" in message_lower) and course_id:
@@ -277,9 +341,11 @@ You can view the full textbook content in the course details panel."""
                             "message": f"Searching lab PDFs and recitation slides"
                         })
                         
-                        # Find relevant PDFs - ensure they're strings
+                        # Fast PDF filtering - single pass
                         lab_pdfs = []
                         recitation_pdfs = []
+                        from urllib.parse import quote
+                        
                         for p in pdfs:
                             pdf_name = p if isinstance(p, str) else (p.get('filename') if isinstance(p, dict) else str(p))
                             if pdf_name:
@@ -289,19 +355,16 @@ You can view the full textbook content in the course details panel."""
                                 elif "rec" in pdf_lower:
                                     recitation_pdfs.append(pdf_name)
                         
+                        # Build PDF links efficiently
                         pdf_links = ""
                         if lab_pdfs or recitation_pdfs:
-                            from urllib.parse import quote
                             pdf_links = "\n\n**📄 Related PDFs:**\n"
                             if lab_pdfs:
                                 for pdf in lab_pdfs[:3]:
-                                    # URL encode the filename for the link
-                                    encoded_pdf = quote(pdf, safe='')
-                                    pdf_links += f"- [{pdf}](/api/pdfs/{encoded_pdf}) - Lab slides\n"
+                                    pdf_links += f"- [{pdf}](/api/pdfs/{quote(pdf, safe='')}) - Lab slides\n"
                             if recitation_pdfs:
                                 for pdf in recitation_pdfs[:3]:
-                                    encoded_pdf = quote(pdf, safe='')
-                                    pdf_links += f"- [{pdf}](/api/pdfs/{encoded_pdf}) - Recitation slides\n"
+                                    pdf_links += f"- [{pdf}](/api/pdfs/{quote(pdf, safe='')}) - Recitation slides\n"
                         
                         if "bomb" in message_lower:
                             response_text = f"""**15-213 - Bomb Lab**
@@ -469,33 +532,48 @@ For more detailed examples and problems, check the course textbook in the detail
                         if course_id == "213":
                             from urllib.parse import quote
                             
-                            # Organize PDFs by type
-                            recitation_pdfs = [p for p in pdfs if isinstance(p, str) and "rec" in p.lower()]
-                            bootcamp_pdfs = [p for p in pdfs if isinstance(p, str) and ("bootcamp" in p.lower() or "cprogramming" in p.lower())]
-                            other_pdfs = [p for p in pdfs if isinstance(p, str) and p not in recitation_pdfs and p not in bootcamp_pdfs]
+                            # Fast PDF organization - single pass
+                            recitation_pdfs = []
+                            bootcamp_pdfs = []
+                            other_pdfs = []
+                            pdf_set = set()
                             
+                            for p in pdfs:
+                                if not isinstance(p, str):
+                                    continue
+                                p_lower = p.lower()
+                                if "rec" in p_lower:
+                                    recitation_pdfs.append(p)
+                                    pdf_set.add(p)
+                                elif "bootcamp" in p_lower or "cprogramming" in p_lower:
+                                    bootcamp_pdfs.append(p)
+                                    pdf_set.add(p)
+                            
+                            # Only add non-recitation, non-bootcamp PDFs
+                            for p in pdfs:
+                                if isinstance(p, str) and p not in pdf_set:
+                                    other_pdfs.append(p)
+                            
+                            # Build PDF sections efficiently
                             pdf_sections = ""
                             
                             if bootcamp_pdfs:
                                 pdf_sections += "\n\n**📚 Bootcamp Materials:**\n"
                                 for pdf in bootcamp_pdfs[:5]:
-                                    encoded_pdf = quote(pdf, safe='')
-                                    pdf_sections += f"- [{pdf}](/api/pdfs/{encoded_pdf})\n"
+                                    pdf_sections += f"- [{pdf}](/api/pdfs/{quote(pdf, safe='')})\n"
                             
                             if recitation_pdfs:
                                 pdf_sections += f"\n\n**📖 Recitation Slides ({len(recitation_pdfs)} available):**\n"
-                                # Sort recitation PDFs by number
-                                rec_sorted = sorted(recitation_pdfs, key=lambda x: int(''.join(filter(str.isdigit, x)) or 0))
-                                for pdf in rec_sorted[:11]:  # Show all recitations
-                                    encoded_pdf = quote(pdf, safe='')
-                                    rec_num = ''.join(filter(str.isdigit, pdf.split('rec')[1] if 'rec' in pdf.lower() else ''))
-                                    pdf_sections += f"- [Recitation {rec_num}](/api/pdfs/{encoded_pdf}) - {pdf}\n"
+                                # Simplified sorting - just show first 11
+                                for pdf in recitation_pdfs[:11]:
+                                    # Extract recitation number safely
+                                    rec_num = get_recitation_number(pdf)
+                                    pdf_sections += f"- [Recitation {rec_num}](/api/pdfs/{quote(pdf, safe='')}) - {pdf}\n"
                             
                             if other_pdfs:
                                 pdf_sections += "\n\n**📄 Additional Materials:**\n"
                                 for pdf in other_pdfs[:5]:
-                                    encoded_pdf = quote(pdf, safe='')
-                                    pdf_sections += f"- [{pdf}](/api/pdfs/{encoded_pdf})\n"
+                                    pdf_sections += f"- [{pdf}](/api/pdfs/{quote(pdf, safe='')})\n"
                             
                             response_text = f"""**15-213 - Introduction to Computer Systems**
 
@@ -834,7 +912,7 @@ You can view course details and PDFs in the course panel."""
                 # Check if it's a lab query that wasn't caught
                 if "lab" in message_lower or "bomb" in message_lower:
                     # Default to 15-213 for lab queries
-                course_id = "213"
+                    course_id = "213"
                     course = loader.get_course(course_id)
                     if course:
                         pdfs = loader.course_pdfs.get(course_id, [])

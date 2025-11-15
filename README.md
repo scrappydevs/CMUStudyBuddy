@@ -11,6 +11,8 @@ An interactive 3D visualization of CMU's Computer Science courses with AI-powere
 
 ## Tech Stack
 
+![Tech Stack](Tech%20Stack.png)
+
 - **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
 - **3D Visualization**: React Three Fiber, Three.js, Drei
 - **Backend**: FastAPI, Python
