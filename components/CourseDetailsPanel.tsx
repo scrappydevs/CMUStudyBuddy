@@ -1,14 +1,89 @@
 'use client'
 
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { getCourseDocuments, downloadDocument, deleteDocument, getCourse } from '@/lib/api'
+import { getCourseDocuments, downloadDocument, deleteDocument, getCourse, uploadPDF } from '@/lib/api'
 import DocumentUpload from './DocumentUpload'
 import PDFViewer from './PDFViewer'
 
 interface CourseDetailsPanelProps {
   courseId: string
   onClose: () => void
+}
+
+// PDF Upload Button Component
+function PDFUploadButton({ courseId, onUploadSuccess }: { courseId: string, onUploadSuccess: () => void }) {
+  const [isUploading, setIsUploading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    if (!file.name.toLowerCase().endsWith('.pdf')) {
+      setError('Only PDF files are allowed')
+      return
+    }
+
+    setIsUploading(true)
+    setError(null)
+
+    try {
+      await uploadPDF(courseId, file)
+      onUploadSuccess()
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to upload PDF')
+    } finally {
+      setIsUploading(false)
+    }
+  }
+
+  return (
+    <div>
+      <input
+        ref={fileInputRef}
+        type="file"
+        onChange={handleFileSelect}
+        disabled={isUploading}
+        className="hidden"
+        id={`upload-pdf-${courseId}`}
+        accept=".pdf"
+      />
+      <label
+        htmlFor={`upload-pdf-${courseId}`}
+        className={`
+          inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-light border transition-colors cursor-pointer
+          ${isUploading 
+            ? 'bg-neutral-100 text-neutral-400 border-neutral-200 cursor-not-allowed' 
+            : 'bg-white text-neutral-700 border-neutral-200 hover:bg-neutral-50'
+          }
+        `}
+      >
+        {isUploading ? (
+          <>
+            <svg className="w-3.5 h-3.5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            Uploading...
+          </>
+        ) : (
+          <>
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+            </svg>
+            Upload PDF
+          </>
+        )}
+      </label>
+      {error && (
+        <p className="mt-1 text-xs text-red-600">{error}</p>
+      )}
+    </div>
+  )
 }
 
 // Mock course data
@@ -347,6 +422,7 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
   if (!courseData) return null
 
   return (
+    <>
     <motion.div
       initial={{ opacity: 0, x: -400 }}
       animate={{ opacity: 1, x: 0 }}
@@ -398,11 +474,14 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
         )}
 
         {/* PDFs/Textbooks */}
-        {courseDataFromAPI?.pdfs && courseDataFromAPI.pdfs.length > 0 && (
-          <div className="mb-5">
-            <p className="text-xs font-normal text-neutral-500 uppercase tracking-wider mb-3">
+        <div className="mb-5">
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-xs font-normal text-neutral-500 uppercase tracking-wider">
               Textbooks & PDFs
             </p>
+            <PDFUploadButton courseId={courseId} onUploadSuccess={loadCourseData} />
+          </div>
+          {courseDataFromAPI?.pdfs && courseDataFromAPI.pdfs.length > 0 ? (
             <div className="space-y-1.5">
               {courseDataFromAPI.pdfs.map((pdf: any, idx: number) => {
                 // Handle both string and object formats
@@ -413,7 +492,10 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
                 return (
                   <button
                     key={idx}
-                    onClick={() => setViewingPDF(pdfFilename)}
+                    onClick={() => {
+                      console.log('PDF clicked:', pdfFilename)
+                      setViewingPDF(pdfFilename)
+                    }}
                     className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
                   >
                     <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -425,8 +507,10 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
                 )
               })}
             </div>
-          </div>
-        )}
+          ) : (
+            <p className="text-xs font-light text-neutral-400">No PDFs available. Upload one above.</p>
+          )}
+        </div>
 
         {/* Course Materials */}
         <div>
@@ -576,15 +660,20 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
         </div>
       </div>
 
-      {/* PDF Viewer Modal */}
-      {viewingPDF && (
-        <PDFViewer
-          filename={viewingPDF}
-          courseId={courseId}
-          onClose={() => setViewingPDF(null)}
-        />
-      )}
     </motion.div>
+    
+    {/* PDF Viewer Modal - rendered outside panel to avoid overflow issues */}
+    {viewingPDF && (
+      <PDFViewer
+        filename={viewingPDF}
+        courseId={courseId}
+        onClose={() => {
+          console.log('Closing PDF viewer')
+          setViewingPDF(null)
+        }}
+      />
+    )}
+    </>
   )
 }
 

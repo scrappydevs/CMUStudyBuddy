@@ -1664,10 +1664,15 @@ async def get_pdf(filename: str):
         else:
             raise HTTPException(status_code=404, detail=f"PDF not found: {filename}. Available: {', '.join(available_pdfs[:5])}")
     
+    # Return PDF with proper headers
     return FileResponse(
         path=str(pdf_path),
         media_type="application/pdf",
-        filename=filename
+        filename=filename,
+        headers={
+            "Content-Disposition": f'inline; filename="{filename}"',
+            "Cache-Control": "public, max-age=3600"
+        }
     )
 
 @app.get("/api/documents/{file_id}/download")

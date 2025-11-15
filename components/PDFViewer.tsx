@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface PDFViewerProps {
@@ -17,17 +17,27 @@ export default function PDFViewer({ filename, courseId, onClose }: PDFViewerProp
   const encodedFilename = encodeURIComponent(filename)
   const pdfUrl = `/api/pdfs/${encodedFilename}`
 
-  console.log('PDFViewer rendering:', { filename, pdfUrl })
+  useEffect(() => {
+    console.log('PDFViewer mounted:', { filename, pdfUrl })
+    setIsLoading(true)
+    setError(null)
+  }, [filename, pdfUrl])
 
   const handleIframeLoad = () => {
+    console.log('PDF iframe loaded successfully:', pdfUrl)
     setIsLoading(false)
     setError(null)
   }
 
   const handleIframeError = () => {
+    console.error('PDF iframe error for:', pdfUrl)
     setIsLoading(false)
     setError(`Failed to load PDF: ${filename}`)
-    console.error('PDF iframe error for:', pdfUrl)
+  }
+
+  // Fallback: try opening in new tab if iframe fails
+  const handleOpenInNewTab = () => {
+    window.open(pdfUrl, '_blank')
   }
 
   return (
@@ -78,24 +88,27 @@ export default function PDFViewer({ filename, courseId, onClose }: PDFViewerProp
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
                   <p className="text-sm font-light text-red-600">{error}</p>
-                  <a
-                    href={pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={handleOpenInNewTab}
                     className="text-xs text-blue-600 hover:text-blue-800 underline mt-2"
                   >
                     Open PDF in new tab
-                  </a>
+                  </button>
+                  <p className="text-xs text-neutral-500 mt-1">URL: {pdfUrl}</p>
                 </div>
               </div>
             )}
-            <iframe
-              src={pdfUrl}
-              className="w-full h-full border-0"
-              onLoad={handleIframeLoad}
-              onError={handleIframeError}
-              title={filename}
-            />
+            {!error && (
+              <iframe
+                key={pdfUrl}
+                src={pdfUrl}
+                className="w-full h-full border-0"
+                onLoad={handleIframeLoad}
+                onError={handleIframeError}
+                title={filename}
+                style={{ display: isLoading ? 'none' : 'block' }}
+              />
+            )}
           </div>
         </motion.div>
       </motion.div>

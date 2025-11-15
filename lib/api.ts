@@ -77,6 +77,24 @@ export async function generateSummary(courseId?: string, topic?: string, content
   return response.json()
 }
 
+export async function uploadPDF(courseId: string, file: File) {
+  const formData = new FormData()
+  formData.append('course_id', courseId)
+  formData.append('file', file)
+  
+  const response = await fetch(`${API_URL}/api/upload-pdf`, {
+    method: 'POST',
+    body: formData,
+  })
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ detail: 'Failed to upload PDF' }))
+    throw new Error(error.detail || 'Failed to upload PDF')
+  }
+  
+  return response.json()
+}
+
 export async function uploadDocument(courseId: string, category: 'recitations' | 'class_notes' | 'homeworks', file: File) {
   const formData = new FormData()
   formData.append('course_id', courseId)

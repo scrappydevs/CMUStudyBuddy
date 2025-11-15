@@ -4,19 +4,632 @@ Course URL: https://www.cs.cmu.edu/~10315/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: https://drive.google.com/file/d/1mj4rqrEIIfCTc4elxi3A5mrYW-7yMTvu/view?usp=sharing
+Title: notebook
+
+URL: https://drive.google.com/file/d/1mZkVHZ371GQWAau0cwJMxPXYVisMlekD/view?usp=sharing
+Title: notebook
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: http://www.deeplearningbook.org/contents/mlp.html
+Title: DL 6
+
+Local PDF: matrixcookbook.pdf
+URL: https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+Title: The Matrix Cookbook
+
+URL: http://www.deeplearningbook.org/contents/regularization.html
+Title: DL 7.1,7.8
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: https://mml-book.github.io/
+Title: MML
+
+URL: http://www.cs.cmu.edu/~tom/mlbook/Joint_MLE_MAP.pdf
+Title: Mitchell MLE and MAP
+
+URL: http://www.deeplearningbook.org/contents/convnets.html
+Title: DL 9
+
+URL: http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf
+Title: Mitchell Generative and Discriminative Classifiers
+
+URL: https://drive.google.com/file/d/15bP2o0jHRWvhvhdY8Ep2lF9zWhmSzuj-/view?usp=drive_link
+Title: hello_notebooks.ipynb
+
+Local PDF: matrixcookbook.pdf
+URL: https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+Title: The Matrix Cookbook
+
+URL: https://www.cambridge.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/login?ref=/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+Title: Log in
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/open-access/listing?aggs[productTypes][filters]=BOOK&sort=canonical.date:desc
+Title: Open access books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/books
+Title: Books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/books/listing?aggs[productDate][filters]=Last+3+months&aggs[productTypes][filters]=BOOK&sort=canonical.date:desc
+Title: New books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/collections/cambridgehandbooks
+Title: Cambridge Handbooks
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/publishing-partners/foundation-books
+Title: Foundation Books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/agents/books-for-agents
+Title: Books for agents
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/authors/books
+Title: Books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/authors/marketing-your-book
+Title: Marketing your book
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/corporates/book-special-sales
+Title: Book special sales
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/publishing-ethics-guidelines-books
+Title: Publishing ethics guidelines for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/core-editorial-policies-books
+Title: Core editorial policies for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/authorship-and-contributorship-books
+Title: Authorship and contributorship for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/affiliations-books
+Title: Affiliations for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/research-ethics-books
+Title: Research ethics for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/competing-interests-and-funding-books
+Title: Competing interests and funding for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/data-and-supporting-evidence-books
+Title: Data and supporting evidence for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/misconduct-books
+Title: Misconduct for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/versions-and-adaptations-books
+Title: Versions and adaptations for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/business-ethics-books
+Title: Business ethics books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-partners/partner-books
+Title: Partner books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-partners/ebook-publishing-partnerships
+Title: eBook publishing partnerships
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/open-research-policies/open-access-books
+Title: Open access books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/open-research-policies/gold-open-access-books
+Title: Gold open access books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/open-research-policies/green-open-access-policy-for-books
+Title: Green Open Access policy for books
+
+URL: https://cmu.primo.exlibrisgroup.com/openurl/01CMU_INST/01CMU_INST:01CMU??genre=unknown&au=De%20Bie%20%20Tijl&date=2005&spage=129&doi=10.1007/3-540-28247-5%205&sid=www.cambridge.org&title=Handbook%20of%20Geometric%20Computing
+Title: Get It @ CMU
+
+URL: https://scholar.google.com/scholar_lookup?title=Handbook+of+Geometric+Computing&author=De+Bie+Tijl&author=Cristianini+Nello&author=Rosipal+Roman&publication_year=2005
+Title: Google Scholar
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/aop-cambridge-core/download/cited-by?doi=10.1017/CBO9780511809682&productType=BOOK&productId=811462F4D6CD6A536A05127319A8935A
+Title: Download full list
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+Title: Save to my bookmarks
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/frontmatter/AF9333130F525E3E6656751E250DDEBE
+Title: Frontmatterpp i-iv
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/contents/E141DCBA6688A97D073BF6332D3E1D23
+Title: Contentspp v-vii
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/list-of-code-fragments/4D4B88B644F48FD487427AEAC0472E72
+Title: List of code fragmentspp viii-x
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/preface/2B65F379A450E315306624EBBE74FA2E
+Title: Prefacepp xi-xiv
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/basic-concepts/AF0EF725D5B382FF9B35801B5D2E6802
+Title: Part I - Basic conceptspp 1-2
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/pattern-analysis/62A08C2909A08D00B0B7EC3922EE3285
+Title: 1 - Pattern analysispp 3-24
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/kernel-methods-an-overview/5C8B31E83475594AAB48DA04AB835BB9
+Title: 2 - Kernel methods: an overviewpp 25-46
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/properties-of-kernels/55E6AEE171E21A9329A19A554CC3393A
+Title: 3 - Properties of kernelspp 47-84
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/detecting-stable-patterns/1A8E9D309838F3EEE2CADF18057FC127
+Title: 4 - Detecting stable patternspp 85-108
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/pattern-analysis-algorithms/2A96B6F7C881E57B8614349EBD53E4EF
+Title: Part II - Pattern analysis algorithmspp 109-110
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/elementary-algorithms-in-feature-space/0A156FE3BF030A7897DDE44697A8DE82
+Title: 5 - Elementary algorithms in feature spacepp 111-139
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/pattern-analysis-using-eigendecompositions/B162412E6C163522F233424BA6D3795F
+Title: 6 - Pattern analysis using eigen-decompositionspp 140-194
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/pattern-analysis-using-convex-optimisation/58C186970CB2CA203AE6C01E4FE6FEB0
+Title: 7 - Pattern analysis using convex optimisationpp 195-251
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/ranking-clustering-and-data-visualisation/9AC561A796E08C8A2466CA58902ABFE2
+Title: 8 - Ranking, clustering and data visualisationpp 252-288
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/constructing-kernels/BE543411053C3E7AA0E28FCC1A6C1E0C
+Title: Part III - Constructing kernelspp 289-290
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/basic-kernels-and-kernel-types/683694D1C4439625652D45CCF391B454
+Title: 9 - Basic kernels and kernel typespp 291-326
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/kernels-for-text/C66E4E04F7C15AD521A9713788D106C0
+Title: 10 - Kernels for textpp 327-343
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/kernels-for-structured-data-strings-trees-etc/E30898DF2BAEE64DB3BF5C50C7F616E6
+Title: 11 - Kernels for structured data: strings, trees, etc.pp 344-396
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/kernels-from-generative-models/584397F7B35A5592D009A966D2F16B53
+Title: 12 - Kernels from generative modelspp 397-436
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/proofs-omitted-from-the-main-text/DA879C2BDF894900BCFB984578B58162
+Title: Appendix A - Proofs omitted from the main textpp 437-443
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/notational-conventions/98A418ED9957827D54C7E9D70A344480
+Title: Appendix B - Notational conventionspp 444-445
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/list-of-pattern-analysis-methods/887F1B4F4712D63036ECA22A7AB282A8
+Title: Appendix C - List of pattern analysis methodspp 446-447
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/list-of-kernels/8BDF31550C747AACA9D132D3AD5A6FB3
+Title: Appendix D - List of kernelspp 448-449
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/references/F7761B76E63833E58D70A807D075A579
+Title: Referencespp 450-459
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/index/A35CF742496B856767EBCB9E1DB30FA2
+Title: Indexpp 460-462
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+Title: Book summary page views help
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+Title: Close Book summary page views help
+
+URL: https://www.cambridge.org/core/search?aggs%5BproductTypes%5D%5Bfilters%5D=BOOK
+Title: Books
+
+URL: https://www.cambridge.org/highereducation/search?aggs=%24productTypes%24BOOK%3Atrue%3B%3B
+Title: Textbooks
+
+URL: https://www.facebook.com/CambridgeCore
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~10315/#recitation
+Title: Recitation
+
+URL: https://www.cs.cmu.edu/~10315/#recitation
+Title: Recitation
+
+URL: https://cs.cmu.edu/directory/nichellp
+Title: Nichelle Phillips
+
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: Bishop
+
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: Bishop
+
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: Bishop
+
+URL: https://pytorch.org/tutorials/beginner/basics/intro.html
+Title: PyTorch Basics Tutorial
+
+Local PDF: 10315_S25_Notes_PCA_Recommender-Systems_Clustering.pdf
+URL: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_PCA_Recommender-Systems_Clustering.pdf
+Title: PCA, Recommender Systems, ClusteringCheckpointdue 3/30 Sun, 11:59 pm
+
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: Bishop
+
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: Bishop
+
+URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems.pptx
+Title: pptx
+
+URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_System_inked.pptx
+Title: inked
+
+URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems.pptx
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems_inked.pdf
+Title: inked
+
+URL: https://ieeexplore.ieee.org/abstract/document/5197422
+Title: Matrix Factorization Techniques for Recommender Systems
+
+URL: https://arxiv.org/abs/1606.05908
+Title: Tutorial on Variational Autoencoders
+
+URL: https://drive.google.com/file/d/15OkZ8zXaYQPlA0-oN3kaZNuWvkOjbYN_/view?usp=sharing
+Title: NumPy_Tutorial_from_11-785.ipynb
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_2.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_2_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_3.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_3_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_4.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_4_solution.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_5.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_5_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_6.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_6_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_7.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_7_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_8.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_8_Solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_9.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_9_Solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_10.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_10_Solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_11.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_11_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_12.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_12_solutions.pdf
+Title: solution
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_13.pdf
+Title: pdf
+
+URL: https://www.cs.cmu.edu/~10315/recitation/S25_10_315_Recitation_13_solutions.pdf
+Title: solution
+
+Local PDF: 10315_S25_Notes_PCA_Recommender-Systems_Clustering.pdf
+URL: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_PCA_Recommender-Systems_Clustering.pdf
+Title: PCA, Recommender Systems, ClusteringCheckpointdue 3/30 Sun, 11:59 pm
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/collections/research-directions
+Title: Research Directions
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/authors/co-reviewing-policy
+Title: Co-reviewing policy
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/editors/peer-review-for-editors
+Title: Peer review for editors
+
+URL: https://www.cambridge.org/core/services/librarians/marc-records
+Title: MARC records
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/librarians/using-marcedit-for-marc-records
+Title: Using MARCEdit for MARC records
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/how-to-peer-review-journal-articles
+Title: How to peer review journal articles
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/how-to-peer-review-book-proposals
+Title: How to peer review book proposals
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/how-to-peer-review-registered-reports
+Title: How to peer review Registered Reports
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/peer-review-faqs
+Title: Peer review FAQs
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/ethics-in-peer-review
+Title: Ethics in peer review
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/online-peer-review-systems
+Title: Online peer review systems
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/peer-review/a-guide-to-publons
+Title: A guide to Publons
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/corrections-retractions-and-removals-journals
+Title: Corrections, retractions and removals for journals
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/publishing-ethics/corrections-retractions-and-removals-books
+Title: Corrections, retractions and removals for books
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/services/open-research-initiatives/oa-organisations-initiatives-and-directories
+Title: OA organisations, initiatives & directories
+
+URL: https://cmu.primo.exlibrisgroup.com/openurl/01CMU_INST/01CMU_INST:01CMU??genre=unknown&au=De%20Bie%20%20Tijl&date=2004&spage=16&doi=10.1007/978-3-540-27868-9%202&sid=www.cambridge.org&title=Structural%20%20Syntactic%20%20and%20Statistical%20Pattern%20Recognition
+Title: Get It @ CMU
+
+URL: https://scholar.google.com/scholar_lookup?title=Structural+Syntactic+and+Statistical+Pattern+Recognition&author=De+Bie+Tijl&author=Cristianini+Nello&publication_year=2004
+Title: Google Scholar
+
+URL: https://cmu.primo.exlibrisgroup.com/openurl/01CMU_INST/01CMU_INST:01CMU??genre=unknown&au=Pereira%20Coutinho%20%20David&date=2005&spage=355&doi=10.1007/11492542%2044&sid=www.cambridge.org&title=Pattern%20Recognition%20and%20Image%20Analysis
+Title: Get It @ CMU
+
+URL: https://scholar.google.com/scholar_lookup?title=Pattern+Recognition+and+Image+Analysis&author=Pereira+Coutinho+David&author=Figueiredo+Mário+A.+T.&publication_year=2005
+Title: Google Scholar
+
+URL: https://cmu.primo.exlibrisgroup.com/openurl/01CMU_INST/01CMU_INST:01CMU??genre=unknown&au=Siwei%20Lyu&date=2005&spage=223&doi=10.1109/CVPR.2005.223&sid=www.cambridge.org&title=Mercer%20Kernels%20for%20Object%20Recognition%20with%20Local%20Features
+Title: Get It @ CMU
+
+URL: https://scholar.google.com/scholar_lookup?title=Mercer+Kernels+for+Object+Recognition+with+Local+Features&author=Siwei+Lyu&publication_year=2005
+Title: Google Scholar
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/browse-subjects/computer-science/pattern-recognition-and-machine-learning
+Title: Pattern Recognition and Machine Learning
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~10315/#assignments
+Title: Assignments
+
+Local PDF: Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: available online
+
+URL: http://ciml.info/
+Title: available online
+
+URL: http://www.deeplearningbook.org
+Title: available online
+
+URL: https://mml-book.github.io/
+Title: available online
+
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html
+Title: available online
+
+URL: https://research.ebsco.com/c/npmlsg/ebook-viewer/pdf/wt2ymye5af/page/pp_390?location=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Fnpmlsg%2Fsearch%2Fdetails%2Fwt2ymye5af%3Fdb%3Dnlebk&db=nlabk
+Title: available online
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+Title: available online
+
+URL: https://colab.research.google.com/drive/1JDxYswLLJJQNOUGnYnuM82TVZpQqTG5x?usp=drive_link
+Title: L1_sparsity.ipynb
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg
+Title: Linear Transforms
+
+URL: https://www.desmos.com/calculator/7x11plypr0
+Title: Desmos: Projection
+
+URL: https://colab.research.google.com/drive/1DQJ4cjImkuWOxGibw4oONuuPaVhnxBfC?usp=drive_link
+Title: pca_2d_exercise.ipynb
+
+URL: https://research.ebsco.com/c/npmlsg/ebook-viewer/pdf/wt2ymye5af/page/pp_390?location=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Fnpmlsg%2Fsearch%2Fdetails%2Fwt2ymye5af%3Fdb%3Dnlebk&db=nlabk
+Title: Murphy
+
+URL: https://research.ebsco.com/c/npmlsg/ebook-viewer/pdf/wt2ymye5af/page/pp_390?location=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Fnpmlsg%2Fsearch%2Fdetails%2Fwt2ymye5af%3Fdb%3Dnlebk&db=nlabk
+Title: Murphy
+
+URL: https://research.ebsco.com/c/npmlsg/ebook-viewer/pdf/wt2ymye5af/page/pp_390?location=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Fnpmlsg%2Fsearch%2Fdetails%2Fwt2ymye5af%3Fdb%3Dnlebk&db=nlabk
+Title: Murphy
+
+URL: https://colab.research.google.com/drive/1e2GzOLohMbeLAXI26_z8q8ya930te08l?usp=drive_link
+Title: solution
+
+URL: https://colab.research.google.com/drive/1idPTGewxuwnO8wk9QkrMjb-iD88n_YhE?usp=sharing
+Title: Gaussian Contour Plots
+
+URL: https://colab.research.google.com/drive/1X34L9jHi0gCKAYwTqz-vT5q_9nIsA5FB?usp=drive_link
+Title: PyTorch Tutorial Notebook.ipynb
+
+URL: https://colab.research.google.com/drive/1m5rMS-N3tdxE-ykpTZ3m5yNNV1P26efX?usp=sharing
+Title: word_embeddings.ipynb
+
+URL: https://colab.research.google.com/drive/1gZqGLIN1KWLfgzFDnpCTkBKfEQMp4FUH?usp=sharing
+Title: solution
+
+URL: https://colab.research.google.com/drive/1Y8D3Nxzuk73Bqknf-4I75kjtfxEsXtuR?usp=sharing
+Title: minGPT_pico.ipynb
+
+URL: https://colab.research.google.com/drive/1HGKzbc5oVDMTZ-F0FVd8Rcl0WI6jpHct?usp=sharing
+Title: minGPT_femto.ipynb
+
+URL: https://colab.research.google.com/drive/1Q1aosCPKylQdYSB4_EvoZ-FuxF1kL4mc?usp=sharing
+Title: discriminant_analysis.ipynb
+
+URL: https://colab.research.google.com/drive/1gkMK6js27p85XockzrziuAEXnY8pbDr7?usp=sharing
+Title: kl_divergence.ipynb
+
+URL: https://drive.google.com/file/d/15FL6W3qvPRzBxJ5mF3B9IjtC54uaV6ij/view?usp=drive_link
+Title: hw1.ipynb
+
+Local PDF: hw3_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw3_blank.pdf
+Title: hw3_blank.pdf
+
+URL: https://www.cs.cmu.edu/~10315/assignments/hw3.zip
+Title: hw3_tex.zip
+
+URL: https://drive.google.com/file/d/16HGPAhZQEyIcmIRKAtkgd3PZV-s6HjcV/view?usp=sharing
+Title: hw3.ipynb
+
+Local PDF: hw5_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw5_blank.pdf
+Title: hw5_blank.pdf
+
+URL: https://www.cs.cmu.edu/~10315/assignments/hw5.zip
+Title: hw5_tex.zip
+
+URL: https://drive.google.com/file/d/13_cpptWU5SRtQm3tjWO1dVAplLUbopDo/view?usp=drive_link
+Title: hw5.ipynb
+
+Local PDF: hw7_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw7_blank.pdf
+Title: hw7_blank.pdf
+
+URL: https://www.cs.cmu.edu/~10315/assignments/hw7.zip
+Title: hw7_tex.zip
+
+URL: https://drive.google.com/file/d/1jevaQjeUZMId4sXp396gGujjVnAXnxEy/view?usp=drive_link
+Title: hw7.ipynb
+
+Local PDF: hw10_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw10_blank.pdf
+Title: hw10_blank.pdf
+
+URL: https://www.cs.cmu.edu/~10315/assignments/hw10.zip
+Title: hw10_tex.zip
+
+URL: https://drive.google.com/file/d/17pCHqWEoskVz-yOZe10IlawtCvhlZeM1/view?usp=drive_link
+Title: hw10.ipynb
+
+URL: http://www.cs.cmu.edu/~mgormley/courses/10601/syllabus.html
+Title: 10-301/601 Fall 2023
+
+Local PDF: Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+Title: available online
+
+Local PDF: hw3_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw3_blank.pdf
+Title: hw3_blank.pdf
+
+Local PDF: hw5_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw5_blank.pdf
+Title: hw5_blank.pdf
+
+Local PDF: hw7_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw7_blank.pdf
+Title: hw7_blank.pdf
+
+Local PDF: hw10_blank.pdf
+URL: https://www.cs.cmu.edu/~10315/assignments/hw10_blank.pdf
+Title: hw10_blank.pdf
+
+URL: https://www.desmos.com/calc_thumbs/production/ea7dvqhwkg.png
+
+URL: https://www.desmos.com/services/oembed?url=https%3A%2F%2Fwww.desmos.com%2Fcalculator%2Fea7dvqhwkg
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=de
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=es
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=et
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=fr
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=id
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=it
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=ja
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=ko
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=nl
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=pl
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=pt-BR
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=ru
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=sv-SE
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=th
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=tr
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=uk
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=vi
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=zh-CN
+
+URL: https://www.desmos.com/calculator/ea7dvqhwkg?lang=zh-TW
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/elements/published-elements?aggs%5BopenAccess%5D%5Bfilters%5D=7275BA1E84CA769210167A6A66523B47&aggs%5BproductTypes%5D%5Bfilters%5D=ELEMENT&searchWithinIds=ECFD8F5C64F47F3F5A3D395C15B7C493
+Title: Open access Elements
+
+URL: https://www-cambridge-org.cmu.idm.oclc.org/core/publications/elements/published-elements?aggs%5BproductTypes%5D%5Bfilters%5D=ELEMENT&aggs%5BproductDate%5D%5Bfilters%5D=Last%203%20months&searchWithinIds=ECFD8F5C64F47F3F5A3D395C15B7C493
+Title: New Elements
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:06:53.062737
-Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Last Scraped: 2025-11-15T14:23:26.321442
+Total Textbooks Found: 78
+Total Recitations Found: 64
+Total Homeworks Found: 67

@@ -1838,3 +1838,155 @@
 2025-11-15 14:21:00,636 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language.pptx
 2025-11-15 14:21:05,492 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
 2025-11-15 14:21:05,535 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language_inked.pptx
+2025-11-15 14:21:10,630 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:10,683 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language.pdf
+2025-11-15 14:21:13,037 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:13,043 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language_inked.pdf
+2025-11-15 14:21:15,524 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:15,531 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I.pptx
+2025-11-15 14:21:19,465 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:19,548 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I_inked.pptx
+2025-11-15 14:21:23,217 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:23,263 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I.pdf
+2025-11-15 14:21:25,809 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:25,818 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I_inked.pdf
+2025-11-15 14:21:28,351 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:28,357 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pptx
+2025-11-15 14:21:32,544 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:32,571 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pdf
+2025-11-15 14:21:35,203 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:35,208 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA.pptx
+2025-11-15 14:21:40,014 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:40,063 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA_inked.pptx
+2025-11-15 14:21:45,596 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:45,665 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA.pdf
+2025-11-15 14:21:48,100 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:48,111 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA_inked.pdf
+2025-11-15 14:21:52,560 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:52,581 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering.pptx
+2025-11-15 14:21:58,878 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:21:58,984 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering_inked.pptx
+2025-11-15 14:22:05,387 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:05,480 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering.pdf
+2025-11-15 14:22:07,995 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:08,004 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering_inked.pdf
+2025-11-15 14:22:10,661 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:10,668 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems.pptx
+2025-11-15 14:22:16,201 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:16,229 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_System_inked.pptx
+2025-11-15 14:22:16,247 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_System_inked.pptx: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_System_inked.pptx
+2025-11-15 14:22:16,247 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems_inked.pdf
+2025-11-15 14:22:18,775 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:18,781 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes.pptx
+2025-11-15 14:22:22,527 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:22,556 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes_inked.pptx
+2025-11-15 14:22:26,321 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:26,345 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes.pdf
+2025-11-15 14:22:28,658 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:28,663 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes_inked.pdf
+2025-11-15 14:22:30,992 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:30,998 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE.pptx
+2025-11-15 14:22:34,724 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:34,773 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE_inked.pptx
+2025-11-15 14:22:38,495 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:38,551 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE.pdf
+2025-11-15 14:22:41,085 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:41,095 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE_inked.pdf
+2025-11-15 14:22:43,821 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:43,832 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Math_Background.pdf
+2025-11-15 14:22:45,936 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:45,942 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/ciml-v0_99-ch01.pdf
+2025-11-15 14:22:48,025 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:48,038 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Decision_Trees.pdf
+2025-11-15 14:22:50,189 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:50,200 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/ciml-v0_99-ch02.pdf
+2025-11-15 14:22:52,524 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:52,537 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Optimization_and_Linear_Regression.pdf
+2025-11-15 14:22:54,671 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:54,675 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/ciml-v0_99-ch03.pdf
+2025-11-15 14:22:56,901 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:56,910 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Feature_Engineering_and_Logistic_Regression.pdf
+2025-11-15 14:22:59,236 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:22:59,244 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Neural_Networks.pdf
+2025-11-15 14:23:01,442 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:01,448 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_MLE.pdf
+2025-11-15 14:23:03,880 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:03,882 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_MAP.pdf
+2025-11-15 14:23:06,034 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:06,039 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_CNNs.pdf
+2025-11-15 14:23:08,272 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:08,286 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Word_Embeddings_v0_1.pdf
+2025-11-15 14:23:10,410 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:10,415 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_PCA_Recommender-Systems_Clustering.pdf
+2025-11-15 14:23:12,961 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:12,972 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_Probabilistic_Generative_Models.pdf
+2025-11-15 14:23:15,098 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:15,104 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10315/notes/10315_S25_Notes_VAE.pdf
+2025-11-15 14:23:17,229 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:23:17,234 - __main__ - INFO - Fetching: https://www-cambridge-org.cmu.idm.oclc.org/core/books/kernel-methods-for-pattern-analysis/811462F4D6CD6A536A05127319A8935A
+2025-11-15 14:23:23,885 - __main__ - INFO - Fetching: https://drive.google.com/file/d/15bP2o0jHRWvhvhdY8Ep2lF9zWhmSzuj-/view?usp=drive_link
+2025-11-15 14:23:26,319 - __main__ - INFO - Found for 10-315: 78 textbooks, 64 recitations, 67 homeworks
+2025-11-15 14:23:26,322 - __main__ - INFO - Updated course file: 10-315.txt
+2025-11-15 14:23:26,322 - __main__ - INFO - Processing course 31/225: 17-355
+2025-11-15 14:23:26,323 - __main__ - INFO - Scraping course 17-355: https://www.cs.cmu.edu/~17355/
+2025-11-15 14:23:26,323 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~17355/
+2025-11-15 14:23:26,480 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~17355/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~17355/
+2025-11-15 14:23:26,480 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~355/
+2025-11-15 14:23:26,518 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~355/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~355/
+2025-11-15 14:23:26,518 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~17355/
+2025-11-15 14:23:26,538 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~17355/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~17355/
+2025-11-15 14:23:26,538 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0355/
+2025-11-15 14:23:26,564 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0355/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0355/
+2025-11-15 14:23:26,567 - __main__ - INFO - Updated course file: 17-355.txt
+2025-11-15 14:23:26,567 - __main__ - INFO - Processing course 32/225: 27-100
+2025-11-15 14:23:26,567 - __main__ - INFO - Scraping course 27-100: https://www.cs.cmu.edu/~27100/
+2025-11-15 14:23:26,567 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~27100/
+2025-11-15 14:23:26,612 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~27100/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~27100/
+2025-11-15 14:23:26,612 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~100/
+2025-11-15 14:23:26,634 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~100/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~100/
+2025-11-15 14:23:26,634 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~27100/
+2025-11-15 14:23:26,653 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~27100/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~27100/
+2025-11-15 14:23:26,653 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0100/
+2025-11-15 14:23:26,821 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0100/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0100/
+2025-11-15 14:23:26,822 - __main__ - INFO - Updated course file: 27-100.txt
+2025-11-15 14:23:26,822 - __main__ - INFO - Processing course 33/225: 09-104
+2025-11-15 14:23:26,822 - __main__ - INFO - Scraping course 09-104: https://www.cs.cmu.edu/~09104/
+2025-11-15 14:23:26,823 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~09104/
+2025-11-15 14:23:26,844 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~09104/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~09104/
+2025-11-15 14:23:26,844 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~104/
+2025-11-15 14:23:26,865 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~104/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~104/
+2025-11-15 14:23:26,866 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~09104/
+2025-11-15 14:23:26,887 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~09104/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~09104/
+2025-11-15 14:23:26,887 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0104/
+2025-11-15 14:23:26,932 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0104/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0104/
+2025-11-15 14:23:26,934 - __main__ - INFO - Updated course file: 09-104.txt
+2025-11-15 14:23:26,935 - __main__ - INFO - Processing course 34/225: 15-122
+2025-11-15 14:23:26,935 - __main__ - INFO - Scraping course 15-122: https://www.cs.cmu.edu/~15122/
+2025-11-15 14:23:26,935 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15122/
+2025-11-15 14:23:28,958 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15122/
+2025-11-15 14:23:28,960 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15122/syllabus.shtml
+2025-11-15 14:23:31,034 - __main__ - INFO - Downloading: https://c0.cs.cmu.edu/docs/c0-libraries.pdf -> c0-libraries.pdf
+2025-11-15 14:23:33,113 - __main__ - INFO - Downloaded: c0-libraries.pdf
+2025-11-15 14:23:33,113 - __main__ - INFO - Downloading: https://c0.cs.cmu.edu/docs/c0-reference.pdf -> c0-reference.pdf
+2025-11-15 14:23:35,153 - __main__ - INFO - Downloaded: c0-reference.pdf
+2025-11-15 14:23:35,154 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15122/handouts/misc/linux_quickref.pdf -> linux_quickref.pdf
+2025-11-15 14:23:37,783 - __main__ - INFO - Downloaded: linux_quickref.pdf
+2025-11-15 14:23:37,784 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15122/schedule.shtml
+2025-11-15 14:23:39,853 - __main__ - INFO - Found for 15-122: 6 textbooks, 4 recitations, 2 homeworks
+2025-11-15 14:23:39,856 - __main__ - INFO - Updated course file: 15-122.txt
+2025-11-15 14:23:39,856 - __main__ - INFO - Processing course 35/225: 10-715
+2025-11-15 14:23:39,856 - __main__ - INFO - Scraping course 10-715: https://www.cs.cmu.edu/~10715/
+2025-11-15 14:23:39,856 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10715/
+2025-11-15 14:23:39,946 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10715/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10715/
+2025-11-15 14:23:39,946 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~715/
+2025-11-15 14:23:39,966 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~715/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~715/
+2025-11-15 14:23:39,966 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10715/
+2025-11-15 14:23:39,988 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10715/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10715/
+2025-11-15 14:23:39,988 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0715/
+2025-11-15 14:23:40,020 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0715/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0715/
+2025-11-15 14:23:40,023 - __main__ - INFO - Updated course file: 10-715.txt
+2025-11-15 14:23:40,023 - __main__ - INFO - Processing course 36/225: 10-701
+2025-11-15 14:23:40,023 - __main__ - INFO - Scraping course 10-701: https://www.cs.cmu.edu/~10701/
+2025-11-15 14:23:40,023 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10701/
+2025-11-15 14:23:42,258 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~10701/
+2025-11-15 14:23:42,261 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/professors#jennifer_schwartz

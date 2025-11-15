@@ -4,19 +4,56 @@ Course URL: https://www.cs.cmu.edu/~15122/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+Local PDF: c0-libraries.pdf
+URL: https://c0.cs.cmu.edu/docs/c0-libraries.pdf
+Title: C0 Library Reference
+
+Local PDF: c0-reference.pdf
+URL: https://c0.cs.cmu.edu/docs/c0-reference.pdf
+Title: C0 Language Reference
+
+URL: http://www.cplusplus.com/reference/clibrary/
+Title: C Language Libraries
+
+URL: http://www.cplusplus.com/reference/cstring/
+Title: C string library<string.h>
+
+Local PDF: linux_quickref.pdf
+URL: https://www.cs.cmu.edu/~15122/handouts/misc/linux_quickref.pdf
+Title: Linux Commands Reference Card
+
+URL: https://cmu.mywconline.net
+Title: book an appointment
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://bitbucket.org/c0-lang/docs/wiki/Tutorial/
+Title: C0 Tutorial
+
+URL: https://bitbucket.org/c0-lang/docs/wiki/From_C0_to_C_-_Basics
+Title: From C0 to C: Basics tutorial
+
+URL: https://www.shortcutfoo.com/app/tutorial/emacs
+Title: Game for learning emacs shortcuts
+
+URL: https://www.nytimes.com/2018/08/13/well/an-underappreciated-key-to-college-success-sleep.html
+Title: getting
+    enough sleep
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15122/syllabus.shtml
+Title: Course syllabus
+
+URL: https://autolab.andrew.cmu.edu/courses/15122-f25
+Title: Autolab
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:06:55.137285
-Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Last Scraped: 2025-11-15T14:23:39.855663
+Total Textbooks Found: 6
+Total Recitations Found: 4
+Total Homeworks Found: 2
