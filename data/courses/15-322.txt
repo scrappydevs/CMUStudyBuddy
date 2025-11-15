@@ -2,38 +2,21 @@ Course Code: 15-322
 Course Name: 15-322/622 Intro to Computer Music
 Course URL: https://www.cs.cmu.edu/~15322/
 
-================================================================================
-
 BOOKS AND TEXTBOOKS:
---------------------------------------------------------------------------------
-
-1. can also be accessed for free online as a PDF.
-   Type: text
-
-2. can also be accessed for free online.
-   Type: text
-
-3. are shown in parentheses and will mainly be from Dannenberg or McFee - see resources for physical copies if you prefer. It is recommended to complete the readings in advance of the corresponding lectu
-   Type: text
-
-4. is heavily grounded in the Nyquist programming language, which we are not using—focus on the conceptual material rather than the Nyquist-specific material.
-   Type: text
-
-5. Order textbook
-   URL: https://www.lulu.com/shop/roger-dannenberg/introduction-to-computer-music-second-edition/paperback/product-6evz4n.html
-   Type: link
-
-6. Order textbook
-   URL: https://www.amazon.com/Digital-Signals-Theory-Brian-McFee/dp/1032200502
-   Type: link
-
-7. (Online copy)
-   Type: text
-
-VIDEOS AND LECTURE RECORDINGS:
 --------------------------------------------------------------------------------
 None found
 
+RECITATIONS:
+--------------------------------------------------------------------------------
+None found
+
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
+
+
 ================================================================================
-Total Books Found: 7
-Total Videos Found: 0
+Last Scraped: 2025-11-15T14:07:01.943908
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

@@ -2,18 +2,21 @@ Course Code: 36-700
 Course Name: 
 Course URL: https://www.cs.cmu.edu/~36700/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
-VIDEOS:
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
 None found
 
-LINKS:
-None found
 
-IMAGES:
-None found
-
+================================================================================
+Last Scraped: 2025-11-15T14:06:59.837863
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

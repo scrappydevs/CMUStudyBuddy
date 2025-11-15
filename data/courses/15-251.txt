@@ -2,123 +2,21 @@ Course Code: 15-251
 Course Name: 15-251 Great Ideas in Theoretical Computer Science
 Course URL: https://www.cs.cmu.edu/~15251/
 
-================================================================================
-
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
 None found
 
-VIDEOS AND LECTURE RECORDINGS:
+RECITATIONS:
 --------------------------------------------------------------------------------
+None found
 
-1. Introduction
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3abbd4de-6415-496c-8dd6-a94a00d5b62c
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
 
-2. Strings and encodings
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dfb87df5-005e-4d26-9231-a94c00d6be1f
-
-3. DFAs 1
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=318f2401-cf0b-4730-9a9c-a95100d5b96b
-
-4. DFAs 2
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0c7bb4b-cb48-41b0-815f-a95300d6345b
-
-5. Turing Machines
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=71cc59ee-f1f3-4587-9c9e-a95800ed3ecc
-
-6. Church-Turing Thesis, Universality, Decidability
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=776d0671-93e5-4912-8f83-a95a00d5f2e1
-
-7. Turing's Legacy Continues: Undecidability
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b8d5dd8b-a235-45e7-a60b-a96100d11e0f
-
-8. Time Complexity 1
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=97539a0d-5b49-4442-92b0-a96600d3fdf7
-
-9. Time Complexity 2
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9618541a-66f5-4565-a2fb-a96800d136b8
-
-10. Graphs I: The Basics
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cbc6f2ea-d36e-4ee5-99c2-a96d00d400e8
-
-11. Graphs II: Basic Graph Algorithms
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=20cb41f8-4bf8-4066-b9c4-a96f00d30b8b
-
-12. Graphs III: Matchings and Bipartite Graphs
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f47cbfba-25fb-4e30-8cd0-a97400d512f7
-
-13. Graphs IV: Stable Matchings
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=416b6840-58ae-4aa5-a3cc-a97600d65ed8
-
-14. Boolean Circuits
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a98c260e-cf7a-4bef-8eb7-a97b00d536b5
-
-15. NP and NP-completeness 1
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6c96cc1a-c992-4d3b-a227-a97d00d547ea
-
-16. NP and NP-completeness 2
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=533c4579-d2bf-4db2-8818-a98200d52868
-
-17. Approximation Algorithms
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e6c5a115-f229-4d58-b873-a98400d3c2e0
-
-18. Introduction to Randomness and Probability Theory Review
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9dcb00c-11f3-4014-81d0-a98900d57a01
-
-19. Randomized Algorithms 1
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=09efe035-4f41-4089-bd7e-a98b00d59580
-
-20. Randomized Algorithms 2
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6c2c3acd-eddc-4e1a-b1d2-a99000e6d655
-
-21. Modular Arithmetic
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ea5164d3-50ff-47f8-9a06-a99200e58521
-
-22. Group Theory
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=480ddb1b-d1cd-4ee4-b4a3-a99700e56b76
-
-23. Fields and Polynomials
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0251e18-acd7-468c-b1eb-a99900e60d5e
-
-24. Quantum Computation
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ad14044e-69a9-4eea-bc39-a99e00e5c6df
-
-25. Cryptography
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eccd8136-b7bb-4f1e-a9f7-a9a500e52239
-
-26. Interactive Proofs
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=87087717-8787-4a37-838a-a9a700e54b1e
-
-27. Gödel's Incompleteness Theorems
-   Type: panopto
-   URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c9fb0a2d-d7e1-418e-87e0-a9ac00e627a7
 
 ================================================================================
-Total Books Found: 0
-Total Videos Found: 27
+Last Scraped: 2025-11-15T14:06:50.863478
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

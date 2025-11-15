@@ -2,18 +2,21 @@ Course Code: 33-115
 Course Name: 
 Course URL: https://www.cs.cmu.edu/~33115/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
-VIDEOS:
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
 None found
 
-LINKS:
-None found
 
-IMAGES:
-None found
-
+================================================================================
+Last Scraped: 2025-11-15T14:07:41.196600
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

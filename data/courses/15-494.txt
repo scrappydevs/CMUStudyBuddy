@@ -2,18 +2,21 @@ Course Code: 15-494
 Course Name: Cognitive Robotics
 Course URL: https://www.cs.cmu.edu/~15494/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
-VIDEOS:
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
 None found
 
-LINKS:
-None found
 
-IMAGES:
-None found
-
+================================================================================
+Last Scraped: 2025-11-15T14:06:50.943032
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

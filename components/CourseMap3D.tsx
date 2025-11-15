@@ -3,6 +3,7 @@
 import { useMemo, useRef, useCallback, useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import dynamic from 'next/dynamic'
+import { getCourseDocuments, searchCourses } from '@/lib/api'
 
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d').then(mod => mod.default), {
   ssr: false,
@@ -168,11 +169,81 @@ const sectionColors = {
   exams: '#EF4444',
 }
 
+interface UploadedDocument {
+  id: string
+  filename: string
+  category: string
+  uploaded_at: string
+  size: number
+}
+
 export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMap3DProps) {
   const fgRef = useRef<any>(null)
   const [isStable, setIsStable] = useState(false)
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null)
   const [alphaDecay, setAlphaDecay] = useState(0.02)
+  const [uploadedDocuments, setUploadedDocuments] = useState<Record<string, {
+    recitations?: UploadedDocument[]
+    class_notes?: UploadedDocument[]
+    homeworks?: UploadedDocument[]
+  }>>({})
+  const [coursesFromAPI, setCoursesFromAPI] = useState<CourseNode[]>([])
+
+  // Load courses from API
+  useEffect(() => {
+    const loadCourses = async () => {
+      try {
+        // Load all courses by searching with empty query or a broad query
+        const response = await searchCourses('')
+        if (response.courses && response.courses.length > 0) {
+          const loadedCourses: CourseNode[] = response.courses.map((c: any) => ({
+            id: c.id,
+            code: c.code,
+            name: c.name,
+            color: getColorForCourse(c.code),
+            topics: c.topics || []
+          }))
+          setCoursesFromAPI(loadedCourses)
+        } else {
+          // Fallback to mock data if API fails
+          setCoursesFromAPI(mockCourses)
+        }
+      } catch (error) {
+        console.error('Error loading courses:', error)
+        // Fallback to mock data
+        setCoursesFromAPI(mockCourses)
+      }
+    }
+    loadCourses()
+  }, [])
+
+  // Helper function to assign colors to courses
+  const getColorForCourse = (code: string): string => {
+    const colors = ['#6366F1', '#06B6D4', '#10B981', '#F59E0B', '#EF4444', '#EC4899', '#8B5CF6', '#F97316']
+    const hash = code.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+    return colors[hash % colors.length]
+  }
+
+  // Load uploaded documents for all courses
+  useEffect(() => {
+    const loadAllDocuments = async () => {
+      const coursesToLoad = coursesFromAPI.length > 0 ? coursesFromAPI : mockCourses
+      const docs: Record<string, any> = {}
+      for (const course of coursesToLoad) {
+        try {
+          const response = await getCourseDocuments(course.id)
+          docs[course.id] = response.documents || {}
+        } catch (error) {
+          console.error(`Error loading documents for course ${course.id}:`, error)
+          docs[course.id] = {}
+        }
+      }
+      setUploadedDocuments(docs)
+    }
+    if (coursesFromAPI.length > 0 || mockCourses.length > 0) {
+      loadAllDocuments()
+    }
+  }, [coursesFromAPI])
 
   // Configure force simulation for better spacing and stability
   useEffect(() => {
@@ -195,27 +266,25 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
     }
   }, [])
 
-  // Freeze physics when course is selected to prevent reorientation
+  // Stop physics simulation to keep graph stable
   useEffect(() => {
-    if (fgRef.current && selectedCourse) {
-      // Significantly reduce physics when a course is selected but keep spacing
-      fgRef.current.d3Force('charge').strength(-5000)
-      fgRef.current.d3Force('link').distance(1500)
-      setAlphaDecay(0.1) // Slow down simulation
-    } else if (fgRef.current && isStable) {
-      // Restore normal physics when deselected
-      fgRef.current.d3Force('charge').strength(-20000)
-      fgRef.current.d3Force('link').distance(1800)
-      setAlphaDecay(0.02)
+    if (fgRef.current && isStable) {
+      // After initial layout, stop the simulation entirely
+      setTimeout(() => {
+        if (fgRef.current) {
+          fgRef.current.pauseAnimation()
+        }
+      }, 500)
     }
-  }, [selectedCourse, isStable])
+  }, [isStable])
 
   const graphData = useMemo(() => {
     const nodes: any[] = []
     const links: any[] = []
+    const coursesToUse = coursesFromAPI.length > 0 ? coursesFromAPI : mockCourses
 
     // Add course nodes
-    mockCourses.forEach(course => {
+    coursesToUse.forEach(course => {
       nodes.push({
         id: course.id,
         name: course.code,
@@ -227,7 +296,7 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
     })
 
     // Add topic nodes for all courses
-    mockCourses.forEach(course => {
+    coursesToUse.forEach(course => {
       if (course.topics) {
         course.topics.forEach(topic => {
           const topicId = `${course.id}-topic-${topic}`
@@ -249,57 +318,40 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
       }
     })
 
-    // Add section and material nodes for selected course
-    if (selectedCourse && courseMaterials[selectedCourse as keyof typeof courseMaterials]) {
-      const materials = courseMaterials[selectedCourse as keyof typeof courseMaterials]
+    // Add uploaded document nodes
+    coursesToUse.forEach(course => {
+      const courseDocs = uploadedDocuments[course.id] || {}
+      const docCategories = [
+        { key: 'recitations', color: '#10B981' },
+        { key: 'class_notes', color: '#6366F1' },
+        { key: 'homeworks', color: '#EC4899' }
+      ]
       
-      Object.entries(materials).forEach(([section, items]) => {
-        const sectionId = `${selectedCourse}-section-${section}`
-        const sectionColor = sectionColors[section as keyof typeof sectionColors]
-
-        // Add section node
-        nodes.push({
-          id: sectionId,
-          name: section.charAt(0).toUpperCase() + section.slice(1),
-          val: 15,
-          color: sectionColor,
-          type: 'section',
-          courseId: selectedCourse,
-        })
-
-        // Link course to section
-        links.push({
-          source: selectedCourse,
-          target: sectionId,
-          color: sectionColor,
-          width: 3,
-        })
-
-        // Add material nodes
-        if (Array.isArray(items)) {
-          items.forEach((material) => {
-            const materialId = `${selectedCourse}-${section}-${material.id}`
-            nodes.push({
-              id: materialId,
-              name: material.label,
-              val: 6,
-              color: sectionColor,
-              type: 'material',
-              section: section,
-              courseId: selectedCourse,
-            })
-
-            // Link section to material
-            links.push({
-              source: sectionId,
-              target: materialId,
-              color: sectionColor,
-              width: 2,
-            })
+      docCategories.forEach(({ key, color }) => {
+        const docs = courseDocs[key as keyof typeof courseDocs] || []
+        docs.forEach((doc: UploadedDocument) => {
+          const docId = `doc-${doc.id}`
+          nodes.push({
+            id: docId,
+            name: doc.filename.length > 20 ? doc.filename.substring(0, 20) + '...' : doc.filename,
+            val: 6,
+            color: color,
+            type: 'document',
+            courseId: course.id,
+            documentId: doc.id,
+            fullFilename: doc.filename,
+            category: key,
           })
-        }
+          links.push({
+            source: course.id,
+            target: docId,
+            color: color,
+            width: 1,
+            opacity: 0.6,
+          })
+        })
       })
-    }
+    })
 
     // Add prerequisite links between courses
     mockLinks.forEach(link => {
@@ -313,11 +365,12 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
     })
 
     return { nodes, links }
-  }, [selectedCourse])
+  }, [uploadedDocuments, coursesFromAPI]) // Include coursesFromAPI to update graph when courses load
 
   const selectedCourseData = useMemo(() => {
-    return mockCourses.find(c => c.id === selectedCourse)
-  }, [selectedCourse])
+    const coursesToUse = coursesFromAPI.length > 0 ? coursesFromAPI : mockCourses
+    return coursesToUse.find(c => c.id === selectedCourse)
+  }, [selectedCourse, coursesFromAPI])
 
   const handleNodeClick = useCallback((node: any) => {
     // Make all nodes clickable - clicking a node selects its course
@@ -331,58 +384,42 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
 
   const paintNode = useCallback((node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
     const label = node.name
-    const fontSize = node.type === 'course' ? 14 : node.type === 'section' ? 12 : 10
+    const fontSize = node.type === 'course' ? 14 : (node.type === 'document' ? 8 : 10)
     const isSelected = selectedCourse === node.id || (node.courseId && selectedCourse === node.courseId)
     const isHovered = hoveredNodeId === node.id
-    const nodeRadius = node.val + (isHovered ? 3 : 0) // Slightly larger on hover
+    const nodeRadius = node.val + (isHovered ? 2 : 0)
 
-    // Draw circle with enhanced visibility and smooth transitions
+    // Draw circle - always visible with clear fill and stroke
     ctx.beginPath()
     ctx.arc(node.x, node.y, nodeRadius, 0, 2 * Math.PI, false)
     
-    // Fill with more opaque colors
-    if (isSelected) {
-      ctx.fillStyle = node.color + 'CC' // 80% opacity for selected
-    } else if (isHovered) {
-      ctx.fillStyle = node.color + 'AA' // 67% opacity for hovered
-    } else if (node.type === 'section') {
-      ctx.fillStyle = node.color + '99' // 60% opacity for sections
-    } else if (node.type === 'course') {
+    // Fill circle - white for courses, light gray for topics
+    if (node.type === 'course') {
       ctx.fillStyle = '#FFFFFF'
     } else {
-      ctx.fillStyle = '#F9FAFB' // Light gray for other nodes
+      ctx.fillStyle = '#F9FAFB'
     }
     ctx.fill()
     
-    // Stroke with better visibility and hover effects
-    ctx.strokeStyle = isSelected ? node.color : (isHovered ? node.color : node.color)
-    const strokeWidth = isSelected ? 3.5 / globalScale : (isHovered ? 3 / globalScale : (node.type === 'course' ? 2.5 / globalScale : 2 / globalScale))
+    // Draw stroke - thicker for selected/hovered
+    ctx.strokeStyle = node.color
+    const strokeWidth = isSelected ? 4 / globalScale : (isHovered ? 3 / globalScale : 2.5 / globalScale)
     ctx.lineWidth = strokeWidth
     ctx.stroke()
 
-    // Draw label with better contrast
-    ctx.font = `${fontSize / globalScale}px Inter, system-ui, sans-serif`
+    // Draw label text
+    ctx.font = `bold ${fontSize / globalScale}px Inter, system-ui, sans-serif`
     ctx.textAlign = 'center'
     ctx.textBaseline = 'middle'
-    
-    // Use white text for section nodes, colored for courses, dark for others
-    if (node.type === 'section') {
-      ctx.fillStyle = '#FFFFFF'
-      ctx.font = `bold ${fontSize / globalScale}px Inter, system-ui, sans-serif`
-    } else if (node.type === 'course') {
-      ctx.fillStyle = node.color
-      ctx.font = `bold ${fontSize / globalScale}px Inter, system-ui, sans-serif`
-    } else {
-      ctx.fillStyle = '#1F2937'
-    }
+    ctx.fillStyle = node.type === 'course' ? node.color : '#1F2937'
     ctx.fillText(label, node.x, node.y)
     
-    // Add cursor pointer effect hint
+    // Add subtle glow for hovered nodes
     if (isHovered) {
       ctx.save()
-      ctx.globalAlpha = 0.3
+      ctx.globalAlpha = 0.2
       ctx.beginPath()
-      ctx.arc(node.x, node.y, nodeRadius + 2, 0, 2 * Math.PI, false)
+      ctx.arc(node.x, node.y, nodeRadius + 4, 0, 2 * Math.PI, false)
       ctx.fillStyle = node.color
       ctx.fill()
       ctx.restore()
@@ -426,12 +463,12 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
         d3VelocityDecay={0.5}
         d3AlphaDecay={alphaDecay}
         backgroundColor="#FFFFFF"
-        enableNodeDrag={true}
+        enableNodeDrag={false}
         enableZoomInteraction={true}
         enablePanInteraction={true}
         minZoom={0.2}
         maxZoom={8}
-        cooldownTicks={selectedCourse ? 300 : 150}
+        cooldownTicks={150}
         warmupTicks={100}
         onNodeHover={(node: any) => {
           if (node) {
@@ -442,92 +479,23 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
             document.body.style.cursor = 'default'
           }
         }}
-        onNodeDragEnd={(node: any) => {
-          // Fix node position after dragging to prevent drift
-          if (node && fgRef.current) {
-            node.fx = node.x
-            node.fy = node.y
-          }
-        }}
       />
 
-      {/* Info panel */}
-      <AnimatePresence>
-        {selectedCourse && selectedCourseData && (
-          <motion.div
-            initial={{ opacity: 0, x: -20, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -20, scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="absolute top-6 left-6 z-10 max-w-sm"
-          >
-            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-lg">
-              <div className="relative">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 
-                      className="text-xl font-semibold mb-1 text-gray-900"
-                      style={{ color: selectedCourseData.color }}
-                    >
-                      {selectedCourseData.code}
-                    </h3>
-                    <p className="text-sm text-gray-600 font-normal leading-relaxed">
-                      {selectedCourseData.name}
-                    </p>
-                  </div>
-                  <button
-                    onClick={() => onCourseSelect(null)}
-                    className="text-gray-400 hover:text-gray-600 transition-colors p-1 rounded-md hover:bg-gray-100"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-                
-                {selectedCourseData.topics && selectedCourseData.topics.length > 0 && (
-                  <div className="mt-4 pt-4 border-t border-gray-100">
-                    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                      Topics
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedCourseData.topics.map(topic => (
-                        <motion.span
-                          key={topic}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.1 }}
-                          className="px-3 py-1.5 text-xs font-medium rounded-md bg-gray-50 text-gray-700 border border-gray-200"
-                        >
-                          {topic}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Course panel is now handled by parent component */}
 
-      {/* Section legend */}
-      <div className="absolute bottom-6 right-6 z-10">
-        <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm">
-          <p className="text-xs font-semibold text-gray-700 mb-2">Sections</p>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
-            {Object.entries(sectionColors).map(([section, color]) => (
-              <div key={section} className="flex items-center gap-2">
-                <div 
-                  className="w-3 h-3 rounded-full border" 
-                  style={{ backgroundColor: color + '40', borderColor: color }}
-                />
-                <span className="text-xs text-gray-700 capitalize">{section}</span>
+          {/* Hint - only show when no course is selected */}
+          {!selectedCourse && (
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="absolute top-6 left-6 z-10"
+            >
+              <div className="bg-white border border-neutral-200 px-4 py-2">
+                <p className="text-xs font-light text-neutral-600">Click any course to view materials</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
+            </motion.div>
+          )}
     </div>
   )
 }

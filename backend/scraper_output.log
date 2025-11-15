@@ -1,0 +1,36 @@
+2025-11-15 14:06:33,252 - __main__ - INFO - Loaded 225 courses with URLs
+2025-11-15 14:06:33,252 - __main__ - INFO - Starting scrape of 5 courses
+2025-11-15 14:06:33,252 - __main__ - INFO - Processing course 1/5: 21-341
+2025-11-15 14:06:33,252 - __main__ - INFO - Scraping course 21-341: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:06:33,252 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:06:33,316 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21341/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:06:33,316 - __main__ - INFO - Updated course file: 21-341.txt
+2025-11-15 14:06:33,316 - __main__ - INFO - Processing course 2/5: 16-385
+2025-11-15 14:06:33,316 - __main__ - INFO - Scraping course 16-385: https://www.cs.cmu.edu/~16385/
+2025-11-15 14:06:33,316 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/
+2025-11-15 14:06:35,335 - __main__ - ERROR - Unexpected error parsing https://www.cs.cmu.edu/~16385/: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+2025-11-15 14:06:35,336 - __main__ - INFO - Updated course file: 16-385.txt
+2025-11-15 14:06:35,336 - __main__ - INFO - Processing course 3/5: 15-468
+2025-11-15 14:06:35,336 - __main__ - INFO - Scraping course 15-468: https://www.cs.cmu.edu/~15468/
+2025-11-15 14:06:35,336 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15468/
+2025-11-15 14:06:35,355 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15468/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15468/
+2025-11-15 14:06:35,356 - __main__ - INFO - Updated course file: 15-468.txt
+2025-11-15 14:06:35,356 - __main__ - INFO - Processing course 4/5: 15-440
+2025-11-15 14:06:35,356 - __main__ - INFO - Scraping course 15-440: https://www.cs.cmu.edu/~15440/
+2025-11-15 14:06:35,356 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15440/
+2025-11-15 14:06:35,409 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15440/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15440/
+2025-11-15 14:06:35,409 - __main__ - INFO - Updated course file: 15-440.txt
+2025-11-15 14:06:35,409 - __main__ - INFO - Processing course 5/5: 36-705
+2025-11-15 14:06:35,409 - __main__ - INFO - Scraping course 36-705: https://www.cs.cmu.edu/~36705/
+2025-11-15 14:06:35,409 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~36705/
+2025-11-15 14:06:35,428 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~36705/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~36705/
+2025-11-15 14:06:35,429 - __main__ - INFO - Updated course file: 36-705.txt
+2025-11-15 14:06:35,429 - __main__ - INFO - ================================================================================
+2025-11-15 14:06:35,429 - __main__ - INFO - Scraping Summary:
+2025-11-15 14:06:35,429 - __main__ - INFO -   Total courses: 5
+2025-11-15 14:06:35,429 - __main__ - INFO -   Successful: 5
+2025-11-15 14:06:35,429 - __main__ - INFO -   Failed: 0
+2025-11-15 14:06:35,429 - __main__ - INFO -   Total textbooks found: 0
+2025-11-15 14:06:35,429 - __main__ - INFO -   Total recitations found: 0
+2025-11-15 14:06:35,429 - __main__ - INFO -   Total homeworks found: 0
+2025-11-15 14:06:35,429 - __main__ - INFO - ================================================================================

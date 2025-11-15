@@ -2,22 +2,21 @@ Course Code: 16-824
 Course Name: Index of /~16824
 Course URL: https://www.cs.cmu.edu/~16824/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
-VIDEOS:
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
 None found
 
-LINKS:
-None found
 
-IMAGES:
-[ICO]
-URL: https://www.cs.cmu.edu/icons/blank.gif
-
-[PARENTDIR]
-URL: https://www.cs.cmu.edu/icons/back.gif
-
+================================================================================
+Last Scraped: 2025-11-15T14:07:33.967781
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

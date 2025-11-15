@@ -1,17 +1,21 @@
 Course Code: 15-128
 Course Name: Course URL: https://www.cs.cmu.edu/~15128/
-Course URL: https://www.cs.cmu.edu/~15128/
-
-================================================================================
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
 None found
 
-VIDEOS AND LECTURE RECORDINGS:
+RECITATIONS:
 --------------------------------------------------------------------------------
 None found
 
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
+
+
 ================================================================================
-Total Books Found: 0
-Total Videos Found: 0
+Last Scraped: 2025-11-15T14:07:43.886493
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

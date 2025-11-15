@@ -4,6 +4,8 @@ Allows the AI to fetch and parse course documents, materials, and topics
 """
 
 from typing import Dict, List, Any, Optional
+from data_loader import get_data_loader
+from fuzzywuzzy import fuzz, process
 
 # Tool definitions for Anthropic API
 COURSE_TOOLS = [
@@ -93,6 +95,60 @@ COURSE_TOOLS = [
                 }
             },
             "required": ["course_id", "document_id"]
+        }
+    },
+    {
+        "name": "search_pdf_content",
+        "description": "Search within PDF textbooks/documents for specific content. Use when user asks about PDFs, textbooks, chapters, or specific topics in books. Supports fuzzy search.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "Search query (e.g., 'caching', 'chapter 3', 'example problem about cache')"
+                },
+                "course_id": {
+                    "type": "string",
+                    "description": "Optional: Course ID to limit search to specific course PDFs (e.g., '213' for 15-213)"
+                },
+                "pdf_filename": {
+                    "type": "string",
+                    "description": "Optional: Specific PDF filename to search (e.g., '15-210_book.pdf')"
+                }
+            },
+            "required": ["query"]
+        }
+    },
+    {
+        "name": "get_pdf_chapter",
+        "description": "Extract a specific chapter from a PDF textbook. Use when user asks about 'chapter X' or 'chapter X of textbook'.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "pdf_filename": {
+                    "type": "string",
+                    "description": "PDF filename (e.g., '15-210_book.pdf')"
+                },
+                "chapter_query": {
+                    "type": "string",
+                    "description": "Chapter identifier (e.g., 'chapter 3', 'chapter 5', '3')"
+                }
+            },
+            "required": ["pdf_filename", "chapter_query"]
+        }
+    },
+    {
+        "name": "list_course_pdfs",
+        "description": "List all available PDF textbooks/documents for a course. Use when user asks what PDFs or textbooks are available.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "course_id": {
+                    "type": "string",
+                    "description": "Course ID (e.g., '213' for 15-213)"
+                }
+            },
+            "required": ["course_id"]
         }
     },
     {
@@ -199,57 +255,64 @@ def execute_tool(tool_name: str, tool_input: Dict[str, Any]) -> Dict[str, Any]:
     elif tool_name == "get_topic_overview":
         return get_topic_overview(tool_input.get("topic", ""))
     
+    elif tool_name == "search_pdf_content":
+        return search_pdf_content(
+            tool_input.get("query", ""),
+            tool_input.get("course_id"),
+            tool_input.get("pdf_filename")
+        )
+    
+    elif tool_name == "get_pdf_chapter":
+        return get_pdf_chapter(
+            tool_input.get("pdf_filename", ""),
+            tool_input.get("chapter_query", "")
+        )
+    
+    elif tool_name == "list_course_pdfs":
+        return list_course_pdfs(tool_input.get("course_id", ""))
+    
     else:
         return {"error": f"Unknown tool: {tool_name}"}
 
 
 # Tool implementation functions
 def search_courses(query: str) -> Dict[str, Any]:
-    """Search for courses"""
-    mock_courses = [
-        {"id": "213", "code": "15-213", "name": "Introduction to Computer Systems", "topics": ["Cache", "Memory", "Assembly"]},
-        {"id": "122", "code": "15-122", "name": "Principles of Imperative Computation", "topics": ["C0", "Data Structures"]},
-        {"id": "251", "code": "15-251", "name": "Great Theoretical Ideas in Computer Science", "topics": ["Graph Theory", "Probability"]},
-        {"id": "210", "code": "15-210", "name": "Principles of Programming", "topics": ["Parallel Algorithms", "Functional Programming"]},
-        {"id": "150", "code": "15-150", "name": "Algorithms", "topics": ["Dynamic Programming", "Graph Algorithms"]},
-        {"id": "451", "code": "15-451", "name": "Database Systems", "topics": ["SQL", "Query Optimization"]},
-    ]
+    """Search for courses using real data"""
+    loader = get_data_loader()
+    courses = loader.search_courses(query)
     
-    query_lower = query.lower()
-    results = [
-        c for c in mock_courses
-        if query_lower in c["code"].lower() 
-        or query_lower in c["name"].lower()
-        or any(query_lower in topic.lower() for topic in c["topics"])
-    ]
+    results = []
+    for course in courses[:20]:  # Limit to top 20
+        results.append({
+            "id": course.id,
+            "code": course.code,
+            "name": course.name,
+            "topics": course.topics[:10],  # Limit topics
+            "description": course.description[:200] if course.description else None
+        })
     
     return {"courses": results, "count": len(results)}
 
 
 def get_course_details(course_id: str) -> Dict[str, Any]:
-    """Get course details"""
-    courses = {
-        "213": {
-            "id": "213",
-            "code": "15-213",
-            "name": "Introduction to Computer Systems",
-            "description": "This course provides a comprehensive introduction to computer systems from a programmer's perspective. Topics include data representation, assembly language, machine-level programming, processor architecture, caching, memory hierarchy, linking, and exceptional control flow.",
-            "topics": ["Cache", "Memory", "Assembly", "C Programming", "Virtual Memory", "Linking"],
-            "prerequisites": ["15-122"],
-            "sections": ["notes", "recitations", "textbook", "labs", "exams"]
-        },
-        "122": {
-            "id": "122",
-            "code": "15-122",
-            "name": "Principles of Imperative Computation",
-            "description": "Introduction to imperative programming using C0, covering data structures, algorithms, and program correctness.",
-            "topics": ["C0", "Data Structures", "Algorithms", "Contracts", "Testing"],
-            "prerequisites": [],
-            "sections": ["notes", "recitations", "textbook", "assignments", "exams"]
-        },
-    }
+    """Get course details using real data"""
+    loader = get_data_loader()
+    course = loader.get_course(course_id)
     
-    return courses.get(course_id, {"error": "Course not found"})
+    if not course:
+        return {"error": "Course not found"}
+    
+    return {
+        "id": course.id,
+        "code": course.code,
+        "name": course.name,
+        "description": course.description,
+        "topics": course.topics,
+        "prerequisites": course.prerequisites,
+        "url": course.url,
+        "pdfs": course.pdfs,
+        "books": course.books
+    }
 
 
 def get_course_materials(course_id: str, section: Optional[str] = None) -> Dict[str, Any]:
@@ -319,6 +382,79 @@ def search_course_content(course_id: str, query: str, section: Optional[str] = N
         ]
     
     return {"results": results, "count": len(results), "query": query}
+
+
+def search_pdf_content(query: str, course_id: Optional[str] = None, pdf_filename: Optional[str] = None) -> Dict[str, Any]:
+    """Search PDF content with fuzzy matching"""
+    loader = get_data_loader()
+    
+    # If specific PDF requested, search only that
+    if pdf_filename:
+        pdf = loader.get_pdf(pdf_filename)
+        if not pdf:
+            return {"error": f"PDF not found: {pdf_filename}", "results": []}
+        
+        # Search in this PDF
+        results = loader.search_pdf_content(query, course_id=pdf.course_id)
+        return {
+            "results": results,
+            "count": len(results),
+            "query": query,
+            "pdf": pdf_filename
+        }
+    
+    # Search all PDFs (optionally filtered by course)
+    results = loader.search_pdf_content(query, course_id=course_id)
+    
+    return {
+        "results": results,
+        "count": len(results),
+        "query": query,
+        "course_id": course_id
+    }
+
+
+def get_pdf_chapter(pdf_filename: str, chapter_query: str) -> Dict[str, Any]:
+    """Extract a chapter from PDF"""
+    loader = get_data_loader()
+    chapter_text = loader.get_pdf_chapter(pdf_filename, chapter_query)
+    
+    if not chapter_text:
+        return {
+            "error": f"Chapter '{chapter_query}' not found in {pdf_filename}",
+            "pdf": pdf_filename,
+            "chapter": chapter_query
+        }
+    
+    return {
+        "pdf": pdf_filename,
+        "chapter": chapter_query,
+        "content": chapter_text[:5000],  # Limit to 5000 chars
+        "full_length": len(chapter_text)
+    }
+
+
+def list_course_pdfs(course_id: str) -> Dict[str, Any]:
+    """List all PDFs for a course"""
+    loader = get_data_loader()
+    pdf_filenames = loader.course_pdfs.get(course_id, [])
+    
+    pdfs = []
+    for filename in pdf_filenames:
+        pdf = loader.get_pdf(filename)
+        if pdf:
+            pdfs.append({
+                "filename": pdf.filename,
+                "title": pdf.title or pdf.filename,
+                "pages": pdf.pages,
+                "course_id": pdf.course_id
+            })
+    
+    return {
+        "course_id": course_id,
+        "pdfs": pdfs,
+        "count": len(pdfs)
+    }
 
 
 def get_document_content(course_id: str, document_id: str) -> Dict[str, Any]:

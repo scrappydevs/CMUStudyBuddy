@@ -2,18 +2,21 @@ Course Code: 15-351
 Course Name: 
 Course URL: https://www.cs.cmu.edu/~15351/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
-VIDEOS:
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
 None found
 
-LINKS:
-None found
 
-IMAGES:
-None found
-
+================================================================================
+Last Scraped: 2025-11-15T14:07:02.033722
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

@@ -2,132 +2,21 @@ Course Code: 02-251
 Course Name: 02-251 Great Ideas in Computational Biology
 Course URL: https://www.cs.cmu.edu/~02251/
 
-BOOKS:
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
 None found
 
-PDFS:
-here
-URL: https://www.cs.cmu.edu/~02251/syllabus_251.pdf
-
-Introduction
-URL: https://www.cs.cmu.edu/~02251/lectures/intro.pdf
-
-Recitation on Genome Assembly
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_assembly.pdf
-
-Sequence alignment (Part 1)
-URL: https://www.cs.cmu.edu/~02251/lectures/alignment1.pdf
-
-Sequence alignment (Part 2)
-URL: https://www.cs.cmu.edu/~02251/lectures/alignment2.pdf
-
-Recitation on Dynamic Programming
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_dynamic_programming.pdf
-
-Suffix Tree Math
-URL: https://www.cs.cmu.edu/~02251/lectures/suffix_trees_math.pdf
-
-Recitation on Read Mapping (Part 1)
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_read_mapping.pdf
-
-Multiple  sequence alignment
-URL: https://www.cs.cmu.edu/~02251/lectures/MSA.pdf
-
-Recitation on Read Mapping (Part 2)
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_read_mapping.pdf
-
-Hidden Markov models
-URL: https://www.cs.cmu.edu/~02251/lectures/hmm.pdf
-
-Metagenomics
-URL: https://www.cs.cmu.edu/~02251/lectures/metagenomics.pdf
-
-Recitation on HMMs
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_profile_HMMs.pdf
-
-Phylogenetics (in progress)
-URL: https://www.cs.cmu.edu/~02251/lectures/evolutionary_trees_part_1.pdf
-
-Phylogenetics (complete)
-URL: https://www.cs.cmu.edu/~02251/lectures/evolutionary_trees_complete.pdf
-
-some necessary mathematics
-URL: https://www.cs.cmu.edu/~02251/lectures/Evo_Trees_Math.pdf
-
-MCMC for Phylogenetics
-URL: https://www.cs.cmu.edu/~02251/recitations/phylo-mcmc.pdf
-
-Motif Finding, Gibbs Sampling, EM
-URL: https://www.cs.cmu.edu/~02251/lectures/motif-em.pdf
-
-RNA sequencing, gene expression
-URL: https://www.cs.cmu.edu/~02251/lectures/rnaseq-em.pdf
-
-Network biology: intro & function prediction
-URL: https://www.cs.cmu.edu/~02251/lectures/networks1.pdf
-
-Network biology: evolution of modularity
-URL: https://www.cs.cmu.edu/~02251/lectures/networks-evolmod.pdf
-
-Population Genetics
-URL: https://www.cs.cmu.edu/~02251/lectures/PCA_student.pdf
-
-Recitation on Soft Clustering
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_soft_clustering.pdf
-
-Evolutionary Game Theory
-URL: https://www.cs.cmu.edu/~02251/lectures/spatialgames.pdf
-
-Neural Modeling
-URL: https://www.cs.cmu.edu/~02251/lectures/perceptrons.pdf
-
-Universality of Neural Networks and Deep Learning (incomplete)
-URL: https://www.cs.cmu.edu/~02251/lectures/neural_nets.pdf
-
-Protein Structure Prediction
-URL: https://www.cs.cmu.edu/~02251/lectures/protein-folding.pdf
-
-Recitation on Neural Nets
-URL: https://www.cs.cmu.edu/~02251/recitations/recitation_deep_learning.pdf
-
-Three Mini-"Great Ideas": Turing Patterns, Fragile Genomes, and DNA Computing
-URL: https://www.cs.cmu.edu/~02251/lectures/mini_great_ideas.pdf
-
-VIDEOS:
-Genome assembly (Part 1)
-URL: https://www.cs.cmu.edu/~02251/lectures/assembly_part_1.pptx
-
-Genome assembly (Complete)
-URL: https://www.cs.cmu.edu/~02251/lectures/genome_assembly.pptx
-
-Read mapping (Part 1)
-URL: https://www.cs.cmu.edu/~02251/lectures/read_mapping_1.pptx
-
-Read mapping (Part 2)
-URL: https://www.cs.cmu.edu/~02251/lectures/read_mapping_2.pptx
-
-LINKS:
-http://kingsfordlab.cbd.cmu.edu
-URL: http://kingsfordlab.cbd.cmu.edu
-
-http://compeau.cbd.cmu.edu
-URL: http://compeau.cbd.cmu.edu
-
-https://canvas.cmu.edu/courses/8153
-URL: https://canvas.cmu.edu/courses/8153
-
-https: //gradescope.com
-URL: https://www.cs.cmu.edu/~02251/ /gradescope.com
-
-https://piazza.com/class/jpbntwh8tix1hu
-URL: https://piazza.com/class/jpbntwh8tix1hu
-
-http://www.cmu.edu/academic-integrity/
-URL: http://cmu.edu/academic-integrity/
-
-http://www.cmu.edu/counseling/
-URL: http://www.cmu.edu/counseling/
-
-IMAGES:
+RECITATIONS:
+--------------------------------------------------------------------------------
 None found
 
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
+
+
+================================================================================
+Last Scraped: 2025-11-15T14:07:24.302277
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

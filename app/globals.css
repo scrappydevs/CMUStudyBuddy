@@ -2,56 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  
-  --background: 0 0% 98%;
-  --foreground: 0 0% 3.9%;
-  --primary: 251 59% 52%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 96.1%;
-  --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 95%;
-  --muted-foreground: 0 0% 45.1%;
-  --border: 0 0% 89.8%;
-  --input: 0 0% 89.8%;
-  --ring: 0 0% 3.9%;
-  --radius: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --primary: 251 59% 52%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-  }
-}
-
 @layer base {
+  :root {
+    /* NEUTRAL PALETTE - Clean Grays */
+    --color-neutral-950: #0f172a;
+    --color-neutral-700: #475569;
+    --color-neutral-500: #94a3b8;
+    --color-neutral-400: #cbd5e1;
+    --color-neutral-300: #cbd5e1;
+    --color-neutral-200: #e2e8f0;
+    --color-neutral-100: #f1f5f9;
+    --color-neutral-50: #fafafa;
+
+    /* SEMANTIC COLORS */
+    --color-background: #fafafa;
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
+  }
+
+  * {
+    @apply border-neutral-200;
+  }
+
   html {
     font-size: 14px;
   }
-  
-  * {
-    @apply border-border;
-  }
-  
+
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-neutral-50 text-neutral-950 font-sans font-light antialiased;
+  }
+
+  /* Clean typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light tracking-tight;
+  }
+
+  button {
+    @apply font-sans;
+  }
+
+  input, textarea, select {
+    @apply font-sans font-light;
+  }
+}
+
+@layer utilities {
+  .label-uppercase {
+    @apply text-xs font-normal uppercase tracking-wider;
   }
 }
 
@@ -80,5 +77,14 @@
 
 .thinking-dot:nth-child(3) {
   animation-delay: 320ms;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 

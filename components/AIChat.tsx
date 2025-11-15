@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { chatWithAI, generateSummary } from '@/lib/api'
-import ThinkingAnimation from './ThinkingAnimation'
+import { ToolUseIndicator, ThinkingIndicator } from './ChatEnhancements'
 
 interface Message {
   role: 'user' | 'assistant'
@@ -21,7 +21,6 @@ interface AIChatProps {
 }
 
 export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
-  const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -29,78 +28,53 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
   const [streamingText, setStreamingText] = useState('')
   const [isStreaming, setIsStreaming] = useState(false)
   const [toolCallCount, setToolCallCount] = useState(0)
+  const [showToolIndicator, setShowToolIndicator] = useState(false)
+  const [toolDetails, setToolDetails] = useState<Array<{tool: string, status: string, message: string}>>([])
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     scrollToBottom()
   }, [messages, streamingText])
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.shiftKey && e.key === 'h') {
-        e.preventDefault()
-        setIsOpen(prev => !prev)
-      }
-      if (e.key === 'Escape' && isOpen) {
-        e.preventDefault()
-        setIsOpen(false)
-      }
+    if (inputRef.current) {
+      inputRef.current.focus()
     }
-
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen])
+  }, [])
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   const streamText = async (text: string, courseId?: string | null) => {
-    setIsStreaming(true)
+    // Show response immediately without artificial streaming delays
+    setIsStreaming(false)
     setStreamingText('')
-    
-    const placeholderMsg: Message = { 
-      role: 'assistant', 
-      content: '',
-      isStreaming: true,
-      courseId: courseId || null
-    }
-    setMessages(prev => [...prev, placeholderMsg])
-    
-    const words = text.split(' ')
-    let currentText = ''
-    
-    for (let i = 0; i < words.length; i++) {
-      currentText += (i > 0 ? ' ' : '') + words[i]
-      setStreamingText(currentText)
-      
-      setMessages(prev => {
-        const updated = [...prev]
-        updated[updated.length - 1] = {
-          role: 'assistant',
-          content: currentText,
-          isStreaming: true,
-          courseId: courseId || null
-        }
-        return updated
-      })
-      
-      await new Promise(resolve => setTimeout(resolve, 30))
-    }
     
     setMessages(prev => {
       const updated = [...prev]
-      updated[updated.length - 1] = {
-        role: 'assistant',
-        content: text,
-        isStreaming: false,
-        courseId: courseId || null
+      // Update or add assistant message
+      const lastMsg = updated[updated.length - 1]
+      if (lastMsg && lastMsg.role === 'assistant' && lastMsg.isStreaming) {
+        // Update existing streaming message
+        updated[updated.length - 1] = {
+          role: 'assistant',
+          content: text,
+          isStreaming: false,
+          courseId: courseId || null
+        }
+      } else {
+        // Add new assistant message
+        updated.push({
+          role: 'assistant',
+          content: text,
+          isStreaming: false,
+          courseId: courseId || null
+        })
       }
       return updated
     })
-    
-    setIsStreaming(false)
-    setStreamingText('')
   }
 
   const handleSendMessage = async () => {
@@ -119,22 +93,24 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
         setSessionId(response.session_id)
       }
       
-      // Track tool calls
-      if (response.tool_calls) {
+      // Track tool calls with detailed information
+      if (response.tool_calls && response.tool_calls > 0) {
         setToolCallCount(response.tool_calls)
+        if (response.tool_details && response.tool_details.length > 0) {
+          setToolDetails(response.tool_details)
+        }
+        setShowToolIndicator(true)
+        // Show tool indicator with details
+        await new Promise(resolve => setTimeout(resolve, 800))
+        setShowToolIndicator(false)
+        setToolDetails([])
       }
       
       setIsLoading(false)
       
       const responseText = response.response || response.message || 'Sorry, I encountered an error.'
       
-      // Store course_id with the message for download functionality
-      const assistantMessage: Message = {
-        role: 'assistant',
-        content: responseText,
-        courseId: response.course_id || null
-      }
-      
+      // Show response immediately (no fake streaming delay)
       await streamText(responseText, response.course_id || null)
       
       // Reset tool call count after response
@@ -153,34 +129,40 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
     }
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault()
-      handleSendMessage()
-    }
-  }
 
-  const handleDownloadSummary = async (courseId?: string | null, content?: string) => {
+  const handleDownloadSummary = async (courseId?: string | null, content?: string, format: 'markdown' | 'pdf' = 'markdown') => {
     try {
       setIsLoading(true)
-      const summary = await generateSummary(courseId || undefined, undefined, content)
+      const result = await generateSummary(courseId || undefined, undefined, content, format)
       
-      if (summary.error) {
-        alert(summary.error)
+      if (result.error) {
+        alert(result.error)
         setIsLoading(false)
         return
       }
       
-      // Create downloadable markdown file
-      const blob = new Blob([summary.content], { type: 'text/markdown' })
-      const url = URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = courseId ? `course-${courseId}-summary.md` : 'course-summary.md'
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
-      URL.revokeObjectURL(url)
+      if (format === 'pdf' && result.blob) {
+        // Handle PDF download
+        const url = URL.createObjectURL(result.blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = courseId ? `course-${courseId}-summary.pdf` : 'course-summary.pdf'
+        document.body.appendChild(a)
+        a.click()
+        document.body.removeChild(a)
+        URL.revokeObjectURL(url)
+      } else {
+        // Handle markdown download
+        const blob = new Blob([result.content], { type: 'text/markdown' })
+        const url = URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = courseId ? `course-${courseId}-summary.md` : 'course-summary.md'
+        document.body.appendChild(a)
+        a.click()
+        document.body.removeChild(a)
+        URL.revokeObjectURL(url)
+      }
       
       setIsLoading(false)
     } catch (error) {
@@ -191,41 +173,20 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
   }
 
   return (
-    <>
-      <AnimatePresence>
-        {isOpen ? (
-          <motion.div
-            initial={{ scale: 0.95, opacity: 0, originX: 1, originY: 1 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.95, opacity: 0 }}
-            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed bottom-6 right-6 z-50 bg-white border border-gray-200 shadow-xl flex flex-col"
-            style={{ 
-              width: '550px',
-              height: '650px',
-              borderRadius: '12px',
-              transformOrigin: 'bottom right',
-            }}
-          >
-            <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200">
-              <h2 className="text-sm font-semibold text-gray-900">CMU Course Assistant</h2>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-gray-400 hover:text-gray-700 transition-colors p-1 rounded-md hover:bg-gray-100"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
+    <div className="h-full flex flex-col bg-white border-l border-neutral-200">
+      {/* Header */}
+      <div className="h-16 px-4 py-2 border-b border-neutral-200 flex items-center justify-between">
+        <h2 className="text-sm font-light text-neutral-950 tracking-tight">Course Assistant</h2>
+      </div>
 
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      {/* Messages */}
+      <div className="flex-1 overflow-y-auto scrollbar-hide p-4">
               {messages.length === 0 ? (
                 <div>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm font-light text-neutral-600 mb-4">
                     Ask me about CMU CS courses. Try: "Tell me about 15-213's cache chapter"
                   </p>
-                  <div className="space-y-1.5">
+                  <div className="space-y-2">
                     {['Tell me about 15-213', 'Show me courses related to systems', 'What is 15-122 about?'].map((prompt, i) => (
                       <motion.button
                         key={i}
@@ -236,7 +197,7 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
                           setInput(prompt)
                           setTimeout(() => handleSendMessage(), 100)
                         }}
-                        className="w-full text-left px-4 py-2.5 text-sm text-gray-700 bg-white hover:bg-gray-50 border border-gray-200 transition-all rounded-lg"
+                        className="w-full text-left px-4 py-2.5 text-sm font-light text-neutral-700 bg-white hover:bg-neutral-50 border border-neutral-200 transition-all"
                       >
                         {prompt}
                       </motion.button>
@@ -245,24 +206,29 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
                 </div>
               ) : (
                 <>
-                  {messages.map((msg, idx) => (
-                    <motion.div 
-                      key={idx} 
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-                    >
-                      <div
-                        className={`max-w-[75%] px-4 py-3 text-sm leading-relaxed ${
-                          msg.role === 'user'
-                            ? 'bg-gray-900 text-white'
-                            : 'bg-gray-50 text-gray-900'
-                        }`}
-                        style={{ 
-                          borderRadius: msg.role === 'user' ? '12px 12px 2px 12px' : '12px 12px 12px 2px',
-                        }}
+                  {messages.map((msg, idx) => {
+                    const prevMsg = idx > 0 ? messages[idx - 1] : null
+                    const isRoleChange = prevMsg && prevMsg.role !== msg.role
+                    const spacingClass = isRoleChange ? 'mt-5' : 'mt-0'
+                    
+                    return (
+                      <motion.div 
+                        key={idx} 
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} ${spacingClass}`}
                       >
+                        <div
+                          className={`max-w-[85%] px-3 py-2 text-sm font-light leading-relaxed ${
+                            msg.role === 'user'
+                              ? 'bg-neutral-950 text-white text-left'
+                              : 'bg-neutral-50 text-neutral-950'
+                          }`}
+                          style={{ 
+                            borderRadius: msg.role === 'user' ? '4px 4px 2px 4px' : '4px 4px 4px 2px',
+                          }}
+                        >
                         <div className="prose prose-sm max-w-none">
                           <ReactMarkdown
                             remarkPlugins={[remarkGfm]}
@@ -278,100 +244,98 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
                           <span className="inline-block w-1.5 h-3.5 bg-primary-700 ml-0.5 animate-pulse" />
                         )}
                         {msg.role === 'assistant' && !msg.isStreaming && (
-                          <div className="mt-3 pt-3 border-t border-gray-200">
+                          <div className="mt-3 pt-3 border-t border-neutral-200 flex gap-2">
                             <button
-                              onClick={() => handleDownloadSummary(msg.courseId, msg.content)}
+                              onClick={() => handleDownloadSummary(msg.courseId, msg.content, 'markdown')}
                               disabled={isLoading}
-                              className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-gray-700 bg-white hover:bg-gray-50 border border-gray-300 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                              className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-light text-neutral-700 bg-white hover:bg-neutral-50 border border-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                              title="Download as Markdown"
                             >
-                              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                               </svg>
-                              Download Summary
+                              MD
+                            </button>
+                            <button
+                              onClick={() => handleDownloadSummary(msg.courseId, msg.content, 'pdf')}
+                              disabled={isLoading}
+                              className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-light text-neutral-700 bg-white hover:bg-neutral-50 border border-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                              title="Download as PDF"
+                            >
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                              </svg>
+                              PDF
+                            </button>
+                            <button
+                              onClick={async () => {
+                                await navigator.clipboard.writeText(msg.content)
+                              }}
+                              className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-light text-neutral-700 bg-white hover:bg-neutral-50 border border-neutral-200 transition-colors"
+                              title="Copy to clipboard"
+                            >
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                              </svg>
+                              Copy
                             </button>
                           </div>
                         )}
                       </div>
                     </motion.div>
-                  ))}
+                    )
+                  })}
                   
-                      {isLoading && !isStreaming && (
-                        <div className="flex flex-col gap-3 w-full">
-                          {toolCallCount > 0 && (
-                            <motion.div
-                              initial={{ opacity: 0, scale: 0.95 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              className="flex justify-start"
-                            >
-                              <div className="px-4 py-2.5 bg-blue-50 border border-blue-200 text-blue-700 text-sm rounded-lg flex items-center gap-2">
-                                <svg className="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                                </svg>
-                                <span>Searching course materials ({toolCallCount} {toolCallCount === 1 ? 'query' : 'queries'})</span>
-                              </div>
-                            </motion.div>
-                          )}
-                          <div className="flex justify-start w-full">
-                            <div className="w-full max-w-md">
-                              <ThinkingAnimation />
-                            </div>
-                          </div>
-                        </div>
+                      {/* Tool Use Indicator */}
+                      {showToolIndicator && (
+                        <ToolUseIndicator 
+                          toolDetails={toolDetails.length > 0 ? toolDetails : undefined}
+                          toolCount={toolCallCount}
+                        />
                       )}
+                  
+                  {/* Thinking indicator */}
+                  <ThinkingIndicator show={isLoading && !isStreaming && !showToolIndicator} />
                   
                   <div ref={messagesEndRef} />
                 </>
               )}
             </div>
 
-            <div className="border-t border-gray-200 p-4">
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  placeholder={isLoading ? "Thinking..." : isStreaming ? "Responding..." : "Ask about CMU courses..."}
-                  disabled={isLoading || isStreaming}
-                  className="flex-1 px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all disabled:opacity-50 disabled:bg-gray-50 rounded-lg"
-                />
-                <button
-                  onClick={handleSendMessage}
-                  disabled={isLoading || isStreaming || input.trim() === ''}
-                  className="px-4 py-2.5 bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded-lg"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        ) : (
-          <motion.button
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gray-900 hover:bg-gray-800 text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center rounded-full"
-            title="Open AI Chat (Cmd+Shift+H)"
+      {/* Input Area */}
+      <div className="px-4 border-t border-neutral-200">
+        <div className="border border-neutral-200 px-3 bg-white mb-4">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault()
+              handleSendMessage()
+            }}
+            className="pt-2"
           >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-            </svg>
-          </motion.button>
-        )}
-      </AnimatePresence>
-    </>
+            <textarea
+              ref={inputRef}
+              value={input}
+              disabled={isLoading || isStreaming}
+              onChange={(e) => {
+                setInput(e.target.value)
+                const el = e.target
+                el.style.height = 'auto'
+                el.style.height = `${el.scrollHeight}px`
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey && !isLoading && !isStreaming) {
+                  e.preventDefault()
+                  handleSendMessage()
+                }
+              }}
+              placeholder={isLoading ? "Thinking..." : isStreaming ? "Responding..." : "Ask about CMU courses..."}
+              rows={3}
+              className="w-full pb-3 py-1 focus:outline-none resize-none max-h-48 overflow-y-auto text-sm font-light text-neutral-950 placeholder:text-neutral-400 disabled:opacity-50 disabled:cursor-not-allowed"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
   )
 }
 

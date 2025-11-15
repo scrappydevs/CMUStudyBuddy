@@ -114,8 +114,8 @@ Claudev1/
 
 The project uses:
 - **TypeScript** for type safety
-- **Tailwind CSS** for styling (following auctor-1 design patterns)
-- **React Three Fiber** for 3D graphics (similar to haven's 3D components)
+- **Tailwind CSS** for styling
+- **React Three Fiber** for 3D graphics
 - **Framer Motion** for animations
 
 ## License

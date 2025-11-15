@@ -2,25 +2,21 @@ Course Code: 15-150
 Course Name: 15-150: Functional Programming, Fall 2025
 Course URL: https://www.cs.cmu.edu/~15150/
 
-================================================================================
-
 BOOKS AND TEXTBOOKS:
---------------------------------------------------------------------------------
-
-1. Setup Reference
-   URL: https://www.cs.cmu.edu/~15150/resources/handouts/setup.pdf
-   Type: pdf
-
-2. for the course. All material we expect
-   Type: text
-
-3. is based on the lecture
-   Type: text
-
-VIDEOS AND LECTURE RECORDINGS:
 --------------------------------------------------------------------------------
 None found
 
+RECITATIONS:
+--------------------------------------------------------------------------------
+None found
+
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
+
+
 ================================================================================
-Total Books Found: 3
-Total Videos Found: 0
+Last Scraped: 2025-11-15T14:07:06.523815
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

@@ -2,129 +2,21 @@ Course Code: 15-414
 Course Name: Bug Catching: Automated Program Verification
 Course URL: https://www.cs.cmu.edu/~15414/
 
-================================================================================
-
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
+None found
 
-1. There is no textbook for this class, and detailed lecture notes will be posted to the website within a few
-   Type: text
-
-VIDEOS AND LECTURE RECORDINGS:
+RECITATIONS:
 --------------------------------------------------------------------------------
+None found
 
-1. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/01-intro.pdf
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+None found
 
-2. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/02-contracts.pdf
-
-3. mystery.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/mystery.mlw
-
-4. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/03-datastructures.pdf
-
-5. queue.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/queue.mlw
-
-6. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/04-ghosts.pdf
-
-7. intset.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/intset.mlw
-
-8. bitset.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/bitset.mlw
-
-9. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/05-semantics.pdf
-
-10. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/06-why3-semantics.pdf
-
-11. regexp.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/regexp.mlw
-
-12. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/07-dynamiclogic.pdf
-
-13. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/08-loops.pdf
-
-14. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/09-arrays.pdf
-
-15. ndl-v1.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/ndl-v1.mlw
-
-16. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/10-induction.pdf
-
-17. ndl-v2.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/ndl-v2.mlw
-
-18. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/11-convergence.pdf
-
-19. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/12-post.pdf
-
-20. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/13-sequents.pdf
-
-21. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/14-certificates.pdf
-
-22. gcd.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/gcd.mlw
-
-23. bipartite.mlw
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/bipartite.mlw
-
-24. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/15-euf.pdf
-
-25. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/16-combination.pdf
-
-26. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/17-ltl.pdf
-
-27. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/18-buchi.pdf
-
-28. [pdf]
-   Type: unknown
-   URL: https://www.cs.cmu.edu/~15414/lectures/19-ctl.pdf
 
 ================================================================================
-Total Books Found: 1
-Total Videos Found: 28
+Last Scraped: 2025-11-15T14:07:27.168215
+Total Textbooks Found: 0
+Total Recitations Found: 0
+Total Homeworks Found: 0

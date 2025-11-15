@@ -1,17 +1,76 @@
 Course Code: 15-213
 Course Name: Course URL: https://www.cs.cmu.edu/~15213/
-Course URL: https://www.cs.cmu.edu/~15213/
-
-================================================================================
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~213/textbook.html
+Title: Textbook
 
-VIDEOS AND LECTURE RECORDINGS:
+
+RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.pearson.com/store/p/computer-systems-a-programmer-s-perspective/P100002502659/9780134092669
+Title: directly from Pearson
+
+
+HOMEWORKS AND ASSIGNMENTS:
+--------------------------------------------------------------------------------
+URL: https://www.cs.cmu.edu/~213/labs.html
+Title: Labs
+
+URL: https://www.cs.cmu.edu/~213/assignments.html
+Title: Assignments
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~213/labmachines.html
+Title: Lab Machines
+
+URL: https://www.cs.cmu.edu/~213/external/autolab
+Title: Autolab
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~213/labs.html
+Title: Labs
+
+URL: https://www.cs.cmu.edu/~213/assignments.html
+Title: Assignments
+
+URL: https://www.cs.cmu.edu/~213/labmachines.html
+Title: Lab Machines
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~213/syllabus/syllabus.pdf
+Title: course syllabus
+
+URL: https://www.cs.cmu.edu/~213/labs.html
+Title: labs page
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~213/labs/cprogramminglab-handout.tar
+Title: L0-tar-file
+
+URL: https://www.cs.cmu.edu/~213/bootcamps/lab1_handout.tar
+Title: tar
+
+URL: https://www.cs.cmu.edu/~213/bootcamps/lab2_handout.tar
+Title: tar
+
+URL: https://www.cs.cmu.edu/~213/labmachines.html
+Title: Lab Machines
+
+
 
 ================================================================================
-Total Books Found: 0
-Total Videos Found: 0
+Last Scraped: 2025-11-15T14:09:06.022009
+Total Textbooks Found: 1
+Total Recitations Found: 1
+Total Homeworks Found: 16

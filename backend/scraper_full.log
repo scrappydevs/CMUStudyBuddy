@@ -1,0 +1,74 @@
+2025-11-15 14:09:13,483 - __main__ - INFO - Loaded 225 courses with URLs
+2025-11-15 14:09:13,484 - __main__ - INFO - Starting scrape of 225 courses
+2025-11-15 14:09:13,484 - __main__ - INFO - Processing course 1/225: 21-341
+2025-11-15 14:09:13,484 - __main__ - INFO - Scraping course 21-341: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:09:13,484 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:09:13,541 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21341/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:09:13,541 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~341/
+2025-11-15 14:09:13,559 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~341/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~341/
+2025-11-15 14:09:13,559 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:09:13,576 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21341/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21341/
+2025-11-15 14:09:13,576 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0341/
+2025-11-15 14:09:13,592 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0341/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0341/
+2025-11-15 14:09:13,593 - __main__ - INFO - Updated course file: 21-341.txt
+2025-11-15 14:09:13,593 - __main__ - INFO - Processing course 2/225: 16-385
+2025-11-15 14:09:13,593 - __main__ - INFO - Scraping course 16-385: https://www.cs.cmu.edu/~16385/
+2025-11-15 14:09:13,593 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/
+2025-11-15 14:09:15,618 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~16385/
+2025-11-15 14:09:15,620 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn1.zip
+2025-11-15 14:09:18,048 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:09:18,051 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn2.zip
+2025-11-15 14:09:27,224 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:09:27,407 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn3.zip
+2025-11-15 14:09:31,570 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:09:31,623 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn4.zip
+2025-11-15 14:09:36,221 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:09:36,253 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn5.zip
+2025-11-15 14:09:42,507 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:09:42,579 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn6.zip
+2025-11-15 14:10:24,367 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:10:26,070 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/assignments/assgn7.zip
+2025-11-15 14:10:49,461 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:10:49,902 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture1.pdf
+2025-11-15 14:10:52,902 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:10:52,954 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture1.pptx
+2025-11-15 14:11:31,614 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:32,786 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture2.pdf
+2025-11-15 14:11:36,008 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:36,033 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture2.pptx
+2025-11-15 14:11:40,181 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:40,235 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture3.pdf
+2025-11-15 14:11:43,171 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:43,194 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture3.pptx
+2025-11-15 14:11:52,979 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:53,118 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture4.pdf
+2025-11-15 14:11:55,938 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:11:55,967 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture4.pptx
+2025-11-15 14:12:00,765 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:00,809 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture5.pdf
+2025-11-15 14:12:05,810 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:05,883 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture5.pptx
+2025-11-15 14:12:14,345 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:14,465 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture6.pdf
+2025-11-15 14:12:17,693 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:17,708 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture6.pptx
+2025-11-15 14:12:25,934 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:26,096 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture7.pdf
+2025-11-15 14:12:28,554 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:28,562 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture7.pptx
+2025-11-15 14:12:31,935 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:31,947 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture9.pdf
+2025-11-15 14:12:34,813 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:34,844 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture9.pptx
+2025-11-15 14:12:44,445 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:44,608 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture10.pdf
+2025-11-15 14:12:49,472 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:12:49,515 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture10.pptx
+2025-11-15 14:13:04,742 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:13:05,075 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture12.pdf
+2025-11-15 14:13:07,803 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:13:07,817 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture12.pptx
+2025-11-15 14:13:10,986 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:13:10,998 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture13.pdf
+2025-11-15 14:13:14,241 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:13:14,262 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16385/lectures/lecture13.pptx
