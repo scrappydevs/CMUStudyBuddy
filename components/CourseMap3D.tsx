@@ -172,6 +172,7 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
   const fgRef = useRef<any>(null)
   const [isStable, setIsStable] = useState(false)
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null)
+  const [alphaDecay, setAlphaDecay] = useState(0.02)
 
   // Configure force simulation for better spacing and stability
   useEffect(() => {
@@ -200,12 +201,12 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
       // Significantly reduce physics when a course is selected but keep spacing
       fgRef.current.d3Force('charge').strength(-5000)
       fgRef.current.d3Force('link').distance(1500)
-      fgRef.current.d3AlphaDecay(0.1) // Slow down simulation
+      setAlphaDecay(0.1) // Slow down simulation
     } else if (fgRef.current && isStable) {
       // Restore normal physics when deselected
       fgRef.current.d3Force('charge').strength(-20000)
       fgRef.current.d3Force('link').distance(1800)
-      fgRef.current.d3AlphaDecay(0.02)
+      setAlphaDecay(0.02)
     }
   }, [selectedCourse, isStable])
 
@@ -423,7 +424,7 @@ export default function CourseMap3D({ selectedCourse, onCourseSelect }: CourseMa
         linkDirectionalArrowRelPos={1}
         linkCurvature={(link: any) => link.curvature || 0}
         d3VelocityDecay={0.5}
-        d3AlphaDecay={selectedCourse ? 0.1 : 0.02}
+        d3AlphaDecay={alphaDecay}
         backgroundColor="#FFFFFF"
         enableNodeDrag={true}
         enableZoomInteraction={true}
