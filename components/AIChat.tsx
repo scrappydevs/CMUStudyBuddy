@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { chatWithAI, generateSummary } from '@/lib/api'
 import { ToolUseIndicator, ThinkingIndicator } from './ChatEnhancements'
+import PDFViewer from './PDFViewer'
 
 interface Message {
   role: 'user' | 'assistant'
@@ -30,6 +31,7 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
   const [toolCallCount, setToolCallCount] = useState(0)
   const [showToolIndicator, setShowToolIndicator] = useState(false)
   const [toolDetails, setToolDetails] = useState<Array<{tool: string, status: string, message: string}>>([])
+  const [viewingPDF, setViewingPDF] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLTextAreaElement>(null)
 
@@ -235,6 +237,28 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
                             components={{
                               p: ({ children }) => <p className="mb-3 last:mb-0 leading-relaxed whitespace-pre-wrap">{children}</p>,
                               code: ({ children }) => <code className="bg-yellow-100 text-neutral-950 px-1.5 py-0.5 rounded text-xs font-medium">{children}</code>,
+                              a: ({ href, children }) => {
+                                // Handle PDF links specially
+                                if (href && href.startsWith('/api/pdfs/')) {
+                                  // Extract and decode filename
+                                  let filename = href.replace('/api/pdfs/', '')
+                                  // URL decode in case it's encoded
+                                  try {
+                                    filename = decodeURIComponent(filename)
+                                  } catch (e) {
+                                    // If decoding fails, use original
+                                  }
+                                  return (
+                                    <button
+                                      onClick={() => setViewingPDF(filename)}
+                                      className="text-blue-600 hover:text-blue-800 underline font-medium"
+                                    >
+                                      {children}
+                                    </button>
+                                  )
+                                }
+                                return <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">{children}</a>
+                              },
                             }}
                           >
                             {msg.content}
@@ -335,6 +359,15 @@ export default function AIChat({ selectedCourse, onCourseQuery }: AIChatProps) {
           </form>
         </div>
       </div>
+
+      {/* PDF Viewer Modal */}
+      {viewingPDF && (
+        <PDFViewer
+          filename={viewingPDF}
+          courseId={selectedCourse || undefined}
+          onClose={() => setViewingPDF(null)}
+        />
+      )}
     </div>
   )
 }

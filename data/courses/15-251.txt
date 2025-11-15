@@ -8,15 +8,85 @@ None found
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation1.pdf
+Title: Recitation 1
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation2.pdf
+Title: Recitation 2
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation3.pdf
+Title: Recitation 3
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation4.pdf
+Title: Recitation 4
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation5.pdf
+Title: Recitation 5
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation6.pdf
+Title: Recitation 6
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation7.pdf
+Title: Recitation 7
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation8.pdf
+Title: Recitation 8
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation9.pdf
+Title: Recitation 9
+
+URL: https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9dcb00c-11f3-4014-81d0-a98900d57a01
+Title: Introduction to Randomness and Probability Theory Review
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation10.pdf
+Title: Recitation 10
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation11.pdf
+Title: Recitation 11
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation12.pdf
+Title: Recitation 12
+
+URL: https://www.cs.cmu.edu/~15251/recitation/recitation14.pdf
+Title: Recitation 14
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15251/hw/hw1.pdf
+Title: Homework 1
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw2.pdf
+Title: Homework 2
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw3.pdf
+Title: Homework 3
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw4.pdf
+Title: Homework 4
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw5.pdf
+Title: Homework 5
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw6.pdf
+Title: Homework 6
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw7.pdf
+Title: Homework 7
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw8.pdf
+Title: Homework 8
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw9.pdf
+Title: Homework 9
+
+URL: https://www.cs.cmu.edu/~15251/hw/hw10.pdf
+Title: Homework 10
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:06:50.863478
+Last Scraped: 2025-11-15T14:16:12.071673
 Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Recitations Found: 14
+Total Homeworks Found: 10

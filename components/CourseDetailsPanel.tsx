@@ -166,6 +166,126 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
   const [isLoadingDocs, setIsLoadingDocs] = useState(true)
   const [courseDataFromAPI, setCourseDataFromAPI] = useState<any>(null)
   const [viewingPDF, setViewingPDF] = useState<string | null>(null)
+  const [showMaterialPDFs, setShowMaterialPDFs] = useState<string | null>(null)
+
+  // Map material IDs to PDFs for 15-213
+  const getMaterialPDFs = (materialId: string, courseId: string): string[] => {
+    if (courseId !== '213') return []
+    
+    const pdfMap: Record<string, string[]> = {
+      'recitation-1': ['rec01_slides.pdf'],
+      'recitation-2': ['rec02_slides.pdf'],
+      'cache-notes': ['rec02_slides.pdf'], // Cache optimization recitation
+      'memory-notes': ['rec01_slides.pdf'], // Pointers & Memory recitation
+      'assembly-notes': ['rec01_slides.pdf', 'rec03_slides.pdf'],
+      'cache-lab': ['rec02_slides.pdf'], // Cache lab uses cache concepts
+      'malloc-lab': ['rec01_slides.pdf'], // Malloc lab uses pointers/memory
+      'textbook-ch3': [], // Would be textbook PDF if available
+      'textbook-ch6': [], // Would be textbook PDF if available
+    }
+    
+    return pdfMap[materialId] || []
+  }
+
+  // Get all available PDFs for a material (searches course PDFs)
+  const findMatchingPDFs = (materialId: string): string[] => {
+    const pdfs = getMaterialPDFs(materialId, courseId)
+    const allPDFs = courseDataFromAPI?.pdfs || []
+    
+    // Convert allPDFs to array of filenames
+    const allPDFFilenames = allPDFs.map((p: any) => {
+      if (typeof p === 'string') return p
+      return p.filename || p.title || ''
+    }).filter(Boolean)
+    
+    if (pdfs.length === 0) {
+      // If no specific mapping, return all PDFs for the course
+      return allPDFFilenames
+    }
+    
+    // Find matching PDFs by exact filename match
+    const matchingPDFs: string[] = []
+    pdfs.forEach(pdfName => {
+      // Try exact match first
+      const exactMatch = allPDFFilenames.find((filename: string) => 
+        filename.toLowerCase() === pdfName.toLowerCase()
+      )
+      if (exactMatch) {
+        matchingPDFs.push(exactMatch)
+      } else {
+        // Try partial match (filename contains the search term)
+        const partialMatch = allPDFFilenames.find((filename: string) => {
+          const searchTerm = pdfName.toLowerCase().replace('.pdf', '')
+          return filename.toLowerCase().includes(searchTerm)
+        })
+        if (partialMatch && !matchingPDFs.includes(partialMatch)) {
+          matchingPDFs.push(partialMatch)
+        }
+      }
+    })
+    
+    return matchingPDFs.length > 0 ? matchingPDFs : allPDFFilenames
+  }
+
+  const handleMaterialClick = (materialId: string, materialLabel: string) => {
+    const allPDFs = courseDataFromAPI?.pdfs || []
+    
+    // Convert to array of filenames
+    const allPDFFilenames = allPDFs.map((p: any) => {
+      if (typeof p === 'string') return p
+      return p.filename || p.title || ''
+    }).filter(Boolean)
+    
+    console.log(`Material clicked: ${materialId} (${materialLabel})`)
+    console.log(`All available PDFs:`, allPDFFilenames)
+    
+    // Get expected PDFs for this material
+    const expectedPDFs = getMaterialPDFs(materialId, courseId)
+    console.log(`Expected PDFs for ${materialId}:`, expectedPDFs)
+    
+    // Find matching PDFs
+    let pdfToShow: string | null = null
+    
+    if (expectedPDFs.length > 0) {
+      // Try to find exact matches first
+      for (const expectedPDF of expectedPDFs) {
+        const match = allPDFFilenames.find((filename: string) => 
+          filename.toLowerCase() === expectedPDF.toLowerCase()
+        )
+        if (match) {
+          pdfToShow = match
+          break
+        }
+      }
+      
+      // If no exact match, try partial match
+      if (!pdfToShow) {
+        for (const expectedPDF of expectedPDFs) {
+          const searchTerm = expectedPDF.toLowerCase().replace('.pdf', '')
+          const match = allPDFFilenames.find((filename: string) => 
+            filename.toLowerCase().includes(searchTerm)
+          )
+          if (match) {
+            pdfToShow = match
+            break
+          }
+        }
+      }
+    }
+    
+    // Fallback: show first available PDF
+    if (!pdfToShow && allPDFFilenames.length > 0) {
+      pdfToShow = allPDFFilenames[0]
+    }
+    
+    if (pdfToShow) {
+      console.log(`Opening PDF: ${pdfToShow}`)
+      setViewingPDF(pdfToShow)
+      setShowMaterialPDFs(materialId)
+    } else {
+      console.warn(`No PDFs available for ${materialId}`)
+    }
+  }
 
   useEffect(() => {
     loadDocuments()
@@ -175,6 +295,8 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
   const loadCourseData = async () => {
     try {
       const data = await getCourse(courseId)
+      console.log('Course data loaded:', data)
+      console.log('PDFs for course:', data?.pdfs)
       setCourseDataFromAPI(data)
     } catch (error) {
       console.error('Error loading course data:', error)
@@ -282,19 +404,26 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
               Textbooks & PDFs
             </p>
             <div className="space-y-1.5">
-              {courseDataFromAPI.pdfs.map((pdf: string, idx: number) => (
-                <button
-                  key={idx}
-                  onClick={() => setViewingPDF(pdf)}
-                  className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
-                >
-                  <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                  <span className="flex-1">{pdf}</span>
-                  <span className="text-xs text-neutral-400">View</span>
-                </button>
-              ))}
+              {courseDataFromAPI.pdfs.map((pdf: any, idx: number) => {
+                // Handle both string and object formats
+                const pdfFilename = typeof pdf === 'string' ? pdf : pdf.filename || pdf.title || pdf
+                const pdfTitle = typeof pdf === 'string' ? pdf : pdf.title || pdf.filename || pdf
+                const pdfPages = typeof pdf === 'object' && pdf.pages ? ` (${pdf.pages} pages)` : ''
+                
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => setViewingPDF(pdfFilename)}
+                    className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <span className="flex-1">{pdfTitle}{pdfPages}</span>
+                    <span className="text-xs text-neutral-400">View</span>
+                  </button>
+                )
+              })}
             </div>
           </div>
         )}
@@ -339,20 +468,26 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
                   {/* Mock items */}
                   {Array.isArray(mockItems) && mockItems.length > 0 && (
                     <div className="space-y-1.5">
-                      {mockItems.map((material) => (
+                      {mockItems.map((material) => {
+                        const pdfs = getMaterialPDFs(material.id, courseId)
+                        const hasPDFs = pdfs.length > 0 || (courseDataFromAPI?.pdfs && courseDataFromAPI.pdfs.length > 0)
+                        
+                        return (
                           <button
                             key={material.id}
                             className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
-                            onClick={() => {
-                              console.log('Open material:', material.id)
-                            }}
+                            onClick={() => handleMaterialClick(material.id, material.label)}
                           >
                             <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                             </svg>
                             <span className="flex-1">{material.label}</span>
+                            {hasPDFs && (
+                              <span className="text-xs text-neutral-400">View PDF</span>
+                            )}
                           </button>
-                      ))}
+                        )
+                      })}
                     </div>
                   )}
                   
@@ -412,20 +547,26 @@ export default function CourseDetailsPanel({ courseId, onClose }: CourseDetailsP
                     </div>
                     {Array.isArray(items) && items.length > 0 && (
                       <div className="space-y-1.5">
-                        {items.map((material) => (
-                          <button
-                            key={material.id}
-                            className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
-                            onClick={() => {
-                              console.log('Open material:', material.id)
-                            }}
-                          >
-                            <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            <span className="flex-1">{material.label}</span>
-                          </button>
-                        ))}
+                        {items.map((material) => {
+                          const pdfs = getMaterialPDFs(material.id, courseId)
+                          const hasPDFs = pdfs.length > 0 || (courseDataFromAPI?.pdfs && courseDataFromAPI.pdfs.length > 0)
+                          
+                          return (
+                            <button
+                              key={material.id}
+                              className="w-full text-left px-3 py-2 text-sm font-light text-neutral-700 bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 transition-colors flex items-center gap-2"
+                              onClick={() => handleMaterialClick(material.id, material.label)}
+                            >
+                              <svg className="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                              </svg>
+                              <span className="flex-1">{material.label}</span>
+                              {hasPDFs && (
+                                <span className="text-xs text-neutral-400">View PDF</span>
+                              )}
+                            </button>
+                          )
+                        })}
                       </div>
                     )}
                   </div>

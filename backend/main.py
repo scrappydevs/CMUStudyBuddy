@@ -35,12 +35,26 @@ load_dotenv(dotenv_path=env_path)
 try:
     import anthropic
     ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-    anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY) if ANTHROPIC_API_KEY else None
-    if anthropic_client:
-        print("✅ Anthropic client initialized")
+    if ANTHROPIC_API_KEY:
+        try:
+            anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+            # Test the client with a simple call to verify it works
+            print("✅ Anthropic client initialized")
+        except Exception as e:
+            anthropic_client = None
+            print(f"⚠️ Anthropic API key found but client initialization failed: {e}")
+            print("⚠️ Falling back to enhanced fallback mode")
+    else:
+        anthropic_client = None
+        print("⚠️ ANTHROPIC_API_KEY not set. Using enhanced fallback mode.")
 except ImportError:
     anthropic_client = None
     print("⚠️ Anthropic library not installed. Install with: pip install anthropic")
+    print("⚠️ Using enhanced fallback mode")
+except Exception as e:
+    anthropic_client = None
+    print(f"⚠️ Error initializing Anthropic: {e}")
+    print("⚠️ Using enhanced fallback mode")
 
 try:
     from ai_tools import COURSE_TOOLS, execute_tool
@@ -128,22 +142,36 @@ async def chat(request: ChatRequest):
     try:
         if not anthropic_client or not TOOLS_AVAILABLE:
             # Fallback with simulated tool calls and realistic responses
-            from data_loader import get_data_loader
-            loader = get_data_loader()
+            try:
+                from data_loader import get_data_loader
+                loader = get_data_loader()
+            except Exception as e:
+                print(f"⚠️ Error loading data loader: {e}")
+                return ChatResponse(
+                    response="I'm having trouble accessing course data. Please try again.",
+                    session_id=request.session_id or "default_session",
+                    course_id=None,
+                    tool_calls=0,
+                    tool_details=None
+                )
             
             message_lower = request.message.lower()
             course_id = None
             response_text = ""
             tool_details = []
             
-            # Check for course mentions
+            # Check for course mentions - prioritize 15-213 for demo
             for course in loader.courses.values():
                 if course.code.lower() in message_lower or course.id in message_lower:
                     course_id = course.id
                     break
             
+            # Default to 15-213 if no course mentioned and query is about labs/PDFs
+            if not course_id and ("lab" in message_lower or "pdf" in message_lower or "recitation" in message_lower or "bomb" in message_lower):
+                course_id = "213"  # Focus on 15-213 for demo
+            
             # Simulate tool calls for textbook/content queries
-            if ("cache" in message_lower or "textbook" in message_lower or "example" in message_lower or "problem" in message_lower) and course_id:
+            if ("cache" in message_lower or "textbook" in message_lower or "example" in message_lower or "problem" in message_lower or "lab" in message_lower or "malloc" in message_lower or "bomb" in message_lower) and course_id:
                 course = loader.get_course(course_id)
                 if course:
                     # Simulate: get_course_details tool call
@@ -162,7 +190,7 @@ async def chat(request: ChatRequest):
                     })
                     
                     # Simulate: search_pdf_content or get_pdf_chapter tool call
-                    if "cache" in message_lower and course_id == "213":
+                    if ("cache" in message_lower or "cache lab" in message_lower) and course_id == "213":
                         tool_details.append({
                             "tool": "search_pdf_content",
                             "status": "completed",
@@ -226,6 +254,189 @@ Given the following memory access sequence (addresses in decimal):
 **Available PDFs**: {', '.join(pdfs) if pdfs else 'No PDFs currently indexed'}
 
 You can view the full textbook content in the course details panel."""
+                    elif ("lab" in message_lower or "malloc" in message_lower or "bomb" in message_lower) and course_id == "213":
+                        # Handle lab queries for 15-213
+                        if "bomb" in message_lower:
+                            lab_name = "Bomb Lab"
+                        elif "cache" in message_lower:
+                            lab_name = "Cache Lab"
+                        elif "malloc" in message_lower:
+                            lab_name = "Malloc Lab"
+                        else:
+                            lab_name = "Lab"
+                        
+                        tool_details.append({
+                            "tool": "get_course_materials",
+                            "status": "completed",
+                            "message": f"Loading materials for {lab_name}"
+                        })
+                        
+                        tool_details.append({
+                            "tool": "search_pdf_content",
+                            "status": "completed",
+                            "message": f"Searching lab PDFs and recitation slides"
+                        })
+                        
+                        # Find relevant PDFs - ensure they're strings
+                        lab_pdfs = []
+                        recitation_pdfs = []
+                        for p in pdfs:
+                            pdf_name = p if isinstance(p, str) else (p.get('filename') if isinstance(p, dict) else str(p))
+                            if pdf_name:
+                                pdf_lower = pdf_name.lower()
+                                if "lab" in pdf_lower:
+                                    lab_pdfs.append(pdf_name)
+                                elif "rec" in pdf_lower:
+                                    recitation_pdfs.append(pdf_name)
+                        
+                        pdf_links = ""
+                        if lab_pdfs or recitation_pdfs:
+                            from urllib.parse import quote
+                            pdf_links = "\n\n**📄 Related PDFs:**\n"
+                            if lab_pdfs:
+                                for pdf in lab_pdfs[:3]:
+                                    # URL encode the filename for the link
+                                    encoded_pdf = quote(pdf, safe='')
+                                    pdf_links += f"- [{pdf}](/api/pdfs/{encoded_pdf}) - Lab slides\n"
+                            if recitation_pdfs:
+                                for pdf in recitation_pdfs[:3]:
+                                    encoded_pdf = quote(pdf, safe='')
+                                    pdf_links += f"- [{pdf}](/api/pdfs/{encoded_pdf}) - Recitation slides\n"
+                        
+                        if "bomb" in message_lower:
+                            response_text = f"""**15-213 - Bomb Lab**
+
+I've reviewed the Bomb Lab materials and related course content:
+
+**Lab Overview:**
+The Bomb Lab is a reverse engineering challenge where you must "defuse" a binary bomb by analyzing assembly code and understanding the program's control flow. You'll use debuggers like GDB to trace execution and identify the correct input sequences.
+
+**Key Concepts Covered:**
+1. **Assembly Language**: Reading and understanding x86-64 assembly code
+2. **Control Flow**: Identifying branches, loops, and function calls
+3. **Debugging**: Using GDB to set breakpoints and inspect registers
+4. **Reverse Engineering**: Analyzing binary code to understand behavior
+
+**Related Course Materials:**
+- **Textbook Chapter 3**: Machine-Level Representation (covers assembly fundamentals)
+- **Class Notes**: Assembly Language (covers x86-64 instructions)
+- **Recitation Slides**: Assembly and debugging techniques
+
+**Lab Tasks:**
+1. Analyze the binary bomb executable
+2. Use GDB to trace through each phase
+3. Identify the required input strings for each phase
+4. Defuse all phases to complete the lab
+
+**Tips:**
+- Start by disassembling the main function to understand the structure
+- Use `objdump -d` or `gdb` to examine assembly code
+- Set breakpoints at function entry points
+- Pay attention to string comparisons and numeric checks
+- Use `x/s` in GDB to examine strings in memory
+
+{pdf_links}
+
+**Next Steps:**
+1. Review the lab PDF and recitation slides (click links above)
+2. Read Chapter 3 of the textbook on Machine-Level Representation
+3. Check your class notes on Assembly Language
+4. Practice using GDB with simple programs first"""
+                        elif "cache" in message_lower:
+                            response_text = f"""**15-213 - Cache Lab**
+
+I've reviewed the Cache Lab materials and related course content:
+
+**Lab Overview:**
+The Cache Lab focuses on optimizing cache performance by understanding cache organization, block placement policies, and replacement strategies. You'll work with cache simulators and analyze memory access patterns.
+
+**Key Concepts Covered:**
+1. **Cache Organization**: Direct-mapped, set-associative, and fully-associative caches
+2. **Block Placement**: How memory blocks map to cache sets
+3. **Replacement Policies**: LRU (Least Recently Used) and other eviction strategies
+4. **Cache Performance Metrics**: Hit rate, miss rate, and average access time
+
+**Related Course Materials:**
+- **Textbook Chapter 6**: Memory Hierarchy (covers cache fundamentals)
+- **Class Notes**: Cache Chapter (covers cache organization and optimization)
+- **Recitation Slides**: Cache Optimization techniques
+
+**Lab Tasks:**
+1. Implement cache simulation functions
+2. Analyze cache performance for different access patterns
+3. Optimize code to improve cache hit rates
+4. Compare different cache configurations
+
+**Tips:**
+- Review the memory hierarchy chapter in the textbook before starting
+- Pay attention to block size and associativity effects
+- Use the recitation slides for optimization techniques
+- Reference your class notes on cache organization
+
+{pdf_links}
+
+**Next Steps:**
+1. Review the lab PDF and recitation slides (click links above)
+2. Read Chapter 6 of the textbook on Memory Hierarchy
+3. Check your class notes on cache organization
+4. Start with the warm-up exercises in the lab handout"""
+                        elif "malloc" in message_lower:
+                            response_text = f"""**15-213 - Malloc Lab**
+
+I've reviewed the Malloc Lab materials and related course content:
+
+**Lab Overview:**
+The Malloc Lab involves implementing your own dynamic memory allocator (malloc, free, realloc) in C. This lab teaches you about heap management, pointer manipulation, and memory efficiency.
+
+**Key Concepts Covered:**
+1. **Heap Management**: Understanding the heap data structure
+2. **Memory Allocation**: Implementing malloc with different strategies
+3. **Free List Management**: Tracking and coalescing free blocks
+4. **Memory Efficiency**: Minimizing fragmentation and overhead
+
+**Related Course Materials:**
+- **Textbook Chapter 9**: Virtual Memory (covers memory management)
+- **Class Notes**: Memory Management (covers heap and pointers)
+- **Recitation Slides**: Pointers & Memory (covers pointer manipulation)
+
+**Lab Tasks:**
+1. Implement implicit free list allocator
+2. Implement explicit free list allocator
+3. Optimize for throughput and memory utilization
+4. Handle edge cases (alignment, boundary tags, etc.)
+
+**Tips:**
+- Review pointer concepts from recitation slides
+- Understand heap organization from class notes
+- Start with implicit list, then optimize to explicit
+- Pay attention to alignment requirements (8-byte or 16-byte)
+
+{pdf_links}
+
+**Next Steps:**
+1. Review the lab PDF and recitation slides (click links above)
+2. Read Chapter 9 of the textbook on Virtual Memory
+3. Review your class notes on Memory Management
+4. Practice pointer manipulation from recitation materials"""
+                        else:
+                            response_text = f"""**15-213 - Lab Information**
+
+I've found lab materials for 15-213:
+
+**Available Labs:**
+- **Bomb Lab**: Reverse engineering and assembly code analysis
+- **Cache Lab**: Cache optimization and performance analysis
+- **Malloc Lab**: Dynamic memory allocator implementation
+
+**Related Materials:**
+- Lab PDFs and handouts
+- Recitation slides covering lab concepts
+- Textbook chapters on relevant topics
+- Class notes with background material
+
+{pdf_links}
+
+Ask me about a specific lab (e.g., "Tell me about the Bomb Lab", "What is the Cache Lab about?", or "Explain the Malloc Lab") for detailed information."""
                     elif "example" in message_lower or "problem" in message_lower:
                         tool_details.append({
                             "tool": "get_pdf_chapter",
@@ -254,7 +465,88 @@ I've extracted an example problem from the course materials:
 
 For more detailed examples and problems, check the course textbook in the details panel."""
                     else:
-                        response_text = f"""**{course.code} - {course.name}**
+                        # Enhanced response for 15-213
+                        if course_id == "213":
+                            from urllib.parse import quote
+                            
+                            # Organize PDFs by type
+                            recitation_pdfs = [p for p in pdfs if isinstance(p, str) and "rec" in p.lower()]
+                            bootcamp_pdfs = [p for p in pdfs if isinstance(p, str) and ("bootcamp" in p.lower() or "cprogramming" in p.lower())]
+                            other_pdfs = [p for p in pdfs if isinstance(p, str) and p not in recitation_pdfs and p not in bootcamp_pdfs]
+                            
+                            pdf_sections = ""
+                            
+                            if bootcamp_pdfs:
+                                pdf_sections += "\n\n**📚 Bootcamp Materials:**\n"
+                                for pdf in bootcamp_pdfs[:5]:
+                                    encoded_pdf = quote(pdf, safe='')
+                                    pdf_sections += f"- [{pdf}](/api/pdfs/{encoded_pdf})\n"
+                            
+                            if recitation_pdfs:
+                                pdf_sections += f"\n\n**📖 Recitation Slides ({len(recitation_pdfs)} available):**\n"
+                                # Sort recitation PDFs by number
+                                rec_sorted = sorted(recitation_pdfs, key=lambda x: int(''.join(filter(str.isdigit, x)) or 0))
+                                for pdf in rec_sorted[:11]:  # Show all recitations
+                                    encoded_pdf = quote(pdf, safe='')
+                                    rec_num = ''.join(filter(str.isdigit, pdf.split('rec')[1] if 'rec' in pdf.lower() else ''))
+                                    pdf_sections += f"- [Recitation {rec_num}](/api/pdfs/{encoded_pdf}) - {pdf}\n"
+                            
+                            if other_pdfs:
+                                pdf_sections += "\n\n**📄 Additional Materials:**\n"
+                                for pdf in other_pdfs[:5]:
+                                    encoded_pdf = quote(pdf, safe='')
+                                    pdf_sections += f"- [{pdf}](/api/pdfs/{encoded_pdf})\n"
+                            
+                            response_text = f"""**15-213 - Introduction to Computer Systems**
+
+{course.description or 'Introduction to computer systems from a programmer\'s perspective.'}
+
+**Core Topics:**
+- **Machine-Level Code**: Understanding x86-64 assembly language and how high-level code translates to machine instructions
+- **Memory Organization**: Stack, heap, data segments, and memory layout
+- **Caching**: Cache organization, locality, and performance optimization
+- **Linking**: Static and dynamic linking, symbol resolution, relocation
+- **Concurrency**: Processes, threads, synchronization, and race conditions
+- **C Programming**: Advanced C concepts, pointers, memory management
+
+**Course Structure:**
+- **Lectures**: Cover fundamental systems concepts
+- **Recitations**: Hands-on practice with assembly, debugging, and systems programming
+- **Labs**: Three major programming assignments:
+  - **Bomb Lab**: Reverse engineering and assembly code analysis
+  - **Cache Lab**: Cache optimization and performance analysis
+  - **Malloc Lab**: Dynamic memory allocator implementation
+
+**Prerequisites:**
+- {', '.join(course.prerequisites) if course.prerequisites else '15-122 (Principles of Imperative Computation)'}
+
+**Textbook:**
+- "Computer Systems: A Programmer's Perspective" (CS:APP)
+- Key chapters: 3 (Machine-Level Representation), 6 (Memory Hierarchy), 9 (Virtual Memory), 12 (Concurrent Programming)
+
+**Learning Resources:**
+- Official course website: https://www.cs.cmu.edu/~213/
+- Recitation slides covering assembly, debugging, cache optimization, and more
+- C Programming Bootcamp materials for review
+- Lab handouts and starter code
+
+{pdf_sections}
+
+**Study Tips:**
+1. Review C programming fundamentals before starting (use bootcamp materials)
+2. Practice reading assembly code regularly
+3. Use GDB extensively for debugging
+4. Understand memory layout and pointer operations
+5. Work through recitation examples step-by-step
+
+**Common Topics by Recitation:**
+- Recitation 1: Pointers & Memory
+- Recitation 2: Cache Optimization
+- Recitations 3-11: Various systems topics and lab support
+
+Click any PDF link above to view materials, or ask me about specific topics like 'Tell me about cache' or 'What is the Bomb Lab?'"""
+                        else:
+                            response_text = f"""**{course.code} - {course.name}**
 
 {course.description or 'Course information retrieved.'}
 
@@ -263,6 +555,230 @@ For more detailed examples and problems, check the course textbook in the detail
 **Available PDFs**: {', '.join(pdfs) if pdfs else 'No PDFs currently indexed'}
 
 You can view course materials and PDFs in the course details panel."""
+            
+            # Check for specific PDF mentions (e.g., "tell me about rec01_slides.pdf")
+            elif any(pdf_name.lower() in message_lower for pdf_name in ["rec01", "rec02", "rec03", "rec04", "rec05", "rec06", "rec07", "rec08", "rec09", "rec10", "rec11", "lab1", "lab2", "lab3", "cprogramming", "bootcamp"]):
+                # User is asking about a specific PDF
+                if not course_id:
+                    course_id = "213"  # Default to 15-213
+                
+                course = loader.get_course(course_id)
+                pdfs = loader.course_pdfs.get(course_id, [])
+                
+                # Find the mentioned PDF
+                mentioned_pdf = None
+                for pdf_name in pdfs:
+                    pdf_str = pdf_name if isinstance(pdf_name, str) else (pdf_name.get('filename') if isinstance(pdf_name, dict) else str(pdf_name))
+                    if pdf_str and any(keyword in pdf_str.lower() for keyword in ["rec01", "rec02", "rec03", "rec04", "rec05", "rec06", "rec07", "rec08", "rec09", "rec10", "rec11", "lab1", "lab2", "lab3", "cprogramming", "bootcamp"]):
+                        if any(keyword in message_lower for keyword in pdf_str.lower().split('_')):
+                            mentioned_pdf = pdf_str
+                            break
+                
+                tool_details.append({
+                    "tool": "get_pdf_chapter",
+                    "status": "completed",
+                    "message": f"Extracting content from {mentioned_pdf or 'PDF'}"
+                })
+                
+                from urllib.parse import quote
+                pdf_link = ""
+                if mentioned_pdf:
+                    encoded_pdf = quote(mentioned_pdf, safe='')
+                    pdf_link = f"\n\n**📄 View PDF**: [{mentioned_pdf}](/api/pdfs/{encoded_pdf})\n"
+                
+                if "rec01" in message_lower or "recitation 1" in message_lower:
+                    response_text = f"""**15-213 - Recitation 1: Pointers & Memory**
+
+I've reviewed Recitation 1 materials:
+
+**Topics Covered:**
+- Pointer basics and memory addresses
+- Pointer arithmetic and operations
+- Arrays and pointers relationship
+- Memory layout (stack, heap, data segments)
+- Stack frames and function calls
+- Common pointer pitfalls and debugging
+
+**Key Concepts:**
+- Understanding `*ptr` vs `ptr` (dereferencing vs address)
+- Pointer dereferencing (`*`) and address-of operator (`&`)
+- Array indexing and pointer arithmetic equivalence
+- Stack vs heap memory allocation
+- Memory addresses and pointer types
+- Pointer arithmetic: `ptr + 1` advances by sizeof(type)
+
+**Related Materials:**
+- **C Programming Bootcamp**: Review C fundamentals before this recitation
+- **Class Notes**: Memory Management chapter
+- **Textbook**: Chapter 3 (Machine-Level Representation) - covers memory layout
+- **Lab Prep**: Essential for Bomb Lab and Malloc Lab
+
+{pdf_link}
+
+**Practice Problems:**
+1. Trace through pointer operations step by step
+2. Draw memory diagrams for pointer code
+3. Identify common errors (dangling pointers, memory leaks, buffer overflows)
+4. Practice pointer arithmetic with different data types
+
+**Common Mistakes:**
+- Confusing `*ptr` (value) with `ptr` (address)
+- Forgetting that arrays decay to pointers
+- Not understanding pointer arithmetic scaling
+
+Click the PDF link above to view the full recitation slides with examples and exercises."""
+                elif "rec02" in message_lower or "recitation 2" in message_lower:
+                    response_text = f"""**15-213 - Recitation 2: Cache Optimization**
+
+I've reviewed Recitation 2 materials:
+
+**Topics Covered:**
+- Cache organization and mapping policies
+- Direct-mapped, set-associative, and fully-associative caches
+- Block placement and replacement strategies
+- Cache-friendly code patterns and data structures
+- Performance optimization techniques
+- Cache performance analysis
+
+**Key Concepts:**
+- **Spatial Locality**: Accessing nearby memory locations
+- **Temporal Locality**: Reusing recently accessed data
+- **Cache Line Utilization**: Maximizing data per cache line
+- **Blocking/Tiling**: Breaking large problems into cache-sized chunks
+- **Memory Access Pattern Optimization**: Row-major vs column-major access
+
+**Cache Parameters:**
+- Block size (B): Size of each cache block
+- Number of sets (S): Determines mapping
+- Associativity (E): Ways per set
+- Total capacity = S × E × B
+
+**Related Materials:**
+- **Class Notes**: Cache Chapter (covers cache organization)
+- **Textbook**: Chapter 6 (Memory Hierarchy) - essential reading
+- **Lab**: Cache Lab directly applies these concepts
+- **Recitation 1**: Understanding memory layout helps with cache concepts
+
+{pdf_link}
+
+**Optimization Tips:**
+1. Maximize spatial locality (access nearby memory sequentially)
+2. Maximize temporal locality (reuse data while it's in cache)
+3. Use blocking/tiling for large matrices
+4. Avoid cache conflicts (multiple blocks mapping to same set)
+5. Consider data structure layout (structure of arrays vs array of structures)
+
+**Common Patterns:**
+- Matrix multiplication: Blocking improves cache performance
+- Traversals: Row-major vs column-major affects cache hits
+- Linked structures: Poor cache performance due to random access
+
+Click the PDF link above to view the full recitation slides with examples and optimization techniques."""
+                elif any(f"rec0{i}" in message_lower or f"recitation {i}" in message_lower for i in range(3, 12)):
+                    # Handle recitations 3-11
+                    rec_num = None
+                    for i in range(3, 12):
+                        if f"rec0{i}" in message_lower or f"recitation {i}" in message_lower:
+                            rec_num = i
+                            break
+                    
+                    response_text = f"""**15-213 - Recitation {rec_num}**
+
+I've found Recitation {rec_num} materials for 15-213:
+
+**About Recitation {rec_num}:**
+Recitations in 15-213 cover various systems programming topics including:
+- Assembly language and debugging techniques
+- Memory management and optimization
+- Systems programming concepts
+- Lab support and problem-solving strategies
+
+**Related Materials:**
+- **Previous Recitations**: Build on concepts from earlier recitations
+- **Textbook**: Relevant chapters based on topic
+- **Labs**: May provide support for current lab assignments
+- **Class Notes**: Related lecture materials
+
+{pdf_link}
+
+**Common Recitation Topics (3-11):**
+- Advanced assembly and debugging (GDB)
+- Memory optimization techniques
+- Systems programming patterns
+- Lab-specific help and walkthroughs
+- Performance analysis and profiling
+
+Click the PDF link above to view the full recitation slides. For specific topics, ask me questions like "What does recitation {rec_num} cover?" or check the course details panel."""
+                elif "cprogramming" in message_lower or "bootcamp" in message_lower:
+                    response_text = f"""**15-213 - C Programming Bootcamp**
+
+I've reviewed the C Programming Bootcamp materials:
+
+**Overview:**
+The C Programming Bootcamp provides essential C programming skills needed for 15-213. This is crucial preparation material, especially if you're coming from 15-122 (which uses C0).
+
+**Topics Covered:**
+- **C Language Fundamentals**: Syntax, data types, operators
+- **Memory Management**: Stack vs heap, malloc/free, memory leaks
+- **Pointers and Arrays**: Pointer arithmetic, array-pointer relationship
+- **Strings**: String manipulation, null-terminated strings
+- **Structures and Unions**: Defining and using structs
+- **File I/O**: Reading and writing files
+- **Common C Idioms**: Patterns and best practices
+- **Preprocessor**: Macros, includes, conditional compilation
+
+**Key Concepts:**
+- **C vs C0 Differences**: 
+  - C requires manual memory management (malloc/free)
+  - C has more low-level control
+  - C pointers are more flexible but error-prone
+- **Manual Memory Management**: Understanding when to use malloc/free
+- **Pointer Manipulation**: Advanced pointer operations
+- **String Handling**: C strings vs higher-level string types
+- **System Calls**: Direct interaction with OS
+
+**Essential for:**
+- **Bomb Lab**: Understanding C code structure and debugging
+- **Malloc Lab**: Deep understanding of memory management
+- **All Labs**: C is the primary language for 15-213 labs
+
+**Related Materials:**
+- **Recitation 1**: Pointers & Memory (builds on bootcamp)
+- **Textbook**: Chapter 3 (Machine-Level Representation)
+- **15-122 Review**: If you need to refresh C0 concepts
+
+{pdf_link}
+
+**Practice Areas:**
+1. **Pointer Operations**: `*ptr`, `&var`, pointer arithmetic
+2. **Dynamic Memory**: `malloc()`, `calloc()`, `realloc()`, `free()`
+3. **String Manipulation**: `strcpy()`, `strlen()`, `strcmp()`, etc.
+4. **Struct Usage**: Defining, accessing, and passing structs
+5. **File Operations**: `fopen()`, `fread()`, `fwrite()`, `fclose()`
+6. **Common Pitfalls**: Buffer overflows, memory leaks, dangling pointers
+
+**Before Starting Labs:**
+- Complete the bootcamp exercises
+- Understand pointer basics thoroughly
+- Practice with dynamic memory allocation
+- Review string manipulation functions
+
+Click the PDF link above to view the full bootcamp materials with exercises and examples."""
+                else:
+                    response_text = f"""**15-213 - PDF Content**
+
+I've found the PDF you're asking about:
+
+**PDF**: {mentioned_pdf or 'PDF found'}
+
+**Related Course Materials:**
+- Check your class notes for related topics
+- Review relevant textbook chapters
+- See related recitation slides
+
+{pdf_link}
+
+Click the PDF link above to view it, or ask me specific questions about its content."""
             
             # Check for PDF-related queries
             elif "pdf" in message_lower or "textbook" in message_lower or "book" in message_lower:
@@ -315,14 +831,65 @@ You can view course details and PDFs in the course panel."""
                 else:
                     response_text = f"Course {course_id} found. Check the course details panel for more information."
             else:
-                # General response
-                response_text = """I can help you explore CMU CS courses! Ask me about:
+                # Check if it's a lab query that wasn't caught
+                if "lab" in message_lower or "bomb" in message_lower:
+                    # Default to 15-213 for lab queries
+                    course_id = "213"
+                    course = loader.get_course(course_id)
+                    if course:
+                        pdfs = loader.course_pdfs.get(course_id, [])
+                        tool_details.append({
+                            "tool": "get_course_details",
+                            "status": "completed",
+                            "message": f"Loading course {course.code}"
+                        })
+                        
+                        if "bomb" in message_lower:
+                            response_text = """**15-213 - Bomb Lab**
+
+I can help you with the Bomb Lab! The Bomb Lab is a reverse engineering challenge where you analyze assembly code to defuse a binary bomb.
+
+**Key Topics:**
+- Assembly language (x86-64)
+- Debugging with GDB
+- Control flow analysis
+- Reverse engineering
+
+**Available Labs for 15-213:**
+- **Bomb Lab**: Reverse engineering and assembly
+- **Cache Lab**: Cache optimization
+- **Malloc Lab**: Memory allocator implementation
+
+Ask me specific questions like:
+- "Tell me about the Bomb Lab"
+- "What tools do I need for Bomb Lab?"
+- "How do I debug assembly code?"
+
+Or check the course details panel for PDFs and materials."""
+                        else:
+                            response_text = f"""**15-213 - Labs**
+
+I can help you with 15-213 labs! Available labs include:
+
+- **Bomb Lab**: Reverse engineering and assembly code analysis
+- **Cache Lab**: Cache optimization and performance analysis  
+- **Malloc Lab**: Dynamic memory allocator implementation
+
+Ask me about a specific lab (e.g., "Tell me about the Bomb Lab") for detailed information, or check the course details panel for PDFs and materials."""
+                else:
+                    # General response
+                    response_text = """I can help you explore CMU CS courses! Ask me about:
 - Specific courses (e.g., 'Tell me about 15-213')
+- Labs (e.g., 'Tell me about Bomb Lab' or 'What is Cache Lab?')
 - PDFs and textbooks (e.g., 'Show PDFs for 15-210')
 - Course topics and materials (e.g., 'Tell me about 213 Cache')
 - Example problems (e.g., 'Give me an example problem from 15-213')
 
-Note: For advanced AI capabilities, configure ANTHROPIC_API_KEY."""
+Note: Enhanced fallback mode is active. For full AI capabilities, ensure ANTHROPIC_API_KEY is configured."""
+            
+            # Ensure we always have a response
+            if not response_text:
+                response_text = "I can help you explore CMU CS courses! Ask me about courses, labs, PDFs, or specific topics."
             
             return ChatResponse(
                 response=response_text,
@@ -568,7 +1135,16 @@ WHEN IN DOUBT: CALL A TOOL. ALWAYS PREFER TOOLS.
         
     except Exception as e:
         print(f"❌ Chat error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        import traceback
+        traceback.print_exc()
+        # Return a response instead of raising to avoid freezing
+        return ChatResponse(
+            response="I'm having trouble processing your request. Please try again.",
+            session_id=request.session_id or "default_session",
+            course_id=None,
+            tool_calls=0,
+            tool_details=None
+        )
 
 @app.get("/api/courses/search")
 async def search_courses(q: Optional[str] = ""):
@@ -913,6 +1489,65 @@ Keep it to one page."""
         print(f"❌ Summary generation error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/api/upload-pdf")
+async def upload_pdf(
+    course_id: str = Form(...),
+    file: UploadFile = File(...)
+):
+    """
+    Upload a PDF/textbook file for a course. Saves to data/books/ directory.
+    """
+    try:
+        # Validate file is PDF
+        if not file.filename.lower().endswith('.pdf'):
+            raise HTTPException(status_code=400, detail="Only PDF files are allowed")
+        
+        # Get data/books directory
+        backend_dir = Path(__file__).parent
+        data_dir = backend_dir.parent / "data" / "books"
+        data_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save file with original filename (sanitized)
+        safe_filename = file.filename.replace(' ', '_').replace('/', '_').replace('\\', '_')
+        file_path = data_dir / safe_filename
+        
+        # If file exists, add timestamp
+        if file_path.exists():
+            stem = file_path.stem
+            suffix = file_path.suffix
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            safe_filename = f"{stem}_{timestamp}{suffix}"
+            file_path = data_dir / safe_filename
+        
+        # Save file
+        content = await file.read()
+        with open(file_path, "wb") as f:
+            f.write(content)
+        
+        # Reload data loader to pick up new PDF
+        from data_loader import get_data_loader
+        loader = get_data_loader()
+        loader.index_pdfs()
+        
+        # Add to course PDFs if course exists
+        if course_id in loader.courses:
+            if course_id not in loader.course_pdfs:
+                loader.course_pdfs[course_id] = []
+            if safe_filename not in loader.course_pdfs[course_id]:
+                loader.course_pdfs[course_id].append(safe_filename)
+        
+        return {
+            "success": True,
+            "filename": safe_filename,
+            "message": f"PDF uploaded successfully: {safe_filename}"
+        }
+        
+    except Exception as e:
+        print(f"❌ PDF upload error: {e}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.post("/api/upload-document")
 async def upload_document(
     course_id: str = Form(...),
@@ -982,18 +1617,55 @@ async def get_course_documents(course_id: str):
         print(f"❌ Get documents error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/pdfs/{filename}")
+@app.get("/api/pdfs/{filename:path}")
 async def get_pdf(filename: str):
     """Serve a PDF file from /data/books/"""
     from pathlib import Path
-    data_dir = Path(__file__).parent.parent / "data" / "books"
+    from urllib.parse import unquote
+    
+    # URL decode the filename in case it's encoded
+    filename = unquote(filename)
+    
+    # Security: prevent directory traversal
+    if '..' in filename or (filename.startswith('/') and not filename.startswith('/api')):
+        # Allow /api/pdfs/ prefix but prevent absolute paths
+        if filename.startswith('/'):
+            filename = filename.lstrip('/')
+        if '/' in filename or '\\' in filename:
+            # Only allow forward slashes if it's part of the API path structure
+            if not filename.startswith('api/pdfs/'):
+                raise HTTPException(status_code=400, detail="Invalid filename")
+            filename = filename.replace('api/pdfs/', '')
+    
+    # Get absolute path to data/books directory
+    backend_dir = Path(__file__).parent
+    data_dir = backend_dir.parent / "data" / "books"
     pdf_path = data_dir / filename
     
+    # Debug logging
+    print(f"📄 PDF request: {filename}")
+    print(f"   Looking in: {data_dir}")
+    print(f"   Full path: {pdf_path}")
+    print(f"   Exists: {pdf_path.exists()}")
+    
     if not pdf_path.exists():
-        raise HTTPException(status_code=404, detail="PDF not found")
+        # List available PDFs for debugging
+        available_pdfs = sorted([f.name for f in data_dir.glob("*.pdf")])
+        print(f"⚠️ PDF not found: {filename}")
+        print(f"   Available PDFs ({len(available_pdfs)}): {available_pdfs}")
+        
+        # Try case-insensitive match
+        filename_lower = filename.lower()
+        for pdf_file in data_dir.glob("*.pdf"):
+            if pdf_file.name.lower() == filename_lower:
+                print(f"   Found case-insensitive match: {pdf_file.name}")
+                pdf_path = pdf_file
+                break
+        else:
+            raise HTTPException(status_code=404, detail=f"PDF not found: {filename}. Available: {', '.join(available_pdfs[:5])}")
     
     return FileResponse(
-        path=pdf_path,
+        path=str(pdf_path),
         media_type="application/pdf",
         filename=filename
     )

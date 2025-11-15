@@ -4,7 +4,9 @@ Course URL: https://www.cs.cmu.edu/~16385/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: http://szeliski.org/Book/
+Title: Computer Vision: Algorithms and Applications
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
@@ -12,11 +14,34 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn1.zip
+Title: PA1 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn2.zip
+Title: PA2 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn3.zip
+Title: PA3 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn4.zip
+Title: PA4 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn5.zip
+Title: PA5 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn5.zip
+Title: PA5 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn6.zip
+Title: PA6 out
+
+URL: https://www.cs.cmu.edu/~16385/assignments/assgn7.zip
+Title: PA7 out
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:06:44.472707
-Total Textbooks Found: 0
+Last Scraped: 2025-11-15T14:15:57.122956
+Total Textbooks Found: 1
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 8

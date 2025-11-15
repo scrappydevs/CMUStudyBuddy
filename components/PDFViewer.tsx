@@ -11,7 +11,24 @@ interface PDFViewerProps {
 
 export default function PDFViewer({ filename, courseId, onClose }: PDFViewerProps) {
   const [isLoading, setIsLoading] = useState(true)
-  const pdfUrl = `/api/pdfs/${filename}`
+  const [error, setError] = useState<string | null>(null)
+  
+  // URL encode the filename to handle special characters
+  const encodedFilename = encodeURIComponent(filename)
+  const pdfUrl = `/api/pdfs/${encodedFilename}`
+
+  console.log('PDFViewer rendering:', { filename, pdfUrl })
+
+  const handleIframeLoad = () => {
+    setIsLoading(false)
+    setError(null)
+  }
+
+  const handleIframeError = () => {
+    setIsLoading(false)
+    setError(`Failed to load PDF: ${filename}`)
+    console.error('PDF iframe error for:', pdfUrl)
+  }
 
   return (
     <AnimatePresence>
@@ -44,8 +61,8 @@ export default function PDFViewer({ filename, courseId, onClose }: PDFViewerProp
 
           {/* PDF Content */}
           <div className="flex-1 overflow-hidden relative">
-            {isLoading && (
-              <div className="absolute inset-0 flex items-center justify-center bg-neutral-50">
+            {isLoading && !error && (
+              <div className="absolute inset-0 flex items-center justify-center bg-neutral-50 z-10">
                 <div className="flex flex-col items-center gap-2">
                   <svg className="w-8 h-8 animate-spin text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -54,10 +71,29 @@ export default function PDFViewer({ filename, courseId, onClose }: PDFViewerProp
                 </div>
               </div>
             )}
+            {error && (
+              <div className="absolute inset-0 flex items-center justify-center bg-neutral-50 z-10">
+                <div className="flex flex-col items-center gap-2 text-center px-4">
+                  <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <p className="text-sm font-light text-red-600">{error}</p>
+                  <a
+                    href={pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-blue-600 hover:text-blue-800 underline mt-2"
+                  >
+                    Open PDF in new tab
+                  </a>
+                </div>
+              </div>
+            )}
             <iframe
               src={pdfUrl}
               className="w-full h-full border-0"
-              onLoad={() => setIsLoading(false)}
+              onLoad={handleIframeLoad}
+              onError={handleIframeError}
               title={filename}
             />
           </div>
