@@ -1,0 +1,285 @@
+Course Code: 15-750
+Course Name: 15-750: Algorithms in the Real World, Fall 2025
+Course URL: https://www.cs.cmu.edu/~15750/
+
+BOOKS:
+by Leskovec, Rajaraman, and Ullman.
+
+PDFS:
+Homework 1
+URL: https://www.cs.cmu.edu/~15750/hws/15750-hw1.pdf
+
+Homework 2
+URL: https://www.cs.cmu.edu/~15750/hws/15750-hw2.pdf
+
+Homework 3
+URL: https://www.cs.cmu.edu/~15750/hws/15750-hw3.pdf
+
+Homework 4
+URL: https://www.cs.cmu.edu/~15750/hws/15750-hw4.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec1.pdf
+
+Chapter 1 of Anupam's notes
+URL: https://www.cs.cmu.edu/~15750/notes/lec1.pdf
+
+older
+            handwritten
+            notes
+URL: https://www.cs.cmu.edu/~15750/notes/lec1-strassen.pdf
+
+Handout
+URL: https://www.cs.cmu.edu/~15750/handouts/recurrences-and-big-oh.pdf
+
+Chapter 1
+URL: http://www.cs.cmu.edu/afs/cs/academic/class/15750-s19/Handouts/Kozen/KozenLecture1.pdf
+
+1
+URL: https://arxiv.org/pdf/1708.09398.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec2.pdf
+
+Chapter 2 of Anupam's notes (MST)
+URL: https://www.cs.cmu.edu/~15750/notes/lec2.pdf
+
+older handwritten notes
+URL: https://www.cs.cmu.edu/~15750/notes/lec2-mst.pdf
+
+Chapter 3 of Anupam's
+            notes (amortized analysis)
+URL: https://www.cs.cmu.edu/~15750/notes/amortization.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec3.pdf
+
+Log* analysis of Union-Find (451, Spr 19)
+URL: http://www.cs.cmu.edu/~15451-s19/lectures/lec04-unionfind.pdf
+
+Chapter 3 of Anupam's notes
+URL: https://www.cs.cmu.edu/~15750/notes/amortization.pdf
+
+451 (Fall 23) Lecture on Union-Find
+URL: https://www.cs.cmu.edu/~15451-f23/lectures/lecture06-unionfind.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec4.pdf
+
+older handwritten
+            notes
+URL: https://www.cs.cmu.edu/~15750/notes/lec3.pdf
+
+Lecture
+            notes
+URL: https://www.cs.cmu.edu/~15451-s19/lectures/lec09-dp2.pdf
+
+binary
+              and binomial
+              heaps
+URL: https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/BinomialHeaps.pdf
+
+Fibonacci
+              heaps
+URL: https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/FibonacciHeaps.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec5.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15750/notes/lec4.pdf
+
+451 notes on DP
+URL: https://www.cs.cmu.edu/~15451-f23/lectures/lecture10-dp2.pdf
+
+slides1
+URL: https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/06DynamicProgrammingI.pdf
+
+slides2
+URL: https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/06DynamicProgrammingII.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec6.pdf
+
+Chapter 5 of Anupam's notes (which includes topics discussed in this lecture).
+URL: https://www.cs.cmu.edu/~15750/notes/hashing.pdf
+
+Notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15750-s20/www/notes/hashing2.pdf
+
+examples/exercises
+URL: https://www.cs.cmu.edu/~15750/notes/chernoff.pdf
+
+(notes from 15-850)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture14.pdf
+
+Chapter 5 of Anupam's notes (which includes notes on Bloom Filters).
+URL: https://www.cs.cmu.edu/~15750/notes/hashing.pdf
+
+Chapter 7 of Anupam's notes (which includes topics discussed on streaming).
+URL: https://www.cs.cmu.edu/~15750/notes/streaming.pdf
+
+(notes from 15-850)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture12.pdf
+
+Lecture notes
+URL: https://www.cs.cmu.edu/afs/cs/project/pscico-guyb/realworld/www/slidesF15/dim-redn.pdf
+
+Indyk/Motwani
+URL: https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/IndykM-curse.pdf
+
+Dasgupta/Gupta
+URL: https://cseweb.ucsd.edu/~dasgupta/papers/jl.pdf
+
+Achlioptas
+URL: https://cs-people.bu.edu/evimaria/cs565/achlioptas.pdf
+
+Ailon-Chazelle
+URL: http://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf
+
+Ailon-Liberty
+URL: http://www.cs.yale.edu/homes/el327/papers/FJLTtalk.pdf
+
+(Meredith's notes)
+URL: https://www.cs.cmu.edu/~15750/notes/meredith-lec10.pdf
+
+451 notes on suffix trees (see sections 1 and 2)
+URL: https://www.cs.cmu.edu/~15451-f18/lectures/lec24-sufftree.pdf
+
+(Meredith's notes)
+URL: https://www.cs.cmu.edu/~15750/notes/meredith-lec11.pdf
+
+The O(n log n)	surrogate algorithm (451 notes)
+URL: https://www.cs.cmu.edu/~15451-f18/lectures/lec26-suffarray.pdf
+
+The O(n) Skew Algorithm.
+URL: https://www.cs.cmu.edu/~15750/notes/skew-algorithm-kingsford-book.pdf
+
+The O(n) Skew Algorithm, original paper.
+URL: https://www.cs.cmu.edu/~guyb/paralg/papers/KarkkainenSanders03.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec12.pdf
+
+Lecture notes
+URL: https://www.cs.cmu.edu/~venkatg/teaching/CStheory-infoage/book-chapter-4.pdf
+
+Chapter
+					11
+URL: http://infolab.stanford.edu/~ullman/mmds/ch11.pdf
+
+slides
+URL: https://web.stanford.edu/class/cs246/slides/06-dim_red.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec13.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15451-f23/lectures/lecture12-flow-i.pdf
+
+Part of the flow chapter
+URL: https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15750-s20/www/handouts/cmuonly/Kleinberg-Tardos-Flows-fix.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec14.pdf
+
+Notes
+URL: https://www.cs.cmu.edu/~15451-f24/lectures/lecture13-min-cost-flow.pdf
+
+(notes)
+URL: https://www.cs.cmu.edu/~15750/notes/jason-lec15.pdf
+
+Anupam's notes on Linear Programming
+URL: https://www.cs.cmu.edu/~15750/notes/Anupam-chapter11-LP.pdf
+
+Carl Kingsford's Simplex Slides
+URL: https://www.cs.cmu.edu/~15451-f23/lectures/lecture18-carl-slides.pdf
+
+Notes about LPs
+URL: https://www.cs.cmu.edu/~15451-f23/lectures/lecture16-lp1.pdf
+
+Introduction
+URL: https://link.springer.com/content/pdf/10.1007%2F978-3-540-30717-4_1.pdf
+
+Examples
+URL: https://link.springer.com/content/pdf/10.1007%2F978-3-540-30717-4_2.pdf
+
+LP Basics
+URL: https://link.springer.com/content/pdf/10.1007%2F978-3-540-30717-4_4.pdf
+
+(notes from 15-850)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture17.pdf
+
+Prediction from experts and the multiplicative weights algorithm
+URL: https://www.cs.cmu.edu/~15451-f22/lectures/lec18-experts.pdf
+
+Notes on Multiplicative weights algorithm
+URL: https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/notes/lecture16.pdf
+
+(notes from 15-850 (1))
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture17.pdf
+
+(notes from 15-850 (2))
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture18.pdf
+
+(notes from 15-850)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture18.pdf
+
+VIDEOS:
+video
+URL: https://www.youtube.com/watch?v=q_dvXF5OhiY
+
+LINKS:
+Jason Li
+URL: http://www.cs.cmu.edu/~jmli/
+
+Link
+URL: https://piazza.com/class/mesjbhtiwy92pi/
+
+Links
+      to resources
+URL: https://www.cs.cmu.edu/~15750/policies.html#texts
+
+paper
+URL: https://link.springer.com/article/10.1007/BF02165411
+
+3
+URL: https://digitalcommons.utep.edu/cs_techrep/502/
+
+CACM
+	    article
+URL: https://dl.acm.org/doi/10.1145/2556647.2556660
+
+Basic animations
+URL: https://visualgo.net/en/mst?slide=1
+
+SciKit's
+URL: https://scikit-learn.org/stable/modules/random_projection.html
+
+(Optional) Chapter 3
+URL: https://www.cs.cornell.edu/jeh/bookMay2015.pdf#page=35
+
+Animations
+URL: https://visualgo.net/en/maxflow
+
+Understanding and Using Linear	Programming
+URL: https://link.springer.com/book/10.1007%2F978-3-540-30717-4
+
+online LP solver
+URL: https://online-optimizer.appspot.com/
+
+CVXOPT
+URL: https://cvxopt.org/index.html
+
+PuLP
+URL: https://pythonhosted.org/PuLP/index.html#
+
+LP solver
+URL: https://github.com/coin-or/Clp
+
+COIN-OR
+URL: https://projects.coin-or.org/
+
+IMAGES:
+None found
+

@@ -1,0 +1,846 @@
+Course Code: 15-850
+Course Name: 15-850: Advanced Algorithms, Spring 2024
+Course URL: https://www.cs.cmu.edu/~15850/
+
+BOOKS:
+Matousek
+      	   and Gaertner book
+URL: https://www.springer.com/us/book/9783540306979
+
+Lovasz-Plummer
+      	      book
+URL: http://www.amazon.com/Matching-Theory-AMS-Chelsea-Publishing/dp/0821847597/ref=sr_1_1?ie=UTF8&s=books&qclass=1255998171&sr=8-1
+
+book
+     	      in preparation
+URL: http://people.cs.umass.edu/~mcgregor/book/book.html
+
+Matousek 
+      		   and Gaertner book
+URL: https://www.springer.com/us/book/9783540306979
+
+Matousek
+       and Gaertner book
+URL: https://www.springer.com/us/book/9783540306979
+
+on approximation algorithms.
+
+on LPs is a great introduction to LPs;
+
+on matching theory.
+
+"Networks,
+
+in preparation.
+
+for a discussion on Ellipsoid.
+
+gives a comprehensive discussion.
+
+has several detatails we skip in our
+
+PDFS:
+Combined lecture notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s23/www/notes/cmu850-f20.pdf
+
+Homework 0
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s23/www/hws/h0.pdf
+
+Exercises 0
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s23/www/hws/ex0.pdf
+
+Homework 1
+URL: https://www.cs.cmu.edu/~15850/hws/h1.pdf
+
+Exercises 1
+URL: https://www.cs.cmu.edu/~15850/hws/ex1.pdf
+
+Homework 2
+URL: https://www.cs.cmu.edu/~15850/hws/h2.pdf
+
+Exercises 2
+URL: https://www.cs.cmu.edu/~15850/hws/ex2.pdf
+
+Homework 3
+URL: https://www.cs.cmu.edu/~15850/hws/h3.pdf
+
+Exercises 3
+URL: https://www.cs.cmu.edu/~15850/hws/ex3.pdf
+
+Homework 4
+URL: https://www.cs.cmu.edu/~15850/hws/h4.pdf
+
+Exercises 4
+URL: https://www.cs.cmu.edu/~15850/hws/ex4.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture1.pdf
+
+Jason Eisner
+URL: http://www.cs.jhu.edu/~jason/papers/eisner.mst-tutorial.pdf
+
+Graham
+	      and Hell
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f09/www/handouts/cmuonly/graham-hell.pdf
+
+Raimund 
+	      Seidel
+URL: http://cgi.di.uoa.gr/~ewcg06/invited/Seidel.pdf
+
+Karger-Klein-Tarjan
+URL: http://cs.brown.edu/research/pubs/pdfs/1995/Karger-1995-RLT.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture2.pdf
+
+Chu-Liu
+URL: https://www.cs.cmu.edu/~15850/handouts/chu-liu_1965.pdf
+
+Edmonds
+URL: http://nvlpubs.nist.gov/nistpubs/jres/71b/jresv71bn4p233_a1b.pdf
+
+Finding
+      	      optimal branchings
+URL: https://cw.fel.cvut.cz/wiki/_media/courses/a4m33pal/cviceni/tarjan-finding-optimum-branchings.pdf
+
+Carmerini
+      	      et al.
+URL: https://cw.fel.cvut.cz/wiki/_media/courses/a4m33pal/cviceni/carmerini-a-note-on-finding-optimum-branchings.pdf
+
+Mendelson,
+      	    Tarjan, Thorup, Zwick
+URL: https://www.cs.tau.ac.il/~zwick/papers/meld-swat.pdf
+
+basic
+      	    LP concepts
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15451-s17/www/lectures/lec14-lp1.pdf
+
+LP
+      	    duality
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15451-s17/www/lectures/lec16-duality.pdf
+
+arborescences
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture2,3.pdf
+
+210
+URL: http://www.cs.cmu.edu/afs/cs/academic/class/15210-s12/www/lectures/lecture11.pdf
+
+451
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15451-s18/www/lectures/lec09-dp2.pdf
+
+SSSP
+URL: http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf
+
+APSP
+URL: http://jeffe.cs.illinois.edu/teaching/algorithms/book/09-apsp.pdf
+
+History
+URL: https://www.cs.cmu.edu/~15850/handouts/cmuonly/schrijver-shortest-paths.pdf
+
+draft
+	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture4.pdf
+
+Witnesses
+      	     	for Boolean Matrix Multiplication and for Shortest Paths
+URL: http://www.math.tau.ac.il/~nogaa/PDFS/witness1.pdf
+
+my
+      	   	notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-s15/www/scans/lecture5.pdf
+
+scribe
+      	   	notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-s15/www/scans/lecture5.pdf
+
+survey
+URL: http://people.csail.mit.edu/virgi/eccentri.pdf
+
+Subcubic Equivalences Between Path, Matrix, and Triangle Problems
+URL: https://people.csail.mit.edu/virgi/tria-mmult-jv.pdf
+
+draft
+	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture5.pdf
+
+Lecture
+      		notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859m-s11/www/lectures/lect0302.pdf
+
+A
+      		Graph-Theoretic Game and its Application to the k-Server
+      		Problem
+URL: http://www.icsi.berkeley.edu/ftp/global/pub/techreports/1991/tr-91-066.pdf
+
+A
+      		tight bound on approximating arbitrary metrics by tree>
+      		metrics
+URL: https://www.microsoft.com/en-us/research/wp-content/uploads/2004/01/06-journal.pdf
+
+Using
+      		Petal-Decompositions to Build a Low Stretch Spanning
+      		Tree
+URL: http://www.cs.bgu.ac.il/~neimano/spanning-full1.pdf
+
+survey
+URL: http://www.cs.cmu.edu/~anupamg/papers/network-survey.pdf
+
+Spielman-Teng
+URL: https://arxiv.org/pdf/cs/0607105.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture6,7.pdf
+
+old LaTeX notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-negative-weight.pdf
+
+draft
+	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture8.pdf
+
+Paths,
+      	    Trees, and Flowers
+URL: http://www.disco.ethz.ch/lectures/fs12/seminar/paper/Tobias/2.pdf
+
+bipartite
+URL: http://math.mit.edu/~goemans/18433S15/matching-notes.pdf
+
+non-bipartite
+URL: http://math.mit.edu/~goemans/18433S15/matching-nonbip-notes.pdf
+
+non-bipartite
+      	      matchings
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15451-f14/www/lectures/lec12/general-matchings.pdf
+
+notes
+      	      on combinatorial optimization
+URL: http://homepages.cwi.nl/~lex/files/dict.pdf
+
+Lex
+      	    Schrijver
+URL: http://homepages.cwi.nl/~lex/files/tutteb.pdf
+
+Doug
+      	    West
+URL: http://www.cse.iitd.ernet.in/~naveen/courses/CSL851/galledm.pdf
+
+Andrei
+      	    Kotlov
+URL: http://arxiv.org/pdf/math/0011204.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture9.pdf
+
+Notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859m-s11/www/lectures/lect0209.pdf
+
+On
+      	      determinants, matchings, and random algorithms
+URL: http://www.math.uwaterloo.ca/~harvey/W11/1979-Lovasz-OnDeterminantsMatchingsAndRandomAlgs.pdf
+
+Tutte
+      	    matrix
+URL: http://web.eecs.umich.edu/~pettie/matching/Tutte-factorization-of-linear-graphs.pdf
+
+Edmonds
+      	    matrix
+URL: http://nvlpubs.nist.gov/nistpubs/jres/71B/jresv71Bn4p241_A1b.pdf
+
+Mucha
+      	  and Sankowski
+URL: http://www.mimuw.edu.pl/~mucha/pub/mucha_sankowski_focs04.pdf
+
+thesis
+URL: http://web.eecs.umich.edu/~pettie/matching/Mucha-PhD-thesis.pdf
+
+cleaner
+      	      solution
+URL: http://web.eecs.umich.edu/~pettie/matching/Harvey-maximum-matching-j-version.pdf
+
+draft
+	notes)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture10.pdf
+
+original
+	paper
+URL: https://web.eecs.umich.edu/~pettie/matching/Kuhn-hungarian-assignment.pdf
+
+tribute
+URL: http://www.cs.elte.hu/egres/tr/egres-04-14.pdf
+
+10
+URL: http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch10.pdf
+
+Gabrielle
+	    Demange, David Gale, Marilda Sotomayor
+URL: http://www.eecs.harvard.edu/~parkes/cs286r/spring02/papers/dgs86.pdf
+
+draft 
+       	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture11.pdf
+
+gentle
+      	    introduction to the probabilistic method
+URL: https://www.cs.cmu.edu/~15850/handouts/matousek-vondrak-prob-ln.pdf
+
+S11
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859m-s11/www/lectures/lect0124.pdf
+
+S04
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f04/www/scribes/lec9.pdf
+
+Gabor
+      	  Lugosi
+URL: http://www.econ.upf.edu/~lugosi/anu.pdf
+
+Vershynin
+URL: https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf
+
+Notes
+URL: http://www.cmap.polytechnique.fr/~merlet/articles/probas_massart_stf03.pdf
+
+paper
+URL: http://www.jstor.org/stable/pdf/2282952.pdf
+
+paper
+URL: http://www.jstor.org/stable/pdf/2236576.pdf
+
+(draft notes)
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture12.pdf
+
+Indyk/Motwani
+URL: https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/IndykM-curse.pdf
+
+Dasgupta/Gupta
+URL: http://www.cs.cmu.edu/~anupamg/papers/jl.pdf
+
+Martin 
+	      Wainwright
+URL: http://www.stat.berkeley.edu/~mjwain/stat210b/Chap2_TailBounds_Jan22_2015.pdf
+
+Roman 
+	      Vershynin
+URL: https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf
+
+Ramon 
+	      van Handel
+URL: https://web.math.princeton.edu/~rvan/APC550.pdf
+
+Ailon-Chazelle
+URL: http://www.cs.princeton.edu/~chazelle/pubs/FJLT-sicomp09.pdf
+
+solving 
+	    LPs
+URL: https://arxiv.org/pdf/2002.02304.pdf
+
+near-neighbor 
+	    search
+URL: https://www.cs.princeton.edu/courses/archive/spr04/cos598B/bib/IndykM-curse.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture13.pdf
+
+Lecture notes
+URL: https://www.stat.cmu.edu/~arinaldo/Teaching/36709/S19/Scribed_Lectures/Feb5_Aleksandr.pdf
+
+Introduction
+URL: https://arxiv.org/pdf/2002.02304.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture14.pdf
+
+Alon-Mathias-Szegedy
+URL: https://www.tau.ac.il/~nogaa/PDFS/amsz4.pdf
+
+chapter
+URL: http://people.cs.umass.edu/~mcgregor/book/signals.pdf
+
+Lecture notes
+URL: https://www.sketchingbigdata.org/fall17/lec/lec2.pdf
+
+draft notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture16.pdf
+
+Lecture notes
+URL: https://courses.cs.duke.edu/fall19/compsci638/fall19_notes/lecture4.pdf
+
+draft
+      	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture17.pdf
+
+survey
+URL: http://theoryofcomputing.org/articles/v008a006/v008a006.pdf
+
+notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/notes/lecture17.pdf
+
+thesis
+URL: http://www.satyenkale.com/papers/thesis.pdf
+
+draft
+      	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture18.pdf
+
+notes
+URL: https://courses.cs.washington.edu/courses/cse521/16sp/521-lecture-16.pdf
+
+draft
+      	  notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture19.pdf
+
+S. Shalev-Shwartz
+URL: http://www.cs.huji.ac.il/~shais/papers/OLsurvey.pdf
+
+E. Hazan
+URL: http://ocobook.cs.princeton.edu/OCObook.pdf
+
+N. Vishnoi
+URL: http://theory.epfl.ch/vishnoi/Nisheeth-VishnoiFall2014-ConvexOptimization.pdf
+
+draft
+      	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture20.pdf
+
+draft
+      	     notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture21.pdf
+
+Bertsemas-Vempala
+		   paper
+URL: https://www.mit.edu/~dbertsim/papers/Optimization/Solving%20Convex%20Programs%20by%20Random%20Walks.pdf
+
+Grotschel-Lovasz-Schrijver
+URL: https://www.zib.de/groetschel/pubnew/paper/groetschellovaszschrijver1988.pdf
+
+account
+		   of developments
+URL: https://lpsdp.files.wordpress.com/2011/10/ellipsoid-stories.pdf
+
+excellent
+		   report
+URL: https://lpsdp.files.wordpress.com/2011/10/ellipsoid-stories3.pdf
+
+draft
+		   notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture21.pdf
+
+Notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/notes/lecture21.pdf
+
+Yuri
+      Nesterov and Arkadi Nemirovski
+URL: https://www2.isye.gatech.edu/~nemirovs/LecIPM.pdf
+
+Ben-Tal
+      and Nemirovski
+URL: https://www2.isye.gatech.edu/~nemirovs/lmco_run.pdf
+
+Mike
+       Todd and Arkadi Nemirovski
+URL: https://people.orie.cornell.edu/miketodd/selfconcN.pdf
+
+Emin's
+      	notes
+URL: https://www.cs.cmu.edu/~15850/notes/emin-lecture23.pdf
+
+Emin's
+      	     notes
+URL: https://www.cs.cmu.edu/~15850/notes/emin-lecture24.pdf
+
+draft
+		   notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture25.pdf
+
+textbook
+URL: http://www.designofapproxalgs.com/book.pdf
+
+Lecture notes
+URL: https://www.cs.cmu.edu/~avrim/451f12/lectures/lect1106.pdf
+
+Lecture notes
+URL: https://viswa.engin.umich.edu/wp-content/uploads/sites/169/2021/02/greedy.pdf
+
+draft
+      	notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture26.pdf
+
+Lecture notes
+URL: https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/notes/lec6.pdf
+
+Leighton-Rao
+URL: http://snap.stanford.edu/class/cs224w-readings/leighton99mincut.pdf
+
+Rajmohan
+	      Rajaraman
+URL: http://www.ccs.neu.edu/home/rraj/Courses/7880/S12/Lectures/UniformMCF2.pdf
+
+draft
+      	     notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture27.pdf
+
+course notes
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s23/www/notes/cmu850-f20.pdf
+
+lecture notes
+URL: https://www.cs.cmu.edu/~15850/notes/thatchaphol-dynamic-connectivity.pdf
+
+paper
+URL: https://arxiv.org/pdf/1611.03745.pdf
+
+draft
+		   notes
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture28.pdf
+
+lecture notes
+URL: https://www.ams.org/meetings/shortcourse/Notes-Moitra-Lect1.pdf
+
+paper.
+URL: http://www-math.mit.edu/~goemans/PAPERS/maxcut-jacm.pdf
+
+VIDEOS:
+shortest paths
+URL: https://www.cs.cmu.edu/~15850/notes/jason-lecture4
+
+Danupon Nanongkai
+URL: https://youtu.be/awvBpvlbG1M
+
+Aaron Bernstein
+URL: https://youtu.be/Bpw3yqWT_d0
+
+Harold
+	Kuhn
+URL: https://www.youtube.com/watch?v=iPNwfGwD6C8
+
+LINKS:
+Jason
+    Li
+URL: http://www.cs.cmu.edu/~jmli
+
+Piazza
+URL: https://piazza.com/cmu/spring2024/cs15850
+
+Gradescope
+URL: https://www.gradescope.com/courses/718003
+
+tentative
+  schedule
+URL: https://docs.google.com/spreadsheets/d/1rKJlPUwe2Y02rscT4eq5VxXE6S7cQJsIECWgRvVfHN4/edit#gid=570345606
+
+Spring
+  23
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s23/www/oldindex.html
+
+Fall
+  20
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f20/www/
+
+Fall
+  18
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f18/www/
+
+Spring
+  17
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-s17/www/
+
+Spring
+  15
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-s15/www/
+
+Martin
+	      Mares
+URL: http://www.sciencedirect.com/science/article/pii/S1574013708000270
+
+Boruvka's
+URL: https://www.sciencedirect.com/science/article/pii/S0012365X00002247
+
+Jarnik's
+URL: https://www.sciencedirect.com/science/article/pii/S0012365X00002569
+
+Gabriel 
+	      Nivasch
+URL: http://www.gabrielnivasch.org/fun/inverse-ackermann
+
+different
+      	      proof
+URL: http://dx.doi.org/10.1016/S0020-0190(98)00129-X
+
+Komlos
+URL: http://dx.doi.org/10.1007/BF02579443
+
+King
+URL: http://dx.doi.org/10.1007/BF02526037
+
+Hagerup
+URL: http://link.springer.com/chapter/10.1007%2F978-3-642-11409-0_16#page-1
+
+slides
+URL: https://www.cs.tau.ac.il/~zwick/grad-algo-17/MST-verification.pptx
+
+Karp
+URL: http://onlinelibrary.wiley.com/doi/10.1002/net.3230010305/abstract
+
+Fall
+      	   2011 course on LPs/SDPs
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/
+
+On
+      	    	the all-pairs-shortest-path problem
+URL: https://www.sciencedirect.com/science/article/pii/S0022000085710781?via%3Dihub
+
+on
+      	     	Wikipedia
+URL: https://en.wikipedia.org/wiki/Seidel%27s_algorithm
+
+New
+      	     	Bounds on the Complexity of the Shortest Path Problem
+URL: http://epubs.siam.org/doi/10.1137/0205006
+
+algorithm
+URL: http://arxiv.org/abs/1312.6680
+
+Probabilistic
+      		Approximation of Metric Spaces and its Algorithmic
+      		Applications
+URL: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.31.8507&rep=rep1&type=pdf
+
+Calinescu-Karloff-Rabani
+URL: http://epubs.siam.org/doi/pdf/10.1137/S0097539701395978
+
+Fakchareonphol-Rao-Talwar
+URL: http://www.sciencedirect.com/science/article/pii/S0022000004000637
+
+Miller
+      		Peng Xu
+URL: http://arxiv.org/abs/1307.3692
+
+KMP
+URL: https://arxiv.org/abs/1003.2958
+
+KOSZ
+URL: https://arxiv.org/abs/1301.6628
+
+Negative-Weight
+		Single-Source Shortest Paths in Near-linear Time
+URL: https://arxiv.org/abs/2203.03456
+
+article
+URL: https://www.quantamagazine.org/finally-a-fast-algorithm-for-shortest-paths-on-negative-graphs-20230118/
+
+Negative-Weight
+		Single-Source Shortest Paths in Near-Linear Time: Now Faster!
+URL: https://arxiv.org/abs/2304.05279
+
+collection
+	      of papers
+URL: https://web.eecs.umich.edu/~pettie/matching/
+
+Matching
+      	  is as easy as Matrix Inversion
+URL: http://link.springer.com/article/10.1007%2FBF02579206
+
+15
+URL: http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch15.pdf#page=26
+
+Networks,
+	    Crowds, and Markets
+URL: http://www.cs.cornell.edu/home/kleinber/networks-book/
+
+Jiri
+      	    Matousek
+URL: http://kam.mff.cuni.cz/~matousek/
+
+Jan
+      	    Vondrak
+URL: http://theory.stanford.edu/~jvondrak/
+
+Colin
+      	  McDiarmid
+URL: https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.168.5794
+
+Alon
+      	  &
+      	  Spencer
+URL: http://www.amazon.com/Probabilistic-Wiley-Interscience-Discrete-Mathematics-Optimization/dp/0470170204/
+
+Boucheron,
+      	  Lugosi,
+      	  Massart
+URL: https://global.oup.com/academic/product/concentration-inequalities-9780199535255
+
+Dubhashi
+      	  &
+      	  Panconesi
+URL: http://www.amazon.com/Concentration-Measure-Analysis-Randomized-Algorithms/dp/0521884276/
+
+Motwani
+      	  &
+      	  Raghavan
+URL: http://www.amazon.com/Randomized-Algorithms-Rajeev-Motwani/dp/0521474655/
+
+Mitzenmacher
+      	  &
+      	  Upfal
+URL: http://www.amazon.com/Probability-Computing-Randomized-Algorithms-Probabilistic/dp/0521835402/
+
+Janson,
+      	    Luczak, Rucinski
+URL: http://www.amazon.com/Random-Graphs-Svante-Janson/dp/0471175412/
+
+David
+      	  Pollard
+URL: http://www.stat.yale.edu/~pollard/Books/Mini/
+
+attributes
+URL: http://nisla05.niss.org/copss/past-present-future-copss.pdf#page=56
+
+Herman
+      	  Rubin
+URL: http://www.stat.purdue.edu/~hrubin/
+
+Chebyshev
+URL: http://en.wikipedia.org/wiki/Pafnuty_Chebyshev
+
+Bienayme
+URL: http://en.wikipedia.org/wiki/Ir%C3%A9n%C3%A9e-Jules_Bienaym%C3%A9
+
+Markov
+URL: http://en.wikipedia.org/wiki/Andrey_Markov
+
+Bernstein
+URL: http://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein
+
+Cramer
+URL: http://en.wikipedia.org/wiki/Harald_Cram%C3%A9r
+
+Chernoff
+URL: http://en.wikipedia.org/wiki/Herman_Chernoff
+
+Hoeffding
+URL: http://en.wikipedia.org/wiki/Wassily_Hoeffding
+
+Achlioptas
+URL: https://www.sciencedirect.com/science/article/pii/S0022000003000254
+
+notes
+URL: https://people.eecs.berkeley.edu/~minilek/madalgo2015/index.html
+
+Noga  
+	      Alon
+URL: http://www.math.tau.ac.il/~nogaa/PDFS/extremal1.pdf#page=17
+
+Larsen and  
+	      Nelson
+URL: https://arxiv.org/abs/1609.02094
+
+spectral 
+	      sparsification
+URL: https://arxiv.org/abs/0803.0929
+
+Jelani
+     	      Nelson
+URL: https://www.sketchingbigdata.org/fall20/
+
+Chandra
+     	      Chekuri
+URL: https://courses.engr.illinois.edu/cs598csc/fa2014/
+
+F20
+     	      version
+URL: https://courses.engr.illinois.edu/cs498abd/fa2020/schedule.html
+
+Algorithms
+     	      for Big Data
+URL: https://www.cs.cmu.edu/~dwoodruf/teaching/15859-fall20/index.html
+
+paper
+URL: https://www.sciencedirect.com/science/article/pii/0022000085900418
+
+paper
+URL: https://epubs.siam.org/doi/abs/10.1137/S0097539704446232
+
+thesis
+URL: http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.9.8338
+
+survey
+URL: http://theoryofcomputing.org/articles/v008a006/v008a006.pdf#page=15
+
+survey
+URL: http://theoryofcomputing.org/articles/v008a006/v008a006.pdf#page=13
+
+Potential function proofs
+URL: https://arxiv.org/abs/1712.04581
+
+S. Bubeck
+URL: https://arxiv.org/abs/1405.4980
+
+S. Boyd and
+	    	  L. Vanderberghe
+URL: http://stanford.edu/~boyd/cvxbook/
+
+Yu. Nesterov
+URL: http://link.springer.com/book/10.1007%2F978-1-4419-8853-9
+
+here
+URL: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.693.855&rep=rep1&type=pdf
+
+Sebastien
+	      	  	Bubeck
+URL: https://arxiv.org/pdf/1405.4980.pdf#page=69
+
+Elad
+	      	  	Hazan
+URL: http://ocobook.cs.princeton.edu/OCObook.pdf#page=91
+
+Shai
+	      	  	Shalev-Shwartz
+URL: http://www.cs.huji.ac.il/%7Eshais/papers/OLsurvey.pdf#page=37
+
+this paper
+URL: https://arxiv.org/abs/2108.04734
+
+Four
+      	 lectures
+URL: https://simons.berkeley.edu/workshops/schedule/4786
+
+Steve
+       Wright
+URL: http://epubs.siam.org/doi/book/10.1137/1.9781611971453
+
+Jim
+       Renegar
+URL: http://epubs.siam.org/doi/book/10.1137/1.9780898718812
+
+Lecture notes
+URL: https://timroughgarden.org/notes.html
+
+2021
+URL: https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/
+
+2005
+URL: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f05/www/
+
+2008
+URL: http://www.cs.cmu.edu/~anupamg/adv-approx/
+
+Approximations
+					  for Cut Problems
+URL: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.33.558&rep=rep1&type=pdf
+
+paper
+URL: https://epubs.siam.org/doi/10.1137/1.9781611973105.81
+
+Notes
+URL: https://www.diderot.one/courses/58
+
+Online notes
+URL: http://www.sumofsquares.org
+
+Chan, Lee, Raghavendra, Steurer
+URL: https://arxiv.org/abs/1309.0563
+
+Kothari, Meka, Raghavendra
+URL: https://arxiv.org/abs/1610.02704
+
+IMAGES:
+None found
+

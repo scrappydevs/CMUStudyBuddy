@@ -1,0 +1,23 @@
+Course Code: 16-824
+Course Name: Index of /~16824
+Course URL: https://www.cs.cmu.edu/~16824/
+
+BOOKS:
+None found
+
+PDFS:
+None found
+
+VIDEOS:
+None found
+
+LINKS:
+None found
+
+IMAGES:
+[ICO]
+URL: https://www.cs.cmu.edu/icons/blank.gif
+
+[PARENTDIR]
+URL: https://www.cs.cmu.edu/icons/back.gif
+

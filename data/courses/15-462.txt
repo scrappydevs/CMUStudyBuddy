@@ -1,0 +1,124 @@
+Course Code: 15-462
+Course Name: Computer Graphics : Spring 2018
+Course URL: https://www.cs.cmu.edu/~15462/
+
+================================================================================
+
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
+None found
+
+VIDEOS AND LECTURE RECORDINGS:
+--------------------------------------------------------------------------------
+
+1. [Lectures]
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lectures
+
+2. Course Introduction
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/intro
+
+3. Math Review Part I (Linear Algebra)
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/math1
+
+4. Math Review Part II (Vector Calculus)
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/math2
+
+5. Drawing a Triangle
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/svg
+
+6. OpenGL tutorial
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/openGL
+
+7. Coordinate Spaces and Transformations
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/trans
+
+8. 3D Rotations and Complex Representations
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/rotations
+
+9. Perspective Projection and Texture Mapping
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/persp
+
+10. The Rasterization Pipeline
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/alpha
+
+11. Introduction to Geometry
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/geom
+
+12. Meshes and Manifolds
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/meshes
+
+13. Digital Geometry Processing
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/geomproc
+
+14. Geometric Queries
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/queries
+
+15. Accelerating Geometric Queries
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/accel
+
+16. Midterm Review
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/midterm
+
+17. Color
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/color
+
+18. Radiometry
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/radiometry
+
+19. The Rendering Equation
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/renderEq
+
+20. Numerical Integration
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/integrate
+
+21. Monte Carlo Ray Tracing
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/monteCarlo
+
+22. Variance Reduction
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/variance
+
+23. Introduction to Animation
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/animIntro
+
+24. Dynamics, Integration, and Optimization (Part 1)
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/dynamics
+
+25. Project 4 Overview
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/p4
+
+26. Optimization, Animation, and PDEs
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/pde
+
+27. Final Review
+   Type: unknown
+   URL: http://15462.courses.cs.cmu.edu/spring2018/lecture/final
+
+================================================================================
+Total Books Found: 0
+Total Videos Found: 27

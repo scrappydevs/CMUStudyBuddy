@@ -1,0 +1,188 @@
+Course Code: 18-213
+Course Name: 18-213/18-613: Computer Systems
+Course URL: https://www.cs.cmu.edu/~18213/
+
+BOOKS:
+Textbook
+URL: https://www.cs.cmu.edu/~18213/external/csapp
+
+Autolab
+
+PDFS:
+Course Syllabus
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+
+course syllabus
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/labs/cprogramminglab.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/01-overview.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/02-bits-bytes-ints.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/03-float.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/04-machine-basics.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/05-machine-control.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/06-machine-procedures.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/07-machine-data.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/08-machine-advanced.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/09-memory-hierarchy.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/10-cache-memories.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/11-linking.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/13-malloc-basics.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/14-malloc-advanced.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/11-vm-concepts.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/12-vm-details.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/17-ecf-procs.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/18-ecf-sigs.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/19-io.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/20-netprog1.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/21-netprog2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/22-concprog.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/23-sync-basic.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/24-sync-advanced.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/25-parallelism.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~18213/lectures/26-optimization.pdf
+
+VIDEOS:
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/01-overview.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/02-bits-bytes-ints.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/03-float.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/04-machine-basics.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/05-machine-control.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/06-machine-procedures.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/07-machine-data.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/08-machine-advanced.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/09-memory-hierarchy.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/10-cache-memories.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/11-linking.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/13-malloc-basics.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/14-malloc-advanced.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/11-vm-concepts.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/12-vm-details.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/17-ecf-procs.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/18-ecf-sigs.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/19-io.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/20-netprog1.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/21-netprog2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/22-concprog.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/23-sync-basic.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/24-sync-advanced.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/25-parallelism.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~18213/lectures/26-optimization.pptx
+
+LINKS:
+Gregory Kesden
+URL: https://www.andrew.cmu.edu/~gkesden
+
+Vyas Sekar
+URL: https://users.ece.cmu.edu/~vsekar/
+
+Computer Systems: A
+     Programmer's Perspective, Third Edition
+URL: http://csapp.cs.cmu.edu/
+
+https://www.cs.cmu.edu/~18213
+URL: https://www.cs.cmu.edu/~18213
+
+IMAGES:
+None found
+
