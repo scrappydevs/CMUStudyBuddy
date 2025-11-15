@@ -1,0 +1,69 @@
+Course Code: 10-701
+Course Name: The incredibly easy, incredibly engaging Q&A platform
+Course URL: https://www.cs.cmu.edu/~10701/
+
+BOOKS:
+None found
+
+PDFS:
+None found
+
+VIDEOS:
+Creating and configuring Your Class
+URL: https://youtu.be/sv83r-y9F3w
+
+Announcing Piazza to students
+URL: https://www.youtube.com/watch?v=9y-j3wAG9EY
+
+Posting your first note
+URL: https://youtu.be/co4JENj0Qx4
+
+Piazza intro for students
+URL: https://youtu.be/TwWPra1UlyQ
+
+LINKS:
+Piazza Talent
+URL: https://talent.piazza.com
+
+Link
+URL: https://medium.com/piazza/large-classes-79e35ff29120
+
+Link
+URL: https://medium.com/piazza/women-in-stem-efa8ff9dcbe2
+
+Link
+URL: https://medium.com/piazza/small-classes-23b29528d26d
+
+Link
+URL: https://medium.com/piazza/managing-teaching-teams-8c92f649de8d
+
+Link
+URL: https://medium.com/piazza/framing-student-behaviour-10134dfe6479
+
+Link
+URL: https://medium.com/piazza/bridging-the-digital-divide-609e0108a711
+
+Link
+URL: https://www.entrepreneur.com/article/311719
+
+Link
+URL: http://www.nytimes.com/2011/07/04/technology/04piazza.html
+
+Link
+URL: https://www.forbes.com/sites/meghancasserly/2012/09/18/mommy-ceo-pooja-sankar-on-raising-a-baby-a-business-and-a-new-school-of-role-models/#191bc2a9671c
+
+Link
+URL: http://www.npr.org/2015/11/06/454970591/app-allows-shy-students-to-ask-questions-anonymously
+
+Link
+URL: http://fortune.com/2015/04/20/the-pervasive-bias-against-female-computer-science-majors/
+
+Link
+URL: http://www.chronicle.com/article/Students-Endlessly-E-Mail/131390/
+
+Link
+URL: http://www.usnews.com/news/stem-solutions/articles/2015/05/05/op-ed-what-more-universities-can-do-to-help-female-and-minority-stem-students-succeed
+
+IMAGES:
+None found
+

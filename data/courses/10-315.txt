@@ -1,0 +1,424 @@
+Course Code: 10-315
+Course Name: 10-315, Spring 2025
+Course URL: https://www.cs.cmu.edu/~10315/
+
+================================================================================
+
+BOOKS AND TEXTBOOKS:
+--------------------------------------------------------------------------------
+
+1. notebook
+   URL: https://drive.google.com/file/d/1mj4rqrEIIfCTc4elxi3A5mrYW-7yMTvu/view?usp=sharing
+   Type: link
+
+2. notebook
+   URL: https://drive.google.com/file/d/1mZkVHZ371GQWAau0cwJMxPXYVisMlekD/view?usp=sharing
+   Type: link
+
+3. The Matrix Cookbook
+   URL: https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+   Type: pdf
+
+4. hello_notebooks.ipynb
+   URL: https://drive.google.com/file/d/15bP2o0jHRWvhvhdY8Ep2lF9zWhmSzuj-/view?usp=drive_link
+   Type: link
+
+5. PyTorch Tutorial Notebook.ipynb
+   URL: https://colab.research.google.com/drive/1X34L9jHi0gCKAYwTqz-vT5q_9nIsA5FB?usp=drive_link
+   Type: link
+
+6. There is no required textbook for this course. Any recommended readings will come from sources freely available online.
+   Type: text
+
+7. Gaussian Contour Plots
+   Type: text
+
+8. & page, URL & location within the page, etc.).
+   Type: text
+
+VIDEOS AND LECTURE RECORDINGS:
+--------------------------------------------------------------------------------
+
+1. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_1_Introduction.pptx
+
+2. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_1_Introduction_inked.pptx
+
+3. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_1_Introduction.pdf
+
+4. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_1_Introduction_inked.pdf
+
+5. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_2_ML_Problem_Formulation.pptx
+
+6. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_2_ML_Problem_Formulation_inked.pptx
+
+7. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_2_ML_Problem_Formulation.pdf
+
+8. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_2_ML_Problem_Formulation_inked.pdf
+
+9. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_3_Decision_Trees.pptx
+
+10. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_3_Decision_Trees_inked.pptx
+
+11. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_3_Decision_Trees.pdf
+
+12. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_3_Decision_Trees_inked.pdf
+
+13. Entropy, Cross-Entropy video
+   Type: youtube
+   URL: https://www.youtube.com/watch?v=ErfnhcEV1O8
+   Video ID: ErfnhcEV1O8
+   Embed URL: https://www.youtube.com/embed/ErfnhcEV1O8
+
+14. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_K-NN.pptx
+
+15. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_K-NN_inked.pptx
+
+16. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_K-NN.pdf
+
+17. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_K-NN_inked.pdf
+
+18. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_Model_Selection.pptx
+
+19. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_Model_Selection_inked.pptx
+
+20. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_Model_Selection.pdf
+
+21. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_4_Model_Selection_inked.pdf
+
+22. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_5-6_Optimization_and_Linear_Regresssion.pptx
+
+23. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_5-6_Optimization_and_Linear_Regresssion_inked.pptx
+
+24. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_5-6_Optimization_and_Linear_Regresssion.pdf
+
+25. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_5-6_Optimization_and_Linear_Regresssion_inked.pdf
+
+26. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7_Feature_Engineering.pptx
+
+27. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7_Feature_Engineering_inked.pptx
+
+28. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7_Feature_Engineering.pdf
+
+29. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7_Feature_Engineering_inked.pdf
+
+30. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7-8_Logistic_Regression.pptx
+
+31. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7-8_Logistic_Regression_inked.pptx
+
+32. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7-8_Logistic_Regression.pdf
+
+33. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_7-8_Logistic_Regression_inked.pdf
+
+34. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_9_Neural_Networks.pptx
+
+35. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_9_Neural_Networks_inked.pptx
+
+36. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_9_Neural_Networks.pdf
+
+37. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_9_Neural_Networks_inked.pdf
+
+38. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_10_Neural_Networks.pptx
+
+39. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_10_Neural_Networks_inked.pptx
+
+40. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_10_Neural_Networks.pdf
+
+41. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_10_Neural_Networks_inked.pdf
+
+42. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_11_Regularization.pptx
+
+43. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_11_Regularization_inked.pptx
+
+44. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_11_Regularization.pdf
+
+45. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_11_Regularization_inked.pdf
+
+46. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_12_MLE.pptx
+
+47. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_12_MLE_inked.pptx
+
+48. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_12_MLE.pdf
+
+49. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_12_MLE_inked.pdf
+
+50. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_13_MAP.pptx
+
+51. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_13_MAP_inked.pptx
+
+52. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_13_MAP.pdf
+
+53. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_13_MAP_inked.pdf
+
+54. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_15_Practical_Responsible_ML.pptx
+
+55. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_15_Practical_Responsible_ML_inked.pptx
+
+56. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_15_Practical_Responsible_ML.pdf
+
+57. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_15_Practical_Responsible_ML_inked.pdf
+
+58. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_16_Neural_Net_Applications_Images.pptx
+
+59. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_16_Neural_Net_Applications_Images_inked.pptx
+
+60. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_16_Neural_Net_Applications_Images.pdf
+
+61. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_16_Neural_Net_Applications_Images_inked.pdf
+
+62. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language.pptx
+
+63. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language_inked.pptx
+
+64. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language.pdf
+
+65. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_17_Neural_Net_Applications_Language_inked.pdf
+
+66. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I.pptx
+
+67. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I_inked.pptx
+
+68. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I.pdf
+
+69. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_18_LLMs_I_inked.pdf
+
+70. Let's build GPT
+   Type: youtube
+   URL: https://www.youtube.com/watch?v=kCc8FmEb1nY
+   Video ID: kCc8FmEb1nY
+   Embed URL: https://www.youtube.com/embed/kCc8FmEb1nY
+
+71. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pptx
+
+72. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pptx
+
+73. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pdf
+
+74. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_19_LLMs_II.pdf
+
+75. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA.pptx
+
+76. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA_inked.pptx
+
+77. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA.pdf
+
+78. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_20_Dimensionality_Reduction_PCA_inked.pdf
+
+79. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering.pptx
+
+80. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering_inked.pptx
+
+81. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering.pdf
+
+82. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_21_Clustering_inked.pdf
+
+83. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems.pptx
+
+84. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_System_inked.pptx
+
+85. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems.pptx
+
+86. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Recommender_Systems_inked.pdf
+
+87. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes.pptx
+
+88. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes_inked.pptx
+
+89. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes.pdf
+
+90. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_22_Generative_and_Naive_Bayes_inked.pdf
+
+91. pptx
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE.pptx
+
+92. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE_inked.pptx
+
+93. pdf
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE.pdf
+
+94. inked
+   Type: unknown
+   URL: https://www.cs.cmu.edu/~10315/lectures/10315_S25_Lecture_23_VAE_inked.pdf
+
+================================================================================
+Total Books Found: 8
+Total Videos Found: 94

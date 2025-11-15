@@ -1,0 +1,565 @@
+Course Code: 10-601
+Course Name: 10-301/10-601, Fall 2020
+Course URL: https://www.cs.cmu.edu/~10601/
+
+BOOKS:
+Jupyter
+                Notebook
+URL: https://drive.google.com/file/d/1pRVp4bWfw6GNG9kbT2He85zsLyde5X0G/view?usp=sharing
+
+Numpy
+                Notebook
+URL: https://drive.google.com/file/d/1klKuLjPyT8n8YUO4y1jdOGh6jPeA1iQM/view?usp=sharing
+
+Logging
+                Notebook
+URL: https://drive.google.com/file/d/1rsUEJukHvZLX502bxc1E4rpX3x7qyTb8/view?usp=sharing
+
+There is no required textbook for this course. Any recommended
+
+PDFS:
+available
+            online
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+notation.pdf
+URL: https://www.cs.cmu.edu/~10601/10601_Notation_Guide.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_1_Introduction.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_1_Introduction_inked2.pdf
+
+Daumé 1
+URL: http://ciml.info/dl/v0_99/ciml-v0_99-ch01.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_2_Decision_Trees.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_2_Decision_Trees_inked2.pdf
+
+Daumé 2
+URL: http://ciml.info/dl/v0_99/ciml-v0_99-ch02.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_3_Decision_Trees.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_3_Decision_Trees_inked2.pdf
+
+Daumé 3
+URL: http://ciml.info/dl/v0_99/ciml-v0_99-ch03.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_4_Decision_Trees_and_Nearest_Neighbor.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_4_Decision_Trees_and_Nearest_Neighbor_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_5_Nearest_Neighbor_and_Model_Selection.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_5_Nearest_Neighbor_and_Model_Selection_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_6_Linear_Regression_and_Optimization.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_6_Linear_Regression_and_Optimization_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_7_Linear_Regression_and_Optimization.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_7_Linear_Regression_and_Optimization_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_8_Logistic_Regression.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_8_Logistic_Regression_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_9_Logistic_Regression.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_9_Logistic_Regression_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_10_Logistic_Regression_and_Feature_Engineering.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_10_Logistic_Regression_and_Feature_Engineering_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_11_Feature_Engineering_and_Regularization.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_11_Feature_Engineering_and_Regularization_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_12_Regularization_and_Neural_Networks.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_12_Regularization_and_Neural_Networks_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_13_Neural_Networks.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_13_Neural_Networks_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_14_Neural_Networks.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_14_Neural_Networks_inked2.pdf
+
+A Few Useful Things to Know about
+                Machine Learning
+URL: http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_15_Learning_Theory.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_15_Learning_Theory_inked2.pdf
+
+Generalization Abilities: Sample
+                Complexity Results
+URL: https://www.cs.cmu.edu/~ninamf/courses/601sp15/sc-2015.pdf
+
+PAC Learning: Theorem 1
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_16_Learning_Theory_whiteboard.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_16_Learning_Theory.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_16_Learning_Theory_inked2.pdf
+
+Estimating Probabilities: MLE and MAP
+URL: http://www.cs.cmu.edu/~tom/mlbook/Joint_MLE_MAP.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_17_MLE_and_MAP.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_17_MLE_and_MAP_inked2.pdf
+
+Generative and Discriminative
+                Classifiers
+URL: http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Generative_Models_and_Naive_Bayes.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Generative_Models_and_Naive_Bayes_inked2.pdf
+
+SPAM handout
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Naive_Bayes_handout_blank.pdf
+
+sol
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Naive_Bayes_handout_sol.pdf
+
+15-281 Probability Reference Sheet
+URL: https://www.cs.cmu.edu/~10601/lectures/281_Probability_Reference_Sheet.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_19_Bayes_Nets.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_19_Bayes_Nets_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_20_HMMs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_20_HMMs_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_21_HMMs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_21_HMMs_inked2.pdf
+
+Reinforcement Learning: A Survey
+URL: https://arxiv.org/pdf/cs/9605103.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_22_MDPs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_22_MDPs_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_23_MDPs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_23_MDPs_inked2.pdf
+
+Playing Atari with Deep Reinforcement
+                Learning
+URL: https://arxiv.org/pdf/1312.5602.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_24_RL.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_24_RL_inked3.pdf
+
+Bishop
+                7.1
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+Daumé 11
+URL: http://ciml.info/dl/v0_99/ciml-v0_99-ch11.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_25_SVMs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_25_SVMs_inked2.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_26_SVMs.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_26_SVMs_inked2.pdf
+
+Bishop
+                9.1
+URL: https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_27_Clustering.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_27_Clustering_inked2.pdf
+
+A Tutorial on Principal Component Analysis
+URL: https://arxiv.org/pdf/1404.1100.pdf
+
+pdf
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_28_PCA.pdf
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_28_PCA_inked2.pdf
+
+recitation1.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation1.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation1_sol.pdf
+
+recitation2.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation2.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation2_sol.pdf
+
+recitation4.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation4.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation4_sol.pdf
+
+recitation5.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation5.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation5_sol.pdf
+
+recitation6.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation6.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation6_sol.pdf
+
+recitation7.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation7.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation7_sol.pdf
+
+recitation8.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation8.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation8_sol.pdf
+
+recitation9.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation9.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation9_sol.pdf
+
+recitation10.pdf
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation10.pdf
+
+solutions
+URL: https://www.cs.cmu.edu/~10601/recitation/recitation10_sol.pdf
+
+VIDEOS:
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_1_Introduction.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_1_Introduction_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_2_Decision_Trees.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_2_Decision_Trees_inked2.pptx
+
+Entropy, Cross-Entropy video
+URL: https://www.youtube.com/watch?v=ErfnhcEV1O8
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_3_Decision_Trees.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_3_Decision_Trees_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_4_Decision_Trees_and_Nearest_Neighbor.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_4_Decision_Trees_and_Nearest_Neighbor_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_5_Nearest_Neighbor_and_Model_Selection.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_5_Nearest_Neighbor_and_Model_Selection_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_6_Linear_Regression_and_Optimization.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_6_Linear_Regression_and_Optimization_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_7_Linear_Regression_and_Optimization.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_7_Linear_Regression_and_Optimization_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_8_Logistic_Regression.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_8_Logistic_Regression_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_9_Logistic_Regression.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_9_Logistic_Regression_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_10_Logistic_Regression_and_Feature_Engineering.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_10_Logistic_Regression_and_Feature_Engineering_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_11_Feature_Engineering_and_Regularization.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_11_Feature_Engineering_and_Regularization_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_12_Regularization_and_Neural_Networks.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_12_Regularization_and_Neural_Networks_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_13_Neural_Networks.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_13_Neural_Networks_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_14_Neural_Networks.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_14_Neural_Networks_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_15_Learning_Theory.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_15_Learning_Theory_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_16_Learning_Theory.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_16_Learning_Theory_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_17_MLE_and_MAP.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_17_MLE_and_MAP_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Generative_Models_and_Naive_Bayes.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_18_Generative_Models_and_Naive_Bayes_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_19_Bayes_Nets.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_19_Bayes_Nets_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_20_HMMs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_20_HMMs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_21_HMMs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_21_HMMs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_22_MDPs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_22_MDPs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_23_MDPs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_23_MDPs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_24_RL.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_24_RL_inked3.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_25_SVMs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_25_SVMs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_26_SVMs.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_26_SVMs_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_27_Clustering.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_27_Clustering_inked2.pptx
+
+pptx
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_28_PCA.pptx
+
+inked
+URL: https://www.cs.cmu.edu/~10601/lectures/10601_Fa20_Lecture_28_PCA_inked2.pptx
+
+LINKS:
+Canvas
+URL: https://canvas.cmu.edu/courses/18611/external_tools/2991
+
+Pat Virtue
+URL: https://cs.cmu.edu/~pvirtue
+
+Canvas
+URL: https://canvas.cmu.edu/courses/18611/grades
+
+Piazza
+URL: https://piazza.com/cmu/fall2020/1030110601
+
+Gradescope
+URL: https://www.gradescope.com
+
+CMU OHQueue tool
+URL: https://cmu.ohqueue.com
+
+OH
+            Appointment Slots
+URL: https://calendar.google.com/calendar/selfsched?sstoken=UUJsVlFnT3dHcGhufGRlZmF1bHR8MThlOWYxNDBmMTM1ODc4NDhmMjA4ZmNiYWRlZmY1NDA
+
+available online
+URL: http://ciml.info/
+
+available online
+URL: https://ebookcentral.proquest.com/lib/cm/detail.action?docID=3339490
+
+available online
+URL: http://www.deeplearningbook.org
+
+available online
+URL: http://www.cs.cmu.edu/~tom/NewChapters.html
+
+lec8.ipynb
+URL: https://drive.google.com/file/d/1xcKznI8EGad11TEOPr3WqMFU6ISKtAdg/view?usp=sharing
+
+Goodfellow, et al, Ch. 7.1,
+                7.8
+URL: http://www.deeplearningbook.org/contents/regularization.html
+
+lec12.ipynb
+URL: https://drive.google.com/file/d/1ghYdbkf99iQyUPsdyQvAmXTavVYvEhlO
+
+Goodfellow, et al, Ch. 6
+URL: http://www.deeplearningbook.org/contents/mlp.html
+
+Goodfellow, et al, Ch. 9
+URL: http://www.deeplearningbook.org/contents/convnets.html
+
+A
+                Tutorial on HMMs
+URL: https://ieeexplore.ieee.org/abstract/document/18626?casa_token=B0sim86J9I0AAAAA:ANNACDvrps-fsE2XT9L_hhwLaHhqkEFNFOtxMGP7hmNbjaXliE9-2NVOIa_fzJ-RTY9riSaNLA
+
+CMU Libraries IEEE
+URL: https://search.library.cmu.edu/link/http://ieeexplore.ieee.org
+
+Canvas
+URL: https://canvas.cmu.edu/courses/18611
+
+Workflow and
+                Debugging
+URL: https://drive.google.com/file/d/103v19p6u4BBkiHbHrjCUB2G_B1w5cxRw/view?usp=sharing
+
+Gradescope
+URL: https://www.gradescope.com/courses/158171
+
+Piazza Resources
+URL: https://piazza.com/cmu/fall2020/1030110601/resources
+
+https://www.cmu.edu/academic-integrity
+URL: https://www.cmu.edu/academic-integrity
+
+CMU grading polices
+URL: https://www.cmu.edu/policies/student-and-student-life/grading.html
+
+website
+URL: https://www.cmu.edu/disability-resources/
+
+http://www.cmu.edu/counseling/
+URL: http://www.cmu.edu/counseling/
+
+IMAGES:
+Image
+URL: https://www.cs.cmu.edu/~10601/ml-logo.gif
+
