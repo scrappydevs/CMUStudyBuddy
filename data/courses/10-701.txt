@@ -4,7 +4,8 @@ Course URL: https://www.cs.cmu.edu/~10701/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: http://www.facebook.com/piazzza
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
@@ -12,11 +13,13 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/professors#jennifer_schwartz
+Title: Jennifer SchwartzChemistry“Many of the students who ask questions on Piazza just wouldn't get the opportunity to ask them otherwise.”
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:06:57.405569
-Total Textbooks Found: 0
+Last Scraped: 2025-11-15T14:24:12.742149
+Total Textbooks Found: 1
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 1

@@ -8,15 +8,79 @@ None found
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://unpkg.com/purecss@1.0.0/build/pure-min.css
+
+URL: https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css
+
+Local PDF: 01.pdf
+URL: https://www.cs.cmu.edu/~411/rec/01.pdf
+Title: Recitation: Instruction Selection
+
+Local PDF: 02.pdf
+URL: https://www.cs.cmu.edu/~411/rec/02.pdf
+Title: Recitation: SSA
+
+Local PDF: 03.pdf
+URL: https://www.cs.cmu.edu/~411/rec/03.pdf
+Title: Recitation: Static Semantics
+
+Local PDF: 04.pdf
+URL: https://www.cs.cmu.edu/~411/rec/04.pdf
+Title: Recitation: Lexing and Parsing
+
+Local PDF: 05.pdf
+URL: https://www.cs.cmu.edu/~411/rec/05.pdf
+Title: Recitation: Calling Conventions
+
+Local PDF: 06.pdf
+URL: https://www.cs.cmu.edu/~411/rec/06.pdf
+Title: Recitation: Dynamic Semantics
+
+Local PDF: 07.pdf
+URL: https://www.cs.cmu.edu/~411/rec/07.pdf
+Title: Recitation: Memory
+
+Local PDF: 08.pdf
+URL: https://www.cs.cmu.edu/~411/rec/08.pdf
+Title: Recitation: Optimizations I
+
+Local PDF: 09.pdf
+URL: https://www.cs.cmu.edu/~411/rec/09.pdf
+Title: Recitation: Optimizations II
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~411/assignments.html
+Title: Assignments
+
+Local PDF: 00.pdf
+URL: https://www.cs.cmu.edu/~411/rec/00.pdf
+Title: Recitation: Lab 1 Intro
+
+Local PDF: 00.pdf
+URL: https://www.cs.cmu.edu/~411/rec/00.pdf
+Title: Lab 1 Intro
+
+URL: https://www.cs.cmu.edu/~411/writtens/homework.sty
+Title: homework.sty
+
+URL: https://www.cs.cmu.edu/~411/writtens/assignment1.tex
+Title: LaTeX source
+
+URL: https://www.cs.cmu.edu/~411/writtens/assignment2.tex
+Title: LaTeX source
+
+URL: https://www.cs.cmu.edu/~411/writtens/assignment3.tex
+Title: LaTeX source
+
+URL: https://www.cs.cmu.edu/~411/writtens/assignment4.tex
+Title: LaTeX source
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:02.070862
+Last Scraped: 2025-11-15T14:25:07.950523
 Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Recitations Found: 11
+Total Homeworks Found: 8

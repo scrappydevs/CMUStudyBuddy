@@ -39,7 +39,7 @@ try:
         try:
             anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
             # Test the client with a simple call to verify it works
-            print("✅ Anthropic client initialized")
+        print("✅ Anthropic client initialized")
         except Exception as e:
             anthropic_client = None
             print(f"⚠️ Anthropic API key found but client initialization failed: {e}")
@@ -834,7 +834,7 @@ You can view course details and PDFs in the course panel."""
                 # Check if it's a lab query that wasn't caught
                 if "lab" in message_lower or "bomb" in message_lower:
                     # Default to 15-213 for lab queries
-                    course_id = "213"
+                course_id = "213"
                     course = loader.get_course(course_id)
                     if course:
                         pdfs = loader.course_pdfs.get(course_id, [])

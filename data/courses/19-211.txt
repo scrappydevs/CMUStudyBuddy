@@ -12,11 +12,16 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: http://fd-temp.isri.cmu.edu/
+Title: Assignments
+
+URL: http://15-211-cmu.blogspot.com/search/label/announcements
+Title: Older Posts »
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:10.771028
+Last Scraped: 2025-11-15T14:26:45.295607
 Total Textbooks Found: 0
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 2

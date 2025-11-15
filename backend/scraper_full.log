@@ -771,3 +771,861 @@
 2025-11-15 14:23:40,023 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10701/
 2025-11-15 14:23:42,258 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~10701/
 2025-11-15 14:23:42,261 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/professors#jennifer_schwartz
+2025-11-15 14:24:12,736 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/professors#jennifer_schwartz: HTTPSConnectionPool(host='www.cs.cmu.edu', port=443): Max retries exceeded with url: /professors (Caused by ResponseError('too many 500 error responses'))
+2025-11-15 14:24:12,740 - __main__ - INFO - Found for 10-701: 1 textbooks, 0 recitations, 1 homeworks
+2025-11-15 14:24:12,742 - __main__ - INFO - Updated course file: 10-701.txt
+2025-11-15 14:24:12,742 - __main__ - INFO - Processing course 37/225: 19-448
+2025-11-15 14:24:12,742 - __main__ - INFO - Scraping course 19-448: https://www.cs.cmu.edu/~19448/
+2025-11-15 14:24:12,742 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19448/
+2025-11-15 14:24:12,793 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19448/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19448/
+2025-11-15 14:24:12,793 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~448/
+2025-11-15 14:24:12,810 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~448/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~448/
+2025-11-15 14:24:12,810 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19448/
+2025-11-15 14:24:12,829 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19448/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19448/
+2025-11-15 14:24:12,829 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0448/
+2025-11-15 14:24:12,856 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0448/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0448/
+2025-11-15 14:24:12,857 - __main__ - INFO - Updated course file: 19-448.txt
+2025-11-15 14:24:12,857 - __main__ - INFO - Processing course 38/225: 68-215
+2025-11-15 14:24:12,857 - __main__ - INFO - Scraping course 68-215: https://www.cs.cmu.edu/~682150/
+2025-11-15 14:24:12,857 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~682150/
+2025-11-15 14:24:12,966 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~682150/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~682150/
+2025-11-15 14:24:12,966 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~215/
+2025-11-15 14:24:12,994 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~215/
+2025-11-15 14:24:12,995 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~68215/
+2025-11-15 14:24:13,037 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~68215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~68215/
+2025-11-15 14:24:13,037 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0215/
+2025-11-15 14:24:13,058 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0215/
+2025-11-15 14:24:13,060 - __main__ - INFO - Updated course file: 68-2150.txt
+2025-11-15 14:24:13,060 - __main__ - INFO - Processing course 39/225: 10-714
+2025-11-15 14:24:13,061 - __main__ - INFO - Scraping course 10-714: https://www.cs.cmu.edu/~10714/
+2025-11-15 14:24:13,061 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10714/
+2025-11-15 14:24:13,161 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10714/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10714/
+2025-11-15 14:24:13,161 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~714/
+2025-11-15 14:24:13,182 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~714/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~714/
+2025-11-15 14:24:13,182 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10714/
+2025-11-15 14:24:13,201 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10714/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10714/
+2025-11-15 14:24:13,202 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0714/
+2025-11-15 14:24:13,221 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0714/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0714/
+2025-11-15 14:24:13,223 - __main__ - INFO - Updated course file: 10-714.txt
+2025-11-15 14:24:13,223 - __main__ - INFO - Processing course 40/225: 09-105
+2025-11-15 14:24:13,224 - __main__ - INFO - Scraping course 09-105: https://www.cs.cmu.edu/~09105/
+2025-11-15 14:24:13,224 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~09105/
+2025-11-15 14:24:13,243 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~09105/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~09105/
+2025-11-15 14:24:13,244 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~105/
+2025-11-15 14:24:13,260 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~105/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~105/
+2025-11-15 14:24:13,260 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~09105/
+2025-11-15 14:24:13,278 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~09105/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~09105/
+2025-11-15 14:24:13,278 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0105/
+2025-11-15 14:24:13,301 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0105/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0105/
+2025-11-15 14:24:13,302 - __main__ - INFO - Updated course file: 09-105.txt
+2025-11-15 14:24:13,302 - __main__ - INFO - Processing course 41/225: 11-711
+2025-11-15 14:24:13,302 - __main__ - INFO - Scraping course 11-711: https://www.cs.cmu.edu/~11711/
+2025-11-15 14:24:13,302 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11711/
+2025-11-15 14:24:13,320 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11711/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11711/
+2025-11-15 14:24:13,320 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~711/
+2025-11-15 14:24:13,341 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~711/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~711/
+2025-11-15 14:24:13,341 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11711/
+2025-11-15 14:24:13,359 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11711/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11711/
+2025-11-15 14:24:13,359 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0711/
+2025-11-15 14:24:13,375 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0711/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0711/
+2025-11-15 14:24:13,375 - __main__ - INFO - Updated course file: 11-711.txt
+2025-11-15 14:24:13,375 - __main__ - INFO - Processing course 42/225: 15-453
+2025-11-15 14:24:13,375 - __main__ - INFO - Scraping course 15-453: https://www.cs.cmu.edu/~15453/
+2025-11-15 14:24:13,375 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15453/
+2025-11-15 14:24:13,393 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15453/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15453/
+2025-11-15 14:24:13,393 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~453/
+2025-11-15 14:24:13,488 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~453/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~453/
+2025-11-15 14:24:13,488 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15453/
+2025-11-15 14:24:13,509 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15453/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15453/
+2025-11-15 14:24:13,509 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0453/
+2025-11-15 14:24:13,542 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0453/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0453/
+2025-11-15 14:24:13,543 - __main__ - INFO - Updated course file: 15-453.txt
+2025-11-15 14:24:13,543 - __main__ - INFO - Processing course 43/225: 15-321
+2025-11-15 14:24:13,543 - __main__ - INFO - Scraping course 15-321: https://www.cs.cmu.edu/~15321/
+2025-11-15 14:24:13,543 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15321/
+2025-11-15 14:24:13,567 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15321/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15321/
+2025-11-15 14:24:13,567 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~321/
+2025-11-15 14:24:13,586 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~321/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~321/
+2025-11-15 14:24:13,586 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15321/
+2025-11-15 14:24:13,681 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15321/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15321/
+2025-11-15 14:24:13,681 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0321/
+2025-11-15 14:24:13,703 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0321/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0321/
+2025-11-15 14:24:13,704 - __main__ - INFO - Updated course file: 15-321.txt
+2025-11-15 14:24:13,704 - __main__ - INFO - Processing course 44/225: 12-215
+2025-11-15 14:24:13,704 - __main__ - INFO - Scraping course 12-215: https://www.cs.cmu.edu/~12215/
+2025-11-15 14:24:13,704 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~12215/
+2025-11-15 14:24:13,723 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~12215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~12215/
+2025-11-15 14:24:13,723 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~215/
+2025-11-15 14:24:13,740 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~215/
+2025-11-15 14:24:13,741 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~12215/
+2025-11-15 14:24:13,760 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~12215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~12215/
+2025-11-15 14:24:13,761 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0215/
+2025-11-15 14:24:13,786 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0215/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0215/
+2025-11-15 14:24:13,787 - __main__ - INFO - Updated course file: 12-215.txt
+2025-11-15 14:24:13,787 - __main__ - INFO - Processing course 45/225: 11-667
+2025-11-15 14:24:13,787 - __main__ - INFO - Scraping course 11-667: https://www.cs.cmu.edu/~11667/
+2025-11-15 14:24:13,787 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11667/
+2025-11-15 14:24:13,814 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11667/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11667/
+2025-11-15 14:24:13,815 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~667/
+2025-11-15 14:24:13,833 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~667/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~667/
+2025-11-15 14:24:13,833 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11667/
+2025-11-15 14:24:13,855 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11667/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11667/
+2025-11-15 14:24:13,855 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0667/
+2025-11-15 14:24:13,873 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0667/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0667/
+2025-11-15 14:24:13,874 - __main__ - INFO - Updated course file: 11-667.txt
+2025-11-15 14:24:13,875 - __main__ - INFO - Processing course 46/225: 03-206
+2025-11-15 14:24:13,875 - __main__ - INFO - Scraping course 03-206: https://www.cs.cmu.edu/~03206/
+2025-11-15 14:24:13,875 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03206/
+2025-11-15 14:24:13,895 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03206/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03206/
+2025-11-15 14:24:13,895 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~206/
+2025-11-15 14:24:13,914 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~206/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~206/
+2025-11-15 14:24:13,914 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03206/
+2025-11-15 14:24:14,024 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03206/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03206/
+2025-11-15 14:24:14,024 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0206/
+2025-11-15 14:24:14,044 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0206/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0206/
+2025-11-15 14:24:14,045 - __main__ - INFO - Updated course file: 03-206.txt
+2025-11-15 14:24:14,045 - __main__ - INFO - Processing course 47/225: 17-781
+2025-11-15 14:24:14,045 - __main__ - INFO - Scraping course 17-781: https://www.cs.cmu.edu/~17781/
+2025-11-15 14:24:14,045 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~17781/
+2025-11-15 14:24:14,063 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~17781/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~17781/
+2025-11-15 14:24:14,063 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~781/
+2025-11-15 14:24:14,084 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~781/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~781/
+2025-11-15 14:24:14,084 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~17781/
+2025-11-15 14:24:14,102 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~17781/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~17781/
+2025-11-15 14:24:14,102 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0781/
+2025-11-15 14:24:14,204 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0781/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0781/
+2025-11-15 14:24:14,205 - __main__ - INFO - Updated course file: 17-781.txt
+2025-11-15 14:24:14,205 - __main__ - INFO - Processing course 48/225: 15-451
+2025-11-15 14:24:14,205 - __main__ - INFO - Scraping course 15-451: https://www.cs.cmu.edu/~15451/
+2025-11-15 14:24:14,205 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15451/
+2025-11-15 14:24:16,235 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15451/
+2025-11-15 14:24:16,236 - __main__ - INFO - Found for 15-451: 0 textbooks, 0 recitations, 0 homeworks
+2025-11-15 14:24:16,237 - __main__ - INFO - Updated course file: 15-451.txt
+2025-11-15 14:24:16,237 - __main__ - INFO - Processing course 49/225: 15-323
+2025-11-15 14:24:16,237 - __main__ - INFO - Scraping course 15-323: https://www.cs.cmu.edu/~15323/
+2025-11-15 14:24:16,237 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15323/
+2025-11-15 14:24:16,314 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15323/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15323/
+2025-11-15 14:24:16,314 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~323/
+2025-11-15 14:24:16,331 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~323/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~323/
+2025-11-15 14:24:16,331 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15323/
+2025-11-15 14:24:16,346 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15323/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15323/
+2025-11-15 14:24:16,346 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0323/
+2025-11-15 14:24:16,363 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0323/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0323/
+2025-11-15 14:24:16,364 - __main__ - INFO - Updated course file: 15-323.txt
+2025-11-15 14:24:16,364 - __main__ - INFO - Processing course 50/225: 15-445
+2025-11-15 14:24:16,364 - __main__ - INFO - Scraping course 15-445: https://www.cs.cmu.edu/~15445/
+2025-11-15 14:24:16,364 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15445/
+2025-11-15 14:24:16,380 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15445/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15445/
+2025-11-15 14:24:16,380 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~445/
+2025-11-15 14:24:16,400 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~445/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~445/
+2025-11-15 14:24:16,400 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15445/
+2025-11-15 14:24:16,417 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15445/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15445/
+2025-11-15 14:24:16,417 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0445/
+2025-11-15 14:24:16,434 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0445/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0445/
+2025-11-15 14:24:16,435 - __main__ - INFO - Updated course file: 15-445.txt
+2025-11-15 14:24:16,436 - __main__ - INFO - Processing course 51/225: 10-716
+2025-11-15 14:24:16,436 - __main__ - INFO - Scraping course 10-716: https://www.cs.cmu.edu/~10716/
+2025-11-15 14:24:16,436 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10716/
+2025-11-15 14:24:16,453 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10716/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10716/
+2025-11-15 14:24:16,454 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~716/
+2025-11-15 14:24:16,472 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~716/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~716/
+2025-11-15 14:24:16,472 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10716/
+2025-11-15 14:24:16,487 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10716/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10716/
+2025-11-15 14:24:16,487 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0716/
+2025-11-15 14:24:16,502 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0716/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0716/
+2025-11-15 14:24:16,503 - __main__ - INFO - Updated course file: 10-716.txt
+2025-11-15 14:24:16,503 - __main__ - INFO - Processing course 52/225: 36-700
+2025-11-15 14:24:16,503 - __main__ - INFO - Scraping course 36-700: https://www.cs.cmu.edu/~36700/
+2025-11-15 14:24:16,503 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~36700/
+2025-11-15 14:24:16,518 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~36700/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~36700/
+2025-11-15 14:24:16,518 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~700/
+2025-11-15 14:24:16,534 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~700/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~700/
+2025-11-15 14:24:16,534 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~36700/
+2025-11-15 14:24:16,637 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~36700/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~36700/
+2025-11-15 14:24:16,637 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0700/
+2025-11-15 14:24:16,661 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0700/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0700/
+2025-11-15 14:24:16,662 - __main__ - INFO - Updated course file: 36-700.txt
+2025-11-15 14:24:16,662 - __main__ - INFO - Processing course 53/225: 88-796
+2025-11-15 14:24:16,662 - __main__ - INFO - Scraping course 88-796: https://www.cs.cmu.edu/~88796/
+2025-11-15 14:24:16,662 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~88796/
+2025-11-15 14:24:16,681 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~88796/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~88796/
+2025-11-15 14:24:16,681 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~796/
+2025-11-15 14:24:16,698 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~796/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~796/
+2025-11-15 14:24:16,699 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~88796/
+2025-11-15 14:24:16,722 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~88796/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~88796/
+2025-11-15 14:24:16,722 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0796/
+2025-11-15 14:24:16,738 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0796/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0796/
+2025-11-15 14:24:16,738 - __main__ - INFO - Updated course file: 88-796.txt
+2025-11-15 14:24:16,738 - __main__ - INFO - Processing course 54/225: 10-717
+2025-11-15 14:24:16,738 - __main__ - INFO - Scraping course 10-717: https://www.cs.cmu.edu/~10717/
+2025-11-15 14:24:16,739 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10717/
+2025-11-15 14:24:16,829 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10717/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10717/
+2025-11-15 14:24:16,829 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~717/
+2025-11-15 14:24:16,856 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~717/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~717/
+2025-11-15 14:24:16,857 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10717/
+2025-11-15 14:24:16,884 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10717/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10717/
+2025-11-15 14:24:16,885 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0717/
+2025-11-15 14:24:16,910 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0717/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0717/
+2025-11-15 14:24:16,910 - __main__ - INFO - Updated course file: 10-717.txt
+2025-11-15 14:24:16,910 - __main__ - INFO - Processing course 55/225: 10-703
+2025-11-15 14:24:16,910 - __main__ - INFO - Scraping course 10-703: https://www.cs.cmu.edu/~10703/
+2025-11-15 14:24:16,910 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10703/
+2025-11-15 14:24:16,927 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10703/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10703/
+2025-11-15 14:24:16,927 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~703/
+2025-11-15 14:24:16,944 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~703/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~703/
+2025-11-15 14:24:16,944 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10703/
+2025-11-15 14:24:16,960 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10703/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10703/
+2025-11-15 14:24:16,961 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0703/
+2025-11-15 14:24:16,976 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0703/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0703/
+2025-11-15 14:24:16,977 - __main__ - INFO - Updated course file: 10-703.txt
+2025-11-15 14:24:16,977 - __main__ - INFO - Processing course 56/225: 15-322
+2025-11-15 14:24:16,977 - __main__ - INFO - Scraping course 15-322: https://www.cs.cmu.edu/~15322/
+2025-11-15 14:24:16,977 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15322/
+2025-11-15 14:24:19,000 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15322/
+2025-11-15 14:24:19,002 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15322/syllabus/
+2025-11-15 14:24:21,070 - __main__ - INFO - Found for 15-322: 2 textbooks, 3 recitations, 8 homeworks
+2025-11-15 14:24:21,072 - __main__ - INFO - Updated course file: 15-322.txt
+2025-11-15 14:24:21,072 - __main__ - INFO - Processing course 57/225: 12-271
+2025-11-15 14:24:21,072 - __main__ - INFO - Scraping course 12-271: https://www.cs.cmu.edu/~12271/
+2025-11-15 14:24:21,072 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~12271/
+2025-11-15 14:24:21,095 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~12271/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~12271/
+2025-11-15 14:24:21,095 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~271/
+2025-11-15 14:24:21,116 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~271/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~271/
+2025-11-15 14:24:21,116 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~12271/
+2025-11-15 14:24:21,138 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~12271/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~12271/
+2025-11-15 14:24:21,138 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0271/
+2025-11-15 14:24:21,159 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0271/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0271/
+2025-11-15 14:24:21,161 - __main__ - INFO - Updated course file: 12-271.txt
+2025-11-15 14:24:21,161 - __main__ - INFO - Processing course 58/225: 21-120
+2025-11-15 14:24:21,161 - __main__ - INFO - Scraping course 21-120: https://www.cs.cmu.edu/~21120/
+2025-11-15 14:24:21,161 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21120/
+2025-11-15 14:24:21,185 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21120/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21120/
+2025-11-15 14:24:21,186 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~120/
+2025-11-15 14:24:21,206 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~120/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~120/
+2025-11-15 14:24:21,207 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21120/
+2025-11-15 14:24:21,227 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21120/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21120/
+2025-11-15 14:24:21,228 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0120/
+2025-11-15 14:24:21,247 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0120/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0120/
+2025-11-15 14:24:21,249 - __main__ - INFO - Updated course file: 21-120.txt
+2025-11-15 14:24:21,249 - __main__ - INFO - Processing course 59/225: 03-512
+2025-11-15 14:24:21,249 - __main__ - INFO - Scraping course 03-512: https://www.cs.cmu.edu/~03512/
+2025-11-15 14:24:21,249 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03512/
+2025-11-15 14:24:21,357 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03512/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03512/
+2025-11-15 14:24:21,357 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~512/
+2025-11-15 14:24:21,379 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~512/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~512/
+2025-11-15 14:24:21,380 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03512/
+2025-11-15 14:24:21,401 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03512/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03512/
+2025-11-15 14:24:21,402 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0512/
+2025-11-15 14:24:21,425 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0512/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0512/
+2025-11-15 14:24:21,427 - __main__ - INFO - Updated course file: 03-512.txt
+2025-11-15 14:24:21,427 - __main__ - INFO - Processing course 60/225: 13-389
+2025-11-15 14:24:21,427 - __main__ - INFO - Scraping course 13-389: https://www.cs.cmu.edu/~133891/
+2025-11-15 14:24:21,427 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~133891/
+2025-11-15 14:24:21,457 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~133891/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~133891/
+2025-11-15 14:24:21,457 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~389/
+2025-11-15 14:24:21,493 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~389/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~389/
+2025-11-15 14:24:21,493 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~13389/
+2025-11-15 14:24:21,513 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~13389/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~13389/
+2025-11-15 14:24:21,514 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0389/
+2025-11-15 14:24:21,531 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0389/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0389/
+2025-11-15 14:24:21,532 - __main__ - INFO - Updated course file: 13-3891.txt
+2025-11-15 14:24:21,532 - __main__ - INFO - Processing course 61/225: 15-351
+2025-11-15 14:24:21,532 - __main__ - INFO - Scraping course 15-351: https://www.cs.cmu.edu/~15351/
+2025-11-15 14:24:21,532 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15351/
+2025-11-15 14:24:21,549 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15351/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15351/
+2025-11-15 14:24:21,550 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~351/
+2025-11-15 14:24:21,568 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~351/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~351/
+2025-11-15 14:24:21,569 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15351/
+2025-11-15 14:24:21,589 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15351/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15351/
+2025-11-15 14:24:21,589 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0351/
+2025-11-15 14:24:21,608 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0351/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0351/
+2025-11-15 14:24:21,609 - __main__ - INFO - Updated course file: 15-351.txt
+2025-11-15 14:24:21,609 - __main__ - INFO - Processing course 62/225: 11-761
+2025-11-15 14:24:21,609 - __main__ - INFO - Scraping course 11-761: https://www.cs.cmu.edu/~11761/
+2025-11-15 14:24:21,609 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11761/
+2025-11-15 14:24:21,630 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11761/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11761/
+2025-11-15 14:24:21,631 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~761/
+2025-11-15 14:24:21,651 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~761/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~761/
+2025-11-15 14:24:21,652 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11761/
+2025-11-15 14:24:21,669 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11761/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11761/
+2025-11-15 14:24:21,669 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0761/
+2025-11-15 14:24:21,694 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0761/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0761/
+2025-11-15 14:24:21,695 - __main__ - INFO - Updated course file: 11-761.txt
+2025-11-15 14:24:21,695 - __main__ - INFO - Processing course 63/225: 19-411
+2025-11-15 14:24:21,695 - __main__ - INFO - Scraping course 19-411: https://www.cs.cmu.edu/~19411/
+2025-11-15 14:24:21,695 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19411/
+2025-11-15 14:24:21,715 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19411/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19411/
+2025-11-15 14:24:21,715 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~411/
+2025-11-15 14:24:23,737 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~411/
+2025-11-15 14:24:23,737 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~411/schedule.html
+2025-11-15 14:24:26,098 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/01-inddef.pdf -> 01-inddef.pdf
+2025-11-15 14:24:28,145 - __main__ - INFO - Downloaded: 01-inddef.pdf
+2025-11-15 14:24:28,146 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/02-regalloc.pdf -> 02-regalloc.pdf
+2025-11-15 14:24:30,236 - __main__ - INFO - Downloaded: 02-regalloc.pdf
+2025-11-15 14:24:30,236 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/00.pdf -> 00.pdf
+2025-11-15 14:24:32,321 - __main__ - INFO - Downloaded: 00.pdf
+2025-11-15 14:24:32,322 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/04-instsel.pdf -> 04-instsel.pdf
+2025-11-15 14:24:34,395 - __main__ - INFO - Downloaded: 04-instsel.pdf
+2025-11-15 14:24:34,396 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/01.pdf -> 01.pdf
+2025-11-15 14:24:36,493 - __main__ - INFO - Downloaded: 01.pdf
+2025-11-15 14:24:36,494 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/02.pdf -> 02.pdf
+2025-11-15 14:24:38,583 - __main__ - INFO - Downloaded: 02.pdf
+2025-11-15 14:24:38,583 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/06-irtrees.pdf -> 06-irtrees.pdf
+2025-11-15 14:24:40,685 - __main__ - INFO - Downloaded: 06-irtrees.pdf
+2025-11-15 14:24:40,686 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/03.pdf -> 03.pdf
+2025-11-15 14:24:42,784 - __main__ - INFO - Downloaded: 03.pdf
+2025-11-15 14:24:42,784 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/04.pdf -> 04.pdf
+2025-11-15 14:24:44,876 - __main__ - INFO - Downloaded: 04.pdf
+2025-11-15 14:24:44,876 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/11-calling.pdf -> 11-calling.pdf
+2025-11-15 14:24:46,976 - __main__ - INFO - Downloaded: 11-calling.pdf
+2025-11-15 14:24:46,977 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/05.pdf -> 05.pdf
+2025-11-15 14:24:49,109 - __main__ - INFO - Downloaded: 05.pdf
+2025-11-15 14:24:49,111 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/14-dynamics.pdf -> 14-dynamics.pdf
+2025-11-15 14:24:51,179 - __main__ - INFO - Downloaded: 14-dynamics.pdf
+2025-11-15 14:24:51,180 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/06.pdf -> 06.pdf
+2025-11-15 14:24:53,316 - __main__ - INFO - Downloaded: 06.pdf
+2025-11-15 14:24:53,316 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/15-mutable.pdf -> 15-mutable.pdf
+2025-11-15 14:24:55,421 - __main__ - INFO - Downloaded: 15-mutable.pdf
+2025-11-15 14:24:55,422 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/16-structs.pdf -> 16-structs.pdf
+2025-11-15 14:24:57,470 - __main__ - INFO - Downloaded: 16-structs.pdf
+2025-11-15 14:24:57,471 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/07.pdf -> 07.pdf
+2025-11-15 14:24:59,585 - __main__ - INFO - Downloaded: 07.pdf
+2025-11-15 14:24:59,586 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/lectures/17-peepsub.pdf -> 17-peepsub.pdf
+2025-11-15 14:25:01,703 - __main__ - INFO - Downloaded: 17-peepsub.pdf
+2025-11-15 14:25:01,704 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/08.pdf -> 08.pdf
+2025-11-15 14:25:03,778 - __main__ - INFO - Downloaded: 08.pdf
+2025-11-15 14:25:03,779 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~411/rec/09.pdf -> 09.pdf
+2025-11-15 14:25:05,859 - __main__ - INFO - Downloaded: 09.pdf
+2025-11-15 14:25:05,860 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~411/assignments.html
+2025-11-15 14:25:07,948 - __main__ - INFO - Found for 19-411: 0 textbooks, 11 recitations, 8 homeworks
+2025-11-15 14:25:07,950 - __main__ - INFO - Updated course file: 19-411.txt
+2025-11-15 14:25:07,951 - __main__ - INFO - Processing course 64/225: 21-242
+2025-11-15 14:25:07,951 - __main__ - INFO - Scraping course 21-242: https://www.cs.cmu.edu/~21242/
+2025-11-15 14:25:07,951 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21242/
+2025-11-15 14:25:08,040 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21242/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21242/
+2025-11-15 14:25:08,040 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~242/
+2025-11-15 14:25:08,059 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~242/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~242/
+2025-11-15 14:25:08,059 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21242/
+2025-11-15 14:25:08,079 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21242/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21242/
+2025-11-15 14:25:08,079 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0242/
+2025-11-15 14:25:08,099 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0242/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0242/
+2025-11-15 14:25:08,099 - __main__ - INFO - Updated course file: 21-242.txt
+2025-11-15 14:25:08,099 - __main__ - INFO - Processing course 65/225: 16-720
+2025-11-15 14:25:08,100 - __main__ - INFO - Scraping course 16-720: https://www.cs.cmu.edu/~16720/
+2025-11-15 14:25:08,100 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16720/
+2025-11-15 14:25:08,118 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~16720/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~16720/
+2025-11-15 14:25:08,118 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~720/
+2025-11-15 14:25:08,138 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~720/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~720/
+2025-11-15 14:25:08,138 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~16720/
+2025-11-15 14:25:08,155 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~16720/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~16720/
+2025-11-15 14:25:08,155 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0720/
+2025-11-15 14:25:08,173 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0720/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0720/
+2025-11-15 14:25:08,175 - __main__ - INFO - Updated course file: 16-720.txt
+2025-11-15 14:25:08,175 - __main__ - INFO - Processing course 66/225: 05-813
+2025-11-15 14:25:08,175 - __main__ - INFO - Scraping course 05-813: https://www.cs.cmu.edu/~05813/
+2025-11-15 14:25:08,175 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~05813/
+2025-11-15 14:25:08,191 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~05813/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~05813/
+2025-11-15 14:25:08,191 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~813/
+2025-11-15 14:25:08,208 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~813/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~813/
+2025-11-15 14:25:08,208 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~05813/
+2025-11-15 14:25:08,227 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~05813/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~05813/
+2025-11-15 14:25:08,227 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0813/
+2025-11-15 14:25:08,244 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0813/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0813/
+2025-11-15 14:25:08,245 - __main__ - INFO - Updated course file: 05-813.txt
+2025-11-15 14:25:08,245 - __main__ - INFO - Processing course 67/225: 36-217
+2025-11-15 14:25:08,245 - __main__ - INFO - Scraping course 36-217: https://www.cs.cmu.edu/~36217/
+2025-11-15 14:25:08,245 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~36217/
+2025-11-15 14:25:08,264 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~36217/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~36217/
+2025-11-15 14:25:08,264 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~217/
+2025-11-15 14:25:08,284 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~217/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~217/
+2025-11-15 14:25:08,284 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~36217/
+2025-11-15 14:25:08,302 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~36217/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~36217/
+2025-11-15 14:25:08,303 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0217/
+2025-11-15 14:25:08,321 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0217/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0217/
+2025-11-15 14:25:08,321 - __main__ - INFO - Updated course file: 36-217.txt
+2025-11-15 14:25:08,321 - __main__ - INFO - Processing course 68/225: 18-213
+2025-11-15 14:25:08,321 - __main__ - INFO - Scraping course 18-213: https://www.cs.cmu.edu/~18213/
+2025-11-15 14:25:08,321 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18213/
+2025-11-15 14:25:10,347 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~18213/
+2025-11-15 14:25:10,348 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+2025-11-15 14:25:12,386 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:25:12,388 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18213/schedule.html
+2025-11-15 14:25:14,430 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18213/assignments.html
+2025-11-15 14:25:16,488 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18213/external/csapp
+2025-11-15 14:25:18,545 - __main__ - INFO - Found for 18-213: 2 textbooks, 0 recitations, 13 homeworks
+2025-11-15 14:25:18,546 - __main__ - INFO - Updated course file: 18-213.txt
+2025-11-15 14:25:18,546 - __main__ - INFO - Processing course 69/225: 33-232
+2025-11-15 14:25:18,546 - __main__ - INFO - Scraping course 33-232: https://www.cs.cmu.edu/~33232/
+2025-11-15 14:25:18,546 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~33232/
+2025-11-15 14:25:18,576 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~33232/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~33232/
+2025-11-15 14:25:18,576 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~232/
+2025-11-15 14:25:18,604 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~232/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~232/
+2025-11-15 14:25:18,604 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~33232/
+2025-11-15 14:25:18,632 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~33232/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~33232/
+2025-11-15 14:25:18,632 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0232/
+2025-11-15 14:25:18,662 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0232/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0232/
+2025-11-15 14:25:18,663 - __main__ - INFO - Updated course file: 33-232.txt
+2025-11-15 14:25:18,663 - __main__ - INFO - Processing course 70/225: 85-314
+2025-11-15 14:25:18,663 - __main__ - INFO - Scraping course 85-314: https://www.cs.cmu.edu/~85314/
+2025-11-15 14:25:18,663 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~85314/
+2025-11-15 14:25:18,695 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~85314/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~85314/
+2025-11-15 14:25:18,696 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~314/
+2025-11-15 14:25:18,746 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~314/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~314/
+2025-11-15 14:25:18,746 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~85314/
+2025-11-15 14:25:18,784 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~85314/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~85314/
+2025-11-15 14:25:18,784 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0314/
+2025-11-15 14:25:18,818 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0314/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0314/
+2025-11-15 14:25:18,820 - __main__ - INFO - Updated course file: 85-314.txt
+2025-11-15 14:25:18,820 - __main__ - INFO - Processing course 71/225: 10-605
+2025-11-15 14:25:18,820 - __main__ - INFO - Scraping course 10-605: https://www.cs.cmu.edu/~10605/
+2025-11-15 14:25:18,820 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10605/
+2025-11-15 14:25:18,854 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10605/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10605/
+2025-11-15 14:25:18,855 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~605/
+2025-11-15 14:25:18,893 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~605/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~605/
+2025-11-15 14:25:18,893 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10605/
+2025-11-15 14:25:18,913 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10605/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10605/
+2025-11-15 14:25:18,913 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0605/
+2025-11-15 14:25:18,930 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0605/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0605/
+2025-11-15 14:25:18,931 - __main__ - INFO - Updated course file: 10-605.txt
+2025-11-15 14:25:18,931 - __main__ - INFO - Processing course 72/225: 21-484
+2025-11-15 14:25:18,931 - __main__ - INFO - Scraping course 21-484: https://www.cs.cmu.edu/~21484/
+2025-11-15 14:25:18,931 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21484/
+2025-11-15 14:25:18,948 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21484/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21484/
+2025-11-15 14:25:18,948 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~484/
+2025-11-15 14:25:19,049 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~484/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~484/
+2025-11-15 14:25:19,049 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21484/
+2025-11-15 14:25:19,066 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21484/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21484/
+2025-11-15 14:25:19,066 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0484/
+2025-11-15 14:25:19,084 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0484/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0484/
+2025-11-15 14:25:19,085 - __main__ - INFO - Updated course file: 21-484.txt
+2025-11-15 14:25:19,085 - __main__ - INFO - Processing course 73/225: 10-613
+2025-11-15 14:25:19,086 - __main__ - INFO - Scraping course 10-613: https://www.cs.cmu.edu/~10613/
+2025-11-15 14:25:19,086 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10613/
+2025-11-15 14:25:19,102 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10613/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10613/
+2025-11-15 14:25:19,103 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~613/
+2025-11-15 14:25:19,120 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~613/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~613/
+2025-11-15 14:25:19,120 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10613/
+2025-11-15 14:25:19,136 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10613/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10613/
+2025-11-15 14:25:19,136 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0613/
+2025-11-15 14:25:19,153 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0613/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0613/
+2025-11-15 14:25:19,154 - __main__ - INFO - Updated course file: 10-613.txt
+2025-11-15 14:25:19,154 - __main__ - INFO - Processing course 74/225: 03-511
+2025-11-15 14:25:19,154 - __main__ - INFO - Scraping course 03-511: https://www.cs.cmu.edu/~03511/
+2025-11-15 14:25:19,154 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03511/
+2025-11-15 14:25:19,174 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03511/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03511/
+2025-11-15 14:25:19,174 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~511/
+2025-11-15 14:25:19,191 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~511/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~511/
+2025-11-15 14:25:19,191 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~03511/
+2025-11-15 14:25:19,209 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~03511/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~03511/
+2025-11-15 14:25:19,209 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0511/
+2025-11-15 14:25:19,228 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0511/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0511/
+2025-11-15 14:25:19,230 - __main__ - INFO - Updated course file: 03-511.txt
+2025-11-15 14:25:19,231 - __main__ - INFO - Processing course 75/225: 05-391
+2025-11-15 14:25:19,231 - __main__ - INFO - Scraping course 05-391: https://www.cs.cmu.edu/~05391/
+2025-11-15 14:25:19,231 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~05391/
+2025-11-15 14:25:19,257 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~05391/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~05391/
+2025-11-15 14:25:19,257 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~391/
+2025-11-15 14:25:19,279 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~391/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~391/
+2025-11-15 14:25:19,279 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~05391/
+2025-11-15 14:25:19,311 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~05391/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~05391/
+2025-11-15 14:25:19,311 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0391/
+2025-11-15 14:25:19,366 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0391/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0391/
+2025-11-15 14:25:19,368 - __main__ - INFO - Updated course file: 05-391.txt
+2025-11-15 14:25:19,368 - __main__ - INFO - Processing course 76/225: 15-150
+2025-11-15 14:25:19,368 - __main__ - INFO - Scraping course 15-150: https://www.cs.cmu.edu/~15150/
+2025-11-15 14:25:19,368 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15150/
+2025-11-15 14:25:21,575 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15150/
+2025-11-15 14:25:21,577 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15150/assign.html
+2025-11-15 14:25:23,689 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15150/lect.html
+2025-11-15 14:25:25,798 - __main__ - INFO - Found for 15-150: 0 textbooks, 0 recitations, 2 homeworks
+2025-11-15 14:25:25,799 - __main__ - INFO - Updated course file: 15-150.txt
+2025-11-15 14:25:25,799 - __main__ - INFO - Processing course 77/225: 21-241
+2025-11-15 14:25:25,799 - __main__ - INFO - Scraping course 21-241: https://www.cs.cmu.edu/~21241/
+2025-11-15 14:25:25,799 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21241/
+2025-11-15 14:25:25,874 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21241/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21241/
+2025-11-15 14:25:25,875 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~241/
+2025-11-15 14:25:25,911 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~241/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~241/
+2025-11-15 14:25:25,911 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21241/
+2025-11-15 14:25:25,946 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21241/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21241/
+2025-11-15 14:25:25,946 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0241/
+2025-11-15 14:25:25,981 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0241/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0241/
+2025-11-15 14:25:25,982 - __main__ - INFO - Updated course file: 21-241.txt
+2025-11-15 14:25:25,982 - __main__ - INFO - Processing course 78/225: 10-799
+2025-11-15 14:25:25,982 - __main__ - INFO - Scraping course 10-799: https://www.cs.cmu.edu/~10799/
+2025-11-15 14:25:25,983 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10799/
+2025-11-15 14:25:26,023 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10799/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10799/
+2025-11-15 14:25:26,023 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~799/
+2025-11-15 14:25:26,065 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~799/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~799/
+2025-11-15 14:25:26,065 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10799/
+2025-11-15 14:25:26,092 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10799/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10799/
+2025-11-15 14:25:26,092 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0799/
+2025-11-15 14:25:26,118 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0799/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0799/
+2025-11-15 14:25:26,119 - __main__ - INFO - Updated course file: 10-799.txt
+2025-11-15 14:25:26,120 - __main__ - INFO - Processing course 79/225: 15-151
+2025-11-15 14:25:26,120 - __main__ - INFO - Scraping course 15-151: https://www.cs.cmu.edu/~15151/
+2025-11-15 14:25:26,120 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15151/
+2025-11-15 14:25:28,174 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15151/
+2025-11-15 14:25:28,175 - __main__ - INFO - Found for 15-151: 0 textbooks, 0 recitations, 0 homeworks
+2025-11-15 14:25:28,176 - __main__ - INFO - Updated course file: 15-151.txt
+2025-11-15 14:25:28,176 - __main__ - INFO - Processing course 80/225: 11-777
+2025-11-15 14:25:28,176 - __main__ - INFO - Scraping course 11-777: https://www.cs.cmu.edu/~11777/
+2025-11-15 14:25:28,176 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11777/
+2025-11-15 14:25:28,208 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11777/
+2025-11-15 14:25:28,209 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~777/
+2025-11-15 14:25:28,241 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~777/
+2025-11-15 14:25:28,241 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11777/
+2025-11-15 14:25:28,274 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11777/
+2025-11-15 14:25:28,274 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0777/
+2025-11-15 14:25:28,305 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0777/
+2025-11-15 14:25:28,307 - __main__ - INFO - Updated course file: 11-777.txt
+2025-11-15 14:25:28,307 - __main__ - INFO - Processing course 81/225: 21-122
+2025-11-15 14:25:28,307 - __main__ - INFO - Scraping course 21-122: https://www.cs.cmu.edu/~21122/
+2025-11-15 14:25:28,307 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21122/
+2025-11-15 14:25:28,338 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21122/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21122/
+2025-11-15 14:25:28,338 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~122/
+2025-11-15 14:25:28,364 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~122/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~122/
+2025-11-15 14:25:28,364 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21122/
+2025-11-15 14:25:28,507 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21122/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21122/
+2025-11-15 14:25:28,508 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0122/
+2025-11-15 14:25:28,541 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0122/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0122/
+2025-11-15 14:25:28,543 - __main__ - INFO - Updated course file: 21-122.txt
+2025-11-15 14:25:28,543 - __main__ - INFO - Processing course 82/225: 11-824
+2025-11-15 14:25:28,543 - __main__ - INFO - Scraping course 11-824: https://www.cs.cmu.edu/~11824/
+2025-11-15 14:25:28,543 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11824/
+2025-11-15 14:25:28,572 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11824/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11824/
+2025-11-15 14:25:28,573 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~824/
+2025-11-15 14:25:28,668 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~824/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~824/
+2025-11-15 14:25:28,668 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11824/
+2025-11-15 14:25:28,689 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11824/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11824/
+2025-11-15 14:25:28,690 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0824/
+2025-11-15 14:25:28,711 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0824/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0824/
+2025-11-15 14:25:28,712 - __main__ - INFO - Updated course file: 11-824.txt
+2025-11-15 14:25:28,712 - __main__ - INFO - Processing course 83/225: 11-830
+2025-11-15 14:25:28,712 - __main__ - INFO - Scraping course 11-830: https://www.cs.cmu.edu/~11830/
+2025-11-15 14:25:28,712 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11830/
+2025-11-15 14:25:28,732 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11830/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11830/
+2025-11-15 14:25:28,732 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~830/
+2025-11-15 14:25:28,754 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~830/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~830/
+2025-11-15 14:25:28,754 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11830/
+2025-11-15 14:25:28,774 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11830/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11830/
+2025-11-15 14:25:28,774 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0830/
+2025-11-15 14:25:28,793 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0830/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0830/
+2025-11-15 14:25:28,793 - __main__ - INFO - Updated course file: 11-830.txt
+2025-11-15 14:25:28,793 - __main__ - INFO - Processing course 84/225: 15-780
+2025-11-15 14:25:28,793 - __main__ - INFO - Scraping course 15-780: https://www.cs.cmu.edu/~15780/
+2025-11-15 14:25:28,793 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/
+2025-11-15 14:25:30,823 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~15780/
+2025-11-15 14:25:30,824 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw1.pdf -> hw1.pdf
+2025-11-15 14:25:32,853 - __main__ - INFO - Downloaded: hw1.pdf
+2025-11-15 14:25:32,854 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw2.pdf -> hw2.pdf
+2025-11-15 14:25:34,888 - __main__ - INFO - Downloaded: hw2.pdf
+2025-11-15 14:25:34,892 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw3.pdf -> hw3.pdf
+2025-11-15 14:25:37,041 - __main__ - INFO - Downloaded: hw3.pdf
+2025-11-15 14:25:37,042 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/proposal.pdf -> proposal.pdf
+2025-11-15 14:25:39,072 - __main__ - INFO - Downloaded: proposal.pdf
+2025-11-15 14:25:39,073 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw4.pdf -> hw4.pdf
+2025-11-15 14:25:41,196 - __main__ - INFO - Downloaded: hw4.pdf
+2025-11-15 14:25:41,196 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw5.pdf -> hw5.pdf
+2025-11-15 14:25:43,349 - __main__ - INFO - Downloaded: hw5.pdf
+2025-11-15 14:25:43,350 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/project.pdf -> project.pdf
+2025-11-15 14:25:45,475 - __main__ - INFO - Downloaded: project.pdf
+2025-11-15 14:25:45,475 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture1_intro.pdf -> Lecture1_intro.pdf
+2025-11-15 14:25:47,813 - __main__ - INFO - Downloaded: Lecture1_intro.pdf
+2025-11-15 14:25:47,813 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture2.pdf -> Lecture2.pdf
+2025-11-15 14:25:50,022 - __main__ - INFO - Downloaded: Lecture2.pdf
+2025-11-15 14:25:50,023 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture3.pdf -> Lecture3.pdf
+2025-11-15 14:25:52,157 - __main__ - INFO - Downloaded: Lecture3.pdf
+2025-11-15 14:25:52,158 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture4-5.pdf -> Lecture4-5.pdf
+2025-11-15 14:25:54,407 - __main__ - INFO - Downloaded: Lecture4-5.pdf
+2025-11-15 14:25:54,408 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture6.pdf -> Lecture6.pdf
+2025-11-15 14:25:56,516 - __main__ - INFO - Downloaded: Lecture6.pdf
+2025-11-15 14:25:56,517 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture7-8-new.pdf -> Lecture7-8-new.pdf
+2025-11-15 14:25:58,846 - __main__ - INFO - Downloaded: Lecture7-8-new.pdf
+2025-11-15 14:25:58,847 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture9.pdf -> Lecture9.pdf
+2025-11-15 14:26:01,014 - __main__ - INFO - Downloaded: Lecture9.pdf
+2025-11-15 14:26:01,016 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture10.pdf -> Lecture10.pdf
+2025-11-15 14:26:03,147 - __main__ - INFO - Downloaded: Lecture10.pdf
+2025-11-15 14:26:03,148 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture11.pdf -> Lecture11.pdf
+2025-11-15 14:26:05,354 - __main__ - INFO - Downloaded: Lecture11.pdf
+2025-11-15 14:26:05,355 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture12.pdf -> Lecture12.pdf
+2025-11-15 14:26:07,601 - __main__ - INFO - Downloaded: Lecture12.pdf
+2025-11-15 14:26:07,602 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture13.pdf -> Lecture13.pdf
+2025-11-15 14:26:09,814 - __main__ - INFO - Downloaded: Lecture13.pdf
+2025-11-15 14:26:09,816 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture14a.pdf -> Lecture14a.pdf
+2025-11-15 14:26:11,992 - __main__ - INFO - Downloaded: Lecture14a.pdf
+2025-11-15 14:26:11,992 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture14b.pdf -> Lecture14b.pdf
+2025-11-15 14:26:14,078 - __main__ - INFO - Downloaded: Lecture14b.pdf
+2025-11-15 14:26:14,080 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~15780/15-780_files/lecture_slides/Lecture15.pdf -> Lecture15.pdf
+2025-11-15 14:26:16,280 - __main__ - INFO - Downloaded: Lecture15.pdf
+2025-11-15 14:26:16,281 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/#schedule
+2025-11-15 14:26:18,314 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/#assignments
+2025-11-15 14:26:20,350 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw1.pdf
+2025-11-15 14:26:22,438 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:22,446 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw2.pdf
+2025-11-15 14:26:24,537 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:24,540 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw3.pdf
+2025-11-15 14:26:26,644 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:26,645 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/proposal.pdf
+2025-11-15 14:26:28,730 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:28,735 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw4.pdf
+2025-11-15 14:26:30,849 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:30,855 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw5.pdf
+2025-11-15 14:26:32,930 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:32,935 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/project.pdf
+2025-11-15 14:26:35,019 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:35,022 - __main__ - INFO - Found for 15-780: 0 textbooks, 0 recitations, 17 homeworks
+2025-11-15 14:26:35,023 - __main__ - INFO - Updated course file: 15-780.txt
+2025-11-15 14:26:35,023 - __main__ - INFO - Processing course 85/225: 19-211
+2025-11-15 14:26:35,023 - __main__ - INFO - Scraping course 19-211: https://www.cs.cmu.edu/~19211/
+2025-11-15 14:26:35,023 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19211/
+2025-11-15 14:26:35,084 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19211/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19211/
+2025-11-15 14:26:35,084 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~211/
+2025-11-15 14:26:37,139 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~211/
+2025-11-15 14:26:37,139 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~211/webiso/schedule/
+2025-11-15 14:26:39,242 - __main__ - INFO - Fetching: http://fd-temp.isri.cmu.edu/
+2025-11-15 14:26:39,280 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10adc5910>: Failed to resolve 'fd-temp.isri.cmu.edu' ([Errno 8] nodename nor servname provided, or not known)")': /
+2025-11-15 14:26:41,282 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10adc57f0>: Failed to resolve 'fd-temp.isri.cmu.edu' ([Errno 8] nodename nor servname provided, or not known)")': /
+2025-11-15 14:26:45,292 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10acce000>: Failed to resolve 'fd-temp.isri.cmu.edu' ([Errno 8] nodename nor servname provided, or not known)")': /
+2025-11-15 14:26:45,294 - __main__ - ERROR - Error fetching http://fd-temp.isri.cmu.edu/: HTTPConnectionPool(host='fd-temp.isri.cmu.edu', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10accdd30>: Failed to resolve 'fd-temp.isri.cmu.edu' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-11-15 14:26:45,295 - __main__ - INFO - Found for 19-211: 0 textbooks, 0 recitations, 2 homeworks
+2025-11-15 14:26:45,296 - __main__ - INFO - Updated course file: 19-211.txt
+2025-11-15 14:26:45,296 - __main__ - INFO - Processing course 86/225: 11-411
+2025-11-15 14:26:45,296 - __main__ - INFO - Scraping course 11-411: https://www.cs.cmu.edu/~11411/
+2025-11-15 14:26:45,296 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11411/
+2025-11-15 14:26:45,362 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11411/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11411/
+2025-11-15 14:26:45,362 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11411/
+2025-11-15 14:26:45,381 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11411/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11411/
+2025-11-15 14:26:45,381 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0411/
+2025-11-15 14:26:45,404 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0411/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0411/
+2025-11-15 14:26:45,405 - __main__ - INFO - Updated course file: 11-411.txt
+2025-11-15 14:26:45,405 - __main__ - INFO - Processing course 87/225: 18-200
+2025-11-15 14:26:45,405 - __main__ - INFO - Scraping course 18-200: https://www.cs.cmu.edu/~18200/
+2025-11-15 14:26:45,405 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18200/
+2025-11-15 14:26:45,428 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~18200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~18200/
+2025-11-15 14:26:45,428 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~200/
+2025-11-15 14:26:45,447 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~200/
+2025-11-15 14:26:45,447 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~18200/
+2025-11-15 14:26:45,473 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~18200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~18200/
+2025-11-15 14:26:45,473 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0200/
+2025-11-15 14:26:45,596 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0200/
+2025-11-15 14:26:45,598 - __main__ - INFO - Updated course file: 18-200.txt
+2025-11-15 14:26:45,598 - __main__ - INFO - Processing course 88/225: 08-200
+2025-11-15 14:26:45,598 - __main__ - INFO - Scraping course 08-200: https://www.cs.cmu.edu/~08200/
+2025-11-15 14:26:45,598 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~08200/
+2025-11-15 14:26:45,616 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~08200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~08200/
+2025-11-15 14:26:45,617 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~200/
+2025-11-15 14:26:45,639 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~200/
+2025-11-15 14:26:45,639 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~08200/
+2025-11-15 14:26:45,660 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~08200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~08200/
+2025-11-15 14:26:45,660 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0200/
+2025-11-15 14:26:45,681 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0200/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0200/
+2025-11-15 14:26:45,682 - __main__ - INFO - Updated course file: 08-200.txt
+2025-11-15 14:26:45,682 - __main__ - INFO - Processing course 89/225: 11-767
+2025-11-15 14:26:45,682 - __main__ - INFO - Scraping course 11-767: https://www.cs.cmu.edu/~11767/
+2025-11-15 14:26:45,682 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11767/
+2025-11-15 14:26:45,702 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11767/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11767/
+2025-11-15 14:26:45,702 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~767/
+2025-11-15 14:26:45,720 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~767/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~767/
+2025-11-15 14:26:45,720 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~11767/
+2025-11-15 14:26:45,742 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~11767/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~11767/
+2025-11-15 14:26:45,742 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0767/
+2025-11-15 14:26:45,760 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0767/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0767/
+2025-11-15 14:26:45,762 - __main__ - INFO - Updated course file: 11-767.txt
+2025-11-15 14:26:45,762 - __main__ - INFO - Processing course 90/225: 19-403
+2025-11-15 14:26:45,762 - __main__ - INFO - Scraping course 19-403: https://www.cs.cmu.edu/~19403/
+2025-11-15 14:26:45,762 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19403/
+2025-11-15 14:26:45,779 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19403/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19403/
+2025-11-15 14:26:45,779 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~403/
+2025-11-15 14:26:45,797 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~403/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~403/
+2025-11-15 14:26:45,797 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19403/
+2025-11-15 14:26:45,812 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19403/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19403/
+2025-11-15 14:26:45,813 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0403/
+2025-11-15 14:26:45,830 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0403/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0403/
+2025-11-15 14:26:45,830 - __main__ - INFO - Updated course file: 19-403.txt
+2025-11-15 14:26:45,830 - __main__ - INFO - Processing course 91/225: 19-402
+2025-11-15 14:26:45,830 - __main__ - INFO - Scraping course 19-402: https://www.cs.cmu.edu/~19402/
+2025-11-15 14:26:45,830 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19402/
+2025-11-15 14:26:45,848 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19402/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19402/
+2025-11-15 14:26:45,848 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~402/
+2025-11-15 14:26:45,866 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~402/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~402/
+2025-11-15 14:26:45,866 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~19402/
+2025-11-15 14:26:45,887 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~19402/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~19402/
+2025-11-15 14:26:45,887 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0402/
+2025-11-15 14:26:45,905 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0402/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0402/
+2025-11-15 14:26:45,906 - __main__ - INFO - Updated course file: 19-402.txt
+2025-11-15 14:26:45,907 - __main__ - INFO - Processing course 92/225: 10-777
+2025-11-15 14:26:45,907 - __main__ - INFO - Scraping course 10-777: https://www.cs.cmu.edu/~10777/
+2025-11-15 14:26:45,907 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10777/
+2025-11-15 14:26:45,926 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10777/
+2025-11-15 14:26:45,926 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~777/
+2025-11-15 14:26:45,945 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~777/
+2025-11-15 14:26:45,945 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10777/
+2025-11-15 14:26:45,966 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10777/
+2025-11-15 14:26:45,966 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0777/
+2025-11-15 14:26:45,988 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0777/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0777/
+2025-11-15 14:26:45,990 - __main__ - INFO - Updated course file: 10-777.txt
+2025-11-15 14:26:45,990 - __main__ - INFO - Processing course 93/225: 15-381
+2025-11-15 14:26:45,990 - __main__ - INFO - Scraping course 15-381: https://www.cs.cmu.edu/~15381/
+2025-11-15 14:26:45,990 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15381/
+2025-11-15 14:26:46,097 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15381/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15381/
+2025-11-15 14:26:46,097 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~381/
+2025-11-15 14:26:46,118 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~381/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~381/
+2025-11-15 14:26:46,118 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15381/
+2025-11-15 14:26:46,137 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15381/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15381/
+2025-11-15 14:26:46,138 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0381/
+2025-11-15 14:26:46,157 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0381/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0381/
+2025-11-15 14:26:46,159 - __main__ - INFO - Updated course file: 15-381.txt
+2025-11-15 14:26:46,159 - __main__ - INFO - Processing course 94/225: 15-418
+2025-11-15 14:26:46,159 - __main__ - INFO - Scraping course 15-418: https://www.cs.cmu.edu/~15418/
+2025-11-15 14:26:46,160 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15418/
+2025-11-15 14:26:46,182 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15418/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15418/
+2025-11-15 14:26:46,182 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~418/
+2025-11-15 14:26:48,229 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~418/
+2025-11-15 14:26:48,230 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~418/syllabus/syllabus.pdf
+2025-11-15 14:26:50,296 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-11-15 14:26:50,301 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~418/schedule.html
+2025-11-15 14:26:52,349 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/01_whyparallelism.pdf -> 01_whyparallelism.pdf
+2025-11-15 14:27:00,416 - __main__ - INFO - Downloaded: 01_whyparallelism.pdf
+2025-11-15 14:27:00,422 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/02_ilp.pdf -> 02_ilp.pdf
+2025-11-15 14:27:02,663 - __main__ - INFO - Downloaded: 02_ilp.pdf
+2025-11-15 14:27:02,664 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/03_basicarch.pdf -> 03_basicarch.pdf
+2025-11-15 14:27:06,177 - __main__ - INFO - Downloaded: 03_basicarch.pdf
+2025-11-15 14:27:06,178 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/03_progmodels.pdf -> 03_progmodels.pdf
+2025-11-15 14:27:08,724 - __main__ - INFO - Downloaded: 03_progmodels.pdf
+2025-11-15 14:27:08,725 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/05-CUDA-programming.pdf -> 05-CUDA-programming.pdf
+2025-11-15 14:27:11,976 - __main__ - INFO - Downloaded: 05-CUDA-programming.pdf
+2025-11-15 14:27:11,978 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/06_progbasics.pdf -> 06_progbasics.pdf
+2025-11-15 14:27:14,201 - __main__ - INFO - Downloaded: 06_progbasics.pdf
+2025-11-15 14:27:14,203 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/07_progperf1.pdf -> 07_progperf1.pdf
+2025-11-15 14:27:16,304 - __main__ - INFO - Downloaded: 07_progperf1.pdf
+2025-11-15 14:27:16,306 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/08_progperf2.pdf -> 08_progperf2.pdf
+2025-11-15 14:27:20,146 - __main__ - INFO - Downloaded: 08_progperf2.pdf
+2025-11-15 14:27:20,147 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/10_cachecoherence.pdf -> 10_cachecoherence.pdf
+2025-11-15 14:27:22,331 - __main__ - INFO - Downloaded: 10_cachecoherence.pdf
+2025-11-15 14:27:22,331 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/11_directorycoherence.pdf -> 11_directorycoherence.pdf
+2025-11-15 14:27:24,414 - __main__ - INFO - Downloaded: 11_directorycoherence.pdf
+2025-11-15 14:27:24,416 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/12_snoopimpl.pdf -> 12_snoopimpl.pdf
+2025-11-15 14:27:28,351 - __main__ - INFO - Downloaded: 12_snoopimpl.pdf
+2025-11-15 14:27:28,353 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/14_interconnects.pdf -> 14_interconnects.pdf
+2025-11-15 14:27:32,306 - __main__ - INFO - Downloaded: 14_interconnects.pdf
+2025-11-15 14:27:32,308 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/revision_exam1.pdf -> revision_exam1.pdf
+2025-11-15 14:27:34,429 - __main__ - INFO - Downloaded: revision_exam1.pdf
+2025-11-15 14:27:34,430 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/13_virtualmemory.pdf -> 13_virtualmemory.pdf
+2025-11-15 14:27:36,613 - __main__ - INFO - Downloaded: 13_virtualmemory.pdf
+2025-11-15 14:27:36,614 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/15_consistency.pdf -> 15_consistency.pdf
+2025-11-15 14:27:38,852 - __main__ - INFO - Downloaded: 15_consistency.pdf
+2025-11-15 14:27:38,854 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/16_synchronization.pdf -> 16_synchronization.pdf
+2025-11-15 14:27:41,133 - __main__ - INFO - Downloaded: 16_synchronization.pdf
+2025-11-15 14:27:41,135 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/17_lockfree.pdf -> 17_lockfree.pdf
+2025-11-15 14:27:43,382 - __main__ - INFO - Downloaded: 17_lockfree.pdf
+2025-11-15 14:27:43,386 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/20_heterogeneity.pdf -> 20_heterogeneity.pdf
+2025-11-15 14:27:46,279 - __main__ - INFO - Downloaded: 20_heterogeneity.pdf
+2025-11-15 14:27:46,281 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/20_specialization_csd.pdf -> 20_specialization_csd.pdf
+2025-11-15 14:27:48,411 - __main__ - INFO - Downloaded: 20_specialization_csd.pdf
+2025-11-15 14:27:48,412 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/22_dsl.pdf -> 22_dsl.pdf
+2025-11-15 14:27:50,821 - __main__ - INFO - Downloaded: 22_dsl.pdf
+2025-11-15 14:27:50,823 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/20_graphdsl.pdf -> 20_graphdsl.pdf
+2025-11-15 14:27:53,041 - __main__ - INFO - Downloaded: 20_graphdsl.pdf
+2025-11-15 14:27:53,042 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/23-parallel_deep_learning_basics.pdf -> 23-parallel_deep_learning_basics.pdf
+2025-11-15 14:27:55,622 - __main__ - INFO - Downloaded: 23-parallel_deep_learning_basics.pdf
+2025-11-15 14:27:55,629 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/24-parallel_deep_learning_data_parallel.pdf -> 24-parallel_deep_learning_data_parallel.pdf
+2025-11-15 14:27:58,384 - __main__ - INFO - Downloaded: 24-parallel_deep_learning_data_parallel.pdf
+2025-11-15 14:27:58,387 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/lectures/25-parallel_deep_learning_model_pipeline_parallel.pdf -> 25-parallel_deep_learning_model_pipeline_parallel.pdf
+2025-11-15 14:28:00,830 - __main__ - INFO - Downloaded: 25-parallel_deep_learning_model_pipeline_parallel.pdf
+2025-11-15 14:28:00,832 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~418/assignments.html
+2025-11-15 14:28:02,874 - __main__ - INFO - Downloading: https://github.com/cmu15418f25/asst1/blob/main/asst1_handout.pdf -> asst1_handout.pdf
+2025-11-15 14:28:05,377 - __main__ - INFO - Downloaded: asst1_handout.pdf
+2025-11-15 14:28:05,383 - __main__ - INFO - Downloading: https://github.com/cmu15418f25/asst2/blob/main/asst2_handout.pdf -> asst2_handout.pdf
+2025-11-15 14:28:07,688 - __main__ - INFO - Downloaded: asst2_handout.pdf
+2025-11-15 14:28:07,689 - __main__ - INFO - Downloading: https://github.com/cmu15418f25/asst3/blob/main/asst3.pdf -> asst3.pdf
+2025-11-15 14:28:10,133 - __main__ - INFO - Downloaded: asst3.pdf
+2025-11-15 14:28:10,134 - __main__ - INFO - Downloading: https://github.com/cmu15418f25/asst4/blob/main/asst4_handout.pdf -> asst4_handout.pdf
+2025-11-15 14:28:12,378 - __main__ - INFO - Downloaded: asst4_handout.pdf
+2025-11-15 14:28:12,378 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~418/doc/CUDA-recitation.pdf -> CUDA-recitation.pdf
+2025-11-15 14:28:14,801 - __main__ - INFO - Downloaded: CUDA-recitation.pdf
+2025-11-15 14:28:14,802 - __main__ - INFO - Found for 15-418: 0 textbooks, 3 recitations, 16 homeworks
+2025-11-15 14:28:14,802 - __main__ - INFO - Updated course file: 15-418.txt
+2025-11-15 14:28:14,802 - __main__ - INFO - Processing course 95/225: 15-424
+2025-11-15 14:28:14,802 - __main__ - INFO - Scraping course 15-424: https://www.cs.cmu.edu/~15424/
+2025-11-15 14:28:14,802 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15424/
+2025-11-15 14:28:14,853 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15424/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15424/
+2025-11-15 14:28:14,853 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~424/
+2025-11-15 14:28:14,875 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~424/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~424/
+2025-11-15 14:28:14,876 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~15424/
+2025-11-15 14:28:14,911 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~15424/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~15424/
+2025-11-15 14:28:14,911 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0424/
+2025-11-15 14:28:14,929 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0424/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0424/
+2025-11-15 14:28:14,929 - __main__ - INFO - Updated course file: 15-424.txt
+2025-11-15 14:28:14,929 - __main__ - INFO - Processing course 96/225: 21-127
+2025-11-15 14:28:14,929 - __main__ - INFO - Scraping course 21-127: https://www.cs.cmu.edu/~21127/
+2025-11-15 14:28:14,929 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21127/
+2025-11-15 14:28:14,949 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21127/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21127/
+2025-11-15 14:28:14,949 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~127/
+2025-11-15 14:28:14,971 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~127/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~127/
+2025-11-15 14:28:14,971 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21127/
+2025-11-15 14:28:14,990 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21127/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21127/
+2025-11-15 14:28:14,990 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0127/
+2025-11-15 14:28:15,023 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0127/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0127/
+2025-11-15 14:28:15,024 - __main__ - INFO - Updated course file: 21-127.txt
+2025-11-15 14:28:15,024 - __main__ - INFO - Processing course 97/225: 02-712
+2025-11-15 14:28:15,024 - __main__ - INFO - Scraping course 02-712: https://www.cs.cmu.edu/~02712/
+2025-11-15 14:28:15,024 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~02712/
+2025-11-15 14:28:15,043 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~02712/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~02712/
+2025-11-15 14:28:15,044 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~712/
+2025-11-15 14:28:15,063 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~712/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~712/
+2025-11-15 14:28:15,063 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~02712/
+2025-11-15 14:28:15,083 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~02712/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~02712/
+2025-11-15 14:28:15,083 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0712/
+2025-11-15 14:28:15,112 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0712/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0712/
+2025-11-15 14:28:15,113 - __main__ - INFO - Updated course file: 02-712.txt
+2025-11-15 14:28:15,113 - __main__ - INFO - Processing course 98/225: 10-401
+2025-11-15 14:28:15,113 - __main__ - INFO - Scraping course 10-401: https://www.cs.cmu.edu/~10401/
+2025-11-15 14:28:15,113 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10401/
+2025-11-15 14:28:15,148 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10401/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10401/
+2025-11-15 14:28:15,148 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~401/
+2025-11-15 14:28:15,168 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~401/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~401/
+2025-11-15 14:28:15,168 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10401/
+2025-11-15 14:28:15,191 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10401/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10401/
+2025-11-15 14:28:15,191 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0401/
+2025-11-15 14:28:15,210 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0401/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0401/
+2025-11-15 14:28:15,211 - __main__ - INFO - Updated course file: 10-401.txt
+2025-11-15 14:28:15,211 - __main__ - INFO - Processing course 99/225: 21-325
+2025-11-15 14:28:15,211 - __main__ - INFO - Scraping course 21-325: https://www.cs.cmu.edu/~21325/
+2025-11-15 14:28:15,211 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21325/
+2025-11-15 14:28:15,232 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21325/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21325/
+2025-11-15 14:28:15,232 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~325/
+2025-11-15 14:28:15,254 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~325/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~325/
+2025-11-15 14:28:15,254 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~21325/
+2025-11-15 14:28:15,274 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~21325/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~21325/
+2025-11-15 14:28:15,274 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0325/
+2025-11-15 14:28:15,375 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0325/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0325/
+2025-11-15 14:28:15,376 - __main__ - INFO - Updated course file: 21-325.txt
+2025-11-15 14:28:15,377 - __main__ - INFO - Processing course 100/225: 02-510
+2025-11-15 14:28:15,377 - __main__ - INFO - Scraping course 02-510: https://www.cs.cmu.edu/~02510/
+2025-11-15 14:28:15,377 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~02510/
+2025-11-15 14:28:15,392 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~02510/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~02510/
+2025-11-15 14:28:15,392 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~510/
+2025-11-15 14:28:15,410 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~510/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~510/
+2025-11-15 14:28:15,410 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~02510/
+2025-11-15 14:28:15,426 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~02510/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~02510/
+2025-11-15 14:28:15,426 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0510/
+2025-11-15 14:28:15,449 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0510/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0510/
+2025-11-15 14:28:15,450 - __main__ - INFO - Updated course file: 02-510.txt
+2025-11-15 14:28:15,450 - __main__ - INFO - Processing course 101/225: 10-617
+2025-11-15 14:28:15,450 - __main__ - INFO - Scraping course 10-617: https://www.cs.cmu.edu/~10617/
+2025-11-15 14:28:15,450 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10617/
+2025-11-15 14:28:15,472 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10617/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10617/
+2025-11-15 14:28:15,472 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~617/
+2025-11-15 14:28:15,490 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~617/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~617/
+2025-11-15 14:28:15,490 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10617/
+2025-11-15 14:28:15,512 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~10617/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~10617/
+2025-11-15 14:28:15,512 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~0617/
+2025-11-15 14:28:15,529 - __main__ - ERROR - Error fetching https://www.cs.cmu.edu/~0617/: 404 Client Error: Not Found for url: https://www.cs.cmu.edu/~0617/
+2025-11-15 14:28:15,530 - __main__ - INFO - Updated course file: 10-617.txt
+2025-11-15 14:28:15,530 - __main__ - INFO - Processing course 102/225: 10-601
+2025-11-15 14:28:15,530 - __main__ - INFO - Scraping course 10-601: https://www.cs.cmu.edu/~10601/
+2025-11-15 14:28:15,531 - __main__ - INFO - Fetching: https://www.cs.cmu.edu/~10601/
+2025-11-15 14:28:17,570 - __main__ - INFO - Successfully accessed course page: https://www.cs.cmu.edu/~10601/
+2025-11-15 14:28:17,575 - __main__ - INFO - Downloading: https://www.cs.cmu.edu/~10601/lectures/281_Probability_Reference_Sheet.pdf -> 281_Probability_Reference_Sheet.pdf
+2025-11-15 14:28:19,596 - __main__ - INFO - Downloaded: 281_Probability_Reference_Sheet.pdf
+2025-11-15 14:28:19,597 - __main__ - INFO - Downloading: https://arxiv.org/pdf/1404.1100.pdf -> 1404.1100.pdf

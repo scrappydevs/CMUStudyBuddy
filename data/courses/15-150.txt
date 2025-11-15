@@ -12,11 +12,16 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15150/assign.html
+Title: Assignments
+
+URL: https://www.cs.cmu.edu/~15150/events.html
+Title: Office Hours, Labs & Events
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:06.523815
+Last Scraped: 2025-11-15T14:25:25.798951
 Total Textbooks Found: 0
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 2

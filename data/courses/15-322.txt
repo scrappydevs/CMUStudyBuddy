@@ -4,19 +4,54 @@ Course URL: https://www.cs.cmu.edu/~15322/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: https://a.co/d/brdIW0f
+Title: Order textbook
+
+URL: https://press.umich.edu/Books/A/Algorithmic-Composition2
+Title: Algorithmic Composition
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.amazon.com/Computer-Music-Tutorial-second-dp-0262044919/dp/0262044919/ref=dp_ob_title_bk
+Title: The Computer Music Tutorial
+
+URL: https://cmu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991019486715904436&context=L&vid=01CMU_INST:01CMU&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&isFrbr=true&tab=Everything&query=any,contains,computer%20music%20tutorial&sortby=date_d&facet=frbrgroupid,include,9019777044576965786&mode=Basic&offset=0
+Title: Link to electronic version in CMU library
+
+URL: https://www.cs.cmu.edu/~15322/syllabus/#attendance-policy-and-class-recordings
+Title: attendance policy
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15322/syllabus/
+Title: Syllabus
+
+URL: https://www.cs.cmu.edu/~15322/projects/
+Title: Projects
+
+URL: https://www.cs.cmu.edu/~15322/syllabus/
+Title: syllabus
+
+URL: https://www.cs.cmu.edu/~15322/syllabus/
+
+URL: https://sourceforge.net/projects/nyquist/
+Title: NyquistIDE
+
+URL: https://www.cs.cmu.edu/~15322/project622/
+Title: ambitious semester-long project
+
+URL: https://www.cs.cmu.edu/~15322/project622/
+Title: additional project
+
+URL: https://www.cs.cmu.edu/~15322/projects/#grading-policies
+Title: this page
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:01.943908
-Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Last Scraped: 2025-11-15T14:24:21.071674
+Total Textbooks Found: 2
+Total Recitations Found: 3
+Total Homeworks Found: 8

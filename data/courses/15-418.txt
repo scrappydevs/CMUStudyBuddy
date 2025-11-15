@@ -8,15 +8,80 @@ None found
 
 RECITATIONS:
 --------------------------------------------------------------------------------
-None found
+Local PDF: revision_exam1.pdf
+URL: https://www.cs.cmu.edu/~418/lectures/revision_exam1.pdf
+Title: exam
+                                        review
+                                        slides
+
+URL: https://youtu.be/EHTPo-tp5wk
+Title: exam review video
+
+Local PDF: CUDA-recitation.pdf
+URL: https://www.cs.cmu.edu/~418/doc/CUDA-recitation.pdf
+Title: CUDA Recitation
+
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~418/assignments.html
+Title: Assignments
+
+URL: https://www.cs.cmu.edu/~418/projects.html
+Title: Projects
+
+URL: https://autolab.andrew.cmu.edu/courses/15418-f24
+Title: Autolab
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~418/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~418/assignments.html
+Title: Assignments
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~418/syllabus/syllabus.pdf
+Title: course syllabus
+
+URL: https://www.cs.cmu.edu/~418/assignments.html
+Title: assignments page
+
+URL: https://autolab.andrew.cmu.edu/courses/15418-f23
+Title: Autolab
+
+URL: https://autolab.andrew.cmu.edu/courses/15418-f25
+Title: Autolab
+
+Local PDF: asst1_handout.pdf
+URL: https://github.com/cmu15418f25/asst1/blob/main/asst1_handout.pdf
+Title: Assignment 1
+
+Local PDF: asst2_handout.pdf
+URL: https://github.com/cmu15418f25/asst2/blob/main/asst2_handout.pdf
+Title: Assignment 2
+
+Local PDF: asst3.pdf
+URL: https://github.com/cmu15418f25/asst3/blob/main/asst3.pdf
+Title: Assignment 3
+
+Local PDF: asst4_handout.pdf
+URL: https://github.com/cmu15418f25/asst4/blob/main/asst4_handout.pdf
+Title: Assignment 4
+
+URL: https://canvas.cmu.edu/courses/50201/assignments/887447
+Title: Written Assignment 1
+
+URL: https://canvas.cmu.edu/courses/50201/assignments/887448
+Title: Written Assignment 2
+
+URL: https://canvas.cmu.edu/courses/50201/assignments/887449
+Title: Written Assignment 3
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:10.981019
+Last Scraped: 2025-11-15T14:28:14.802716
 Total Textbooks Found: 0
-Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Recitations Found: 3
+Total Homeworks Found: 16

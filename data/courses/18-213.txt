@@ -4,7 +4,12 @@ Course URL: https://www.cs.cmu.edu/~18213/
 
 BOOKS AND TEXTBOOKS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~18213/external/csapp
+Title: Textbook
+
+URL: http://csappbook.blogspot.com
+Title: CS:APP blog
+
 
 RECITATIONS:
 --------------------------------------------------------------------------------
@@ -12,11 +17,53 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~18213/labs.html
+Title: Labs
+
+URL: https://www.cs.cmu.edu/~18213/assignments.html
+Title: Homeworks
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~18213/labmachines.html
+Title: Lab Machines
+
+URL: https://www.cs.cmu.edu/~18213/external/autolab
+Title: Autolab
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~18213/labs.html
+Title: Labs
+
+URL: https://www.cs.cmu.edu/~18213/assignments.html
+Title: Homeworks
+
+URL: https://www.cs.cmu.edu/~18213/labmachines.html
+Title: Lab Machines
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+Title: course syllabus
+
+URL: https://www.cs.cmu.edu/~18213/labs.html
+Title: labs page
+
+Local PDF: syllabus.pdf
+URL: https://www.cs.cmu.edu/~18213/syllabus/syllabus.pdf
+Title: Course Syllabus
+
+URL: https://www.cs.cmu.edu/~18213/labs/cprogramminglab-handout.tar
+Title: tar
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:04.160201
-Total Textbooks Found: 0
+Last Scraped: 2025-11-15T14:25:18.545958
+Total Textbooks Found: 2
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 13

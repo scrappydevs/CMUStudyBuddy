@@ -12,11 +12,75 @@ None found
 
 HOMEWORKS AND ASSIGNMENTS:
 --------------------------------------------------------------------------------
-None found
+URL: https://www.cs.cmu.edu/~15780/#assignments
+Title: Assignments
+
+URL: https://www.cs.cmu.edu/~15780/#project
+Title: Course Project
+
+Local PDF: hw1.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw1.pdf
+Title: Homework 1
+
+Local PDF: hw2.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw2.pdf
+Title: Homework 2
+
+Local PDF: hw3.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw3.pdf
+Title: Homework 3
+
+Local PDF: proposal.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/proposal.pdf
+Title: Project Proposal
+
+Local PDF: hw4.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw4.pdf
+Title: Homework 4
+
+Local PDF: hw5.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw5.pdf
+Title: Homework 5
+
+Local PDF: project.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/project.pdf
+Title: Project Report
+
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/proposal.pdf
+Title: here
+
+Local PDF: hw1.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw1.pdf
+Title: Homework 1
+
+Local PDF: hw2.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw2.pdf
+Title: Homework 2
+
+Local PDF: hw3.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw3.pdf
+Title: Homework 3
+
+Local PDF: proposal.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/proposal.pdf
+Title: Project Proposal
+
+Local PDF: hw4.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw4.pdf
+Title: Homework 4
+
+Local PDF: hw5.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/hw5.pdf
+Title: Homework 5
+
+Local PDF: project.pdf
+URL: https://www.cs.cmu.edu/~15780/15-780_files/homeworks/project.pdf
+Title: Project Report
+
 
 
 ================================================================================
-Last Scraped: 2025-11-15T14:07:10.750985
+Last Scraped: 2025-11-15T14:26:35.023529
 Total Textbooks Found: 0
 Total Recitations Found: 0
-Total Homeworks Found: 0
+Total Homeworks Found: 17
