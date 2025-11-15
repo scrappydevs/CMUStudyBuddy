@@ -1,0 +1,186 @@
+Course Code: 02-251
+Course Name: 02-251 Great Ideas in Computational Biology
+Course URL: https://www.cs.cmu.edu/~02251/
+================================================================================
+
+DESCRIPTION:
+--------------------------------------------------------------------------------
+This 12-unit course provides an introduction to many of the great ideas that
+have formed the foundation for the transformation of the life sciences into a
+fully-fledged computational discipline. This gateway course is intended as a
+first exposure to computational biology for first-year undergraduates in the
+School of Computer Science, although it is open to other quantitatively and
+computationally capable students who are interested in exploring the field. By
+completing this course, students will encounter a handful of fundamental
+algorithmic approaches deriving straight from very widely cited primary
+literature, much of which has been published in recent years. The course also
+introduces basic concepts in statistics, mathematics, and machine learning
+necessary to understand these approaches. Many of the ideas central to modern
+computational biology have resulted in widely used software that is applied to
+analyze (often very large) biological datasets; an important feature of the
+course is that students will be exposed to this software in the context of
+compelling biological problems.
+
+PREREQUISITES:
+--------------------------------------------------------------------------------
+Course DescriptionThis 12-unit course provides an introduction to many of the great ideas that
+have formed the foundation for the transformation of the life sciences into a
+fully-fledged computational discipline. This gateway course is intended as a
+first exposure to computational biology for first-year undergraduates in the
+School of Computer Science, although it is open to other quantitatively and
+computationally capable students who are interested in exploring the field. By
+completing this course, students will encounter a handful of fundamental
+algorithmic approaches deriving straight from very widely cited primary
+literature, much of which has been published in recent years. The course also
+introduces basic concepts in statistics, mathematics, and machine learning
+necessary to understand these approaches. Many of the ideas central to modern
+computational biology have resulted in widely used software that is applied to
+analyze (often very large) biological datasets; an important feature of the
+course is that students will be exposed to this software in the context of
+compelling biological problems.Vital InformationClickherefor the course syllabus.LectureRecitationCourseTimeTR 10:30-11:50 AMF 12:30-1:20LocationGHC 4303GHC 4215Prof. Carl KingsfordProf. Phillip CompeauE-mailcarlk@cs.cmu.edupcompeau@cs.cmu.eduInstructorsWebsitehttp://kingsfordlab.cbd.cmu.eduhttp://compeau.cbd.cmu.eduOfficeGHC 7725GHC 7403Office HourWednesday, 1:30-3:00pmWednesday, 10:30am-12:00pm or by appointmentHongyu ZhengWendy YangE-mailhongyuz1@andrew.cmu.edumuyuy@andrew.cmu.eduTAsOffice HourFriday, 6:00-7:00pmMonday, 5:00-6:00pmLocationGHC 7416GHC 7416Pre-requisitesThe most common question we anticipate is, “How much biology do I need to know?” The reason we anticipate this question is that high school biology education is, in most places, boring and outdated. Although taking an introductory biology course concurrently cannot hurt, it is not required for this course, which is first and foremost a computational course.Because of the course’s heavily quantitative and computational nature, we suggest the following prerequisite courses. We also suggest that students consider taking 15-122 (Principles of Imperative Computation) concurrently to guarantee strength in programming.02-201 (Programming for Scientists) or 15-112 (Fundamentals of Programming and Computer Science)15-151 (Mathematical Foundations for Computer Science) or 21-127 (Concepts of Mathematics)Course DetailsCanvas Homepage:Canvas will be used for attendance and as a central repository for grades. You should be automatically enrolled athttps://canvas.cmu.edu/courses/8153.Submitting Assignments:We will use Gradescope for theory assignments. Please visithttps: //gradescope.comand use the following entry code to see our course: 94G82E. For automatically graded programming assignments, links will be provided throughout the course.Discussion Forum:An online forum is provided on Piazza as an area for discussion and questions. The forum will be moderated by the course staff who will respond to questions, but students are encouraged to help each other via discussion. However, assignment specifics should not be discussed — any hints will be provided by the teaching staff. You can find the class on Piazza athttps://piazza.com/class/jpbntwh8tix1hu.Programming Expectations:Early in the course, we will provide test datasets; later, we will assume that you will write your own tests. Programming assignments in this class are based on the model of giving you a randomized dataset and asking you to return the result of running your algorithm on this dataset. Accordingly, there is no official language for the course; you can solve programming assignments using the language of your choosing. We expect you to produce clean, readable, and well-documented code.RecitationsRecitations will focus on a blend of the following:reinforcement and further discussion of key algorithms presented in the course;additional interesting computational biology tidbits on the current subject that did not fit into the main lecture;discussion questions building knowledge of critical conceptsapplication of popular biological software implementing ideas in the course and applied to real datasets.Recitation attendance will not be graded, but attendance is strongly suggested.CourseworkCoursework will consist of the following components.No late assignments will be accepted.Homework assignments (30% of grade)Homework assignments will comprise two parts.Automatically graded programming assignments (20% of grade) will ask you to implement many of the algorithms forming the great ideas for the course. Programming assignments must be completed on your own (unless noted otherwise) and turned in to the autograder by a given deadline.Theory questions (10% of grade) will be provided before each lecture to encourage you to review the material and arrive to class prepared.Examinations (40% of grade)The midterms and final exam will test your knowledge of the material from the class. The midterms will be held in class and the final will be held during the university’s scheduled time. The midterm dates are:Midterm 1 (10% of grade): Thursday, February 14 (in class)Midterm 2 (10% of grade): Tuesday, April 2 (in class)Final (20% of grade): Time and location TBD (will be posted when set by university)The midterms will not be cumulative: midterm 2 will cover material encountered after midterm 1. That having been said, later material in the class builds upon the earlier material, so it is important to know the earlier material.The final will be comprehensive, i.e., it will cover all the material from the class.Project (20% of grade)We want this course to empower you to find your own great ideas in computational biology. Accordingly, you will complete a project analyzing a biological data set. We will provide more details about the project as the course progresses.The final week of the course will feature in-class presentations at the end of the course. You will be graded on this presentation as well as a write-up describing your work.Attendance and participation (10% of grade)Attendance will be taken, and we will have occasional in-class exercises that serve to reinforce the concepts we have covered. These exercises will not be graded, but participation will be expected in order to receive a complete grade for that day.You are allowed three “dropped” attendance grades without penalty. These can be used for any purpose.Collaboration PolicyAll class work should be done independently unless explicitly indicated on the assignment handout. You maydiscusshomework problems and programming assignments with classmates, but must write your solution by yourself. If you do discuss assignments with other classmates, you must supply their names at the top of your homework / source code. No excuses will be accepted for copying others’ work (from the current or past semesters), and violations will be dealt with harshly. (Getting a bad grade is much preferable to cheating.) In addition to manual inspection, we use an automatic system for detecting programming assignments that are significantly similar.The university’s policy on academic integrity can be found at the following link:http://www.cmu.edu/academic-integrity/. In part, it reads, “Unauthorized assistance refers to the use of sources of support that have not been specifically authorized in this policy statement or by the course instructor(s) in the completion of academic work to be graded. Such sources of support may include but are not limited to advice or help provided by another individual, published or unpublished written sources, and electronic sources.” You should be familiar with the policy in its entirety.The default penalty for any academic integrity violation is failure of the course.In particular: use of a previous semester’s answer keys or online solutions for graded work is absolutely forbidden. Any use of such material will be dealt with as an academic integrity violation.Other PoliciesClassroom etiquetteTo minimize disruptions and in consideration of your classmates, we ask that you please arrive on time and do not leave early. If you must do either, please do so quietly.The use of phones or other electronic devices during class is forbidden and will result in a zero discussion grade for the day (counts as missed class).Excused absencesStudents claiming an excused absence for an in-class exam must supply documentation (such as a doctor’s note) justifying the absence. Absences for religious observances must be submitted by email to the instructor during the first two weeks of the semester.Accommodations for Students with DisabilitiesIf you have a disability and have an accommodations letter from the Disability Resources office, we encourage you to discuss your accommodations and needs with us as early in the semester as possible. We will work with you to ensure that accommodations are provided as appropriate. If you suspect that you may have a disability and would benefit from accommodations but are not yet registered with the Office of Disability Resources, we encourage you to contact them ataccess@andrew.cmu.edu.Provost's Statement on Well-BeingTake care of yourself.Do your best to maintain a healthy lifestyle this semester by eating well, exercising, avoiding drugs and alcohol, getting enough sleep and taking some time to relax. This will help you achieve your goals and cope with stress.All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available on campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful.If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support. Counseling and Psychological Services (CaPS) is here to help: call 412-268-2922 and visit their website athttp://www.cmu.edu/counseling/. Consider reaching out to a friend, faculty or family member you trust for help getting connected to the support that can help.If you or someone you know is feeling suicidal or in danger of self-harm, call someone immediately, day or night:CaPS: 412-268-2922Re:solve Crisis Network: 888-796-8226If the situation is life threatening, call the police:On campus: CMU Police: 412-268-2323Off campus: 911If you have questions about this or your coursework, please let us know.
+
+TOPICS COVERED:
+--------------------------------------------------------------------------------
+Course DescriptionThis 12-unit course provides an introduction to many of the great ideas that
+have formed the foundation for the transformation of the life sciences into a
+fully-fledged computational discipline. This gateway course is intended as a
+first exposure to computational biology for first-year undergraduates in the
+School of Computer Science, although it is open to other quantitatively and
+computationally capable students who are interested in exploring the field. By
+completing this course, students will encounter a handful of fundamental
+algorithmic approaches deriving straight from very widely cited primary
+literature, much of which has been published in recent years. The course also
+introduces basic concepts in statistics, mathematics, and machine learning
+necessary to understand these approaches. Many of the ideas central to modern
+computational biology have resulted in widely used software that is applied to
+analyze (often very large) biological datasets; an important feature of the
+course is that students will be exposed to this software in the context of
+compelling biological problems.Vital InformationClickherefor the course syllabus.LectureRecitationCourseTimeTR 10:30-11:50 AMF 12:30-1:20LocationGHC 4303GHC 4215Prof. Carl KingsfordProf. Phillip CompeauE-mailcarlk@cs.cmu.edupcompeau@cs.cmu.eduInstructorsWebsitehttp://kingsfordlab.cbd.cmu.eduhttp://compeau.cbd.cmu.eduOfficeGHC 7725GHC 7403Office HourWednesday, 1:30-3:00pmWednesday, 10:30am-12:00pm or by appointmentHongyu ZhengWendy YangE-mailhongyuz1@andrew.cmu.edumuyuy@andrew.cmu.eduTAsOffice HourFriday, 6:00-7:00pmMonday, 5:00-6:00pmLocationGHC 7416GHC 7416Pre-requisitesThe most common question we anticipate is, “How much biology do I need to know?” The reason we anticipate this question is that high school biology education is, in most places, boring and outdated. Although taking an introductory biology course concurrently cannot hurt, it is not required for this course, which is first and foremost a computational course.Because of the course’s heavily quantitative and computational nature, we suggest the following prerequisite courses. We also suggest that students consider taking 15-122 (Principles of Imperative Computation) concurrently to guarantee strength in programming.02-201 (Programming for Scientists) or 15-112 (Fundamentals of Programming and Computer Science)15-151 (Mathematical Foundations for Computer Science) or 21-127 (Concepts of Mathematics)Course DetailsCanvas Homepage:Canvas will be used for attendance and as a central repository for grades. You should be automatically enrolled athttps://canvas.cmu.edu/courses/8153.Submitting Assignments:We will use Gradescope for theory assignments. Please visithttps: //gradescope.comand use the following entry code to see our course: 94G82E. For automatically graded programming assignments, links will be provided throughout the course.Discussion Forum:An online forum is provided on Piazza as an area for discussion and questions. The forum will be moderated by the course staff who will respond to questions, but students are encouraged to help each other via discussion. However, assignment specifics should not be discussed — any hints will be provided by the teaching staff. You can find the class on Piazza athttps://piazza.com/class/jpbntwh8tix1hu.Programming Expectations:Early in the course, we will provide test datasets; later, we will assume that you will write your own tests. Programming assignments in this class are based on the model of giving you a randomized dataset and asking you to return the result of running your algorithm on this dataset. Accordingly, there is no official language for the course; you can solve programming assignments using the language of your choosing. We expect you to produce clean, readable, and well-documented code.RecitationsRecitations will focus on a blend of the following:reinforcement and further discussion of key algorithms presented in the course;additional interesting computational biology tidbits on the current subject that did not fit into the main lecture;discussion questions building knowledge of critical conceptsapplication of popular biological software implementing ideas in the course and applied to real datasets.Recitation attendance will not be graded, but attendance is strongly suggested.CourseworkCoursework will consist of the following components.No late assignments will be accepted.Homework assignments (30% of grade)Homework assignments will comprise two parts.Automatically graded programming assignments (20% of grade) will ask you to implement many of the algorithms forming the great ideas for the course. Programming assignments must be completed on your own (unless noted otherwise) and turned in to the autograder by a given deadline.Theory questions (10% of grade) will be provided before each lecture to encourage you to review the material and arrive to class prepared.Examinations (40% of grade)The midterms and final exam will test your knowledge of the material from the class. The midterms will be held in class and the final will be held during the university’s scheduled time. The midterm dates are:Midterm 1 (10% of grade): Thursday, February 14 (in class)Midterm 2 (10% of grade): Tuesday, April 2 (in class)Final (20% of grade): Time and location TBD (will be posted when set by university)The midterms will not be cumulative: midterm 2 will cover material encountered after midterm 1. That having been said, later material in the class builds upon the earlier material, so it is important to know the earlier material.The final will be comprehensive, i.e., it will cover all the material from the class.Project (20% of grade)We want this course to empower you to find your own great ideas in computational biology. Accordingly, you will complete a project analyzing a biological data set. We will provide more details about the project as the course progresses.The final week of the course will feature in-class presentations at the end of the course. You will be graded on this presentation as well as a write-up describing your work.Attendance and participation (10% of grade)Attendance will be taken, and we will have occasional in-class exercises that serve to reinforce the concepts we have covered. These exercises will not be graded, but participation will be expected in order to receive a complete grade for that day.You are allowed three “dropped” attendance grades without penalty. These can be used for any purpose.Collaboration PolicyAll class work should be done independently unless explicitly indicated on the assignment handout. You maydiscusshomework problems and programming assignments with classmates, but must write your solution by yourself. If you do discuss assignments with other classmates, you must supply their names at the top of your homework / source code. No excuses will be accepted for copying others’ work (from the current or past semesters), and violations will be dealt with harshly. (Getting a bad grade is much preferable to cheating.) In addition to manual inspection, we use an automatic system for detecting programming assignments that are significantly similar.The university’s policy on academic integrity can be found at the following link:http://www.cmu.edu/academic-integrity/. In part, it reads, “Unauthorized assistance refers to the use of sources of support that have not been specifically authorized in this policy statement or by the course instructor(s) in the completion of academic work to be graded. Such sources of support may include but are not limited to advice or help provided by another individual, published or unpublished written sources, and electronic sources.” You should be familiar with the policy in its entirety.The default penalty for any academic integrity violation is failure of the course.In particular: use of a previous semester’s answer keys or online solutions for graded work is absolutely forbidden. Any use of such material will be dealt with as an academic integrity violation.Other PoliciesClassroom etiquetteTo minimize disruptions and in consideration of your classmates, we ask that you please arrive on time and do not leave early. If you must do either, please do so quietly.The use of phones or other electronic devices during class is forbidden and will result in a zero discussion grade for the day (counts as missed class).Excused absencesStudents claiming an excused absence for an in-class exam must supply documentation (such as a doctor’s note) justifying the absence. Absences for religious observances must be submitted by email to the instructor during the first two weeks of the semester.Accommodations for Students with DisabilitiesIf you have a disability and have an accommodations letter from the Disability Resources office, we encourage you to discuss your accommodations and needs with us as early in the semester as possible. We will work with you to ensure that accommodations are provided as appropriate. If you suspect that you may have a disability and would benefit from accommodations but are not yet registered with the Office of Disability Resources, we encourage you to contact them ataccess@andrew.cmu.edu.Provost's Statement on Well-BeingTake care of yourself.Do your best to maintain a healthy lifestyle this semester by eating well, exercising, avoiding drugs and alcohol, getting enough sleep and taking some time to relax. This will help you achieve your goals and cope with stress.All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available on campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful.If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support. Counseling and Psychological Services (CaPS) is here to help: call 412-268-2922 and visit their website athttp://www.cmu.edu/counseling/. Consider reaching out to a friend, faculty or family member you trust for help getting connected to the support that can help.If you or someone you know is feeling suicidal or in danger of self-harm, call someone immediately, day or night:CaPS: 412-268-2922Re:solve Crisis Network: 888-796-8226If the situation is life threatening, call the police:On campus: CMU Police: 412-268-2323Off campus: 911If you have questions about this or your coursework, please let us know.
+
+FULL TEXT CONTENT:
+--------------------------------------------------------------------------------
+02-251: Great Ideas in Computational Biology
+Date
+Lecture Topic
+Instructor
+1/15
+Introduction
+Genome assembly (Part 1)
+Kingsford
+Compeau
+1/17
+Genome assembly (Complete)
+Compeau
+1/18
+Recitation on Genome Assembly
+TAs
+1/22
+Sequence alignment (Part 1)
+Alignment Demo
+Kingsford
+1/24
+Sequence alignment (Part 2)
+Kingsford
+1/25
+Recitation on Dynamic Programming
+TAs
+1/29
+Read mapping (Part 1)
+Suffix Tree Math
+Compeau
+1/31
+No Class (cancelled due to cold)
+Polar Vortex
+2/1
+Recitation on Read Mapping (Part 1)
+TAs
+2/5
+Read mapping (Part 2)
+Compeau
+2/7
+Multiple  sequence alignment
+Kingsford
+2/8
+Recitation on Read Mapping (Part 2)
+TAs
+2/12
+Mini-lecture day 1
+2/14
+Midterm 1
+2/19
+Hidden Markov models
+Kingsford
+2/21
+Metagenomics
+Compeau
+2/22
+Recitation on HMMs
+TAs
+2/26
+Phylogenetics (in progress)
+Compeau
+2/28
+Phylogenetics (complete)
+and
+some necessary mathematics
+Compeau
+3/1
+MCMC for Phylogenetics
+TAs
+3/5
+Motif Finding, Gibbs Sampling, EM
+Kingsford
+3/7
+RNA sequencing, gene expression
+Kingsford
+S P R I N G   B R E A K
+3/19
+Network biology: intro & function prediction
+Kingsford
+3/21
+Network biology: evolution of modularity
+Kingsford
+3/26
+Population Genetics
+Compeau
+3/28
+Mini-lecture day 2
+3/29
+Recitation on Soft Clustering
+TAs
+4/2
+Midterm 2
+Note: All topics after Midterm 2 are tentative and subject to change.
+4/4
+Evolutionary Game Theory
+Animated GIF
+Kingsford
+4/9
+Neural Modeling
+Kingsford
+S P R I N G   C A R N I V A L
+4/16
+Universality of Neural Networks and Deep Learning (incomplete)
+Compeau
+4/18
+Protein Structure Prediction
+Kingsford
+4/19
+Recitation on Neural Nets
+TAs
+4/23
+Finishing up Neural Nets
+Compeau
+4/25
+Three Mini-"Great Ideas": Turing Patterns, Fragile Genomes, and DNA Computing
+Compeau
+4/26
+Drop-in Project Office Hours During Recitation
+TAs
+4/30
+Project Presentations
+Students
+5/2
+Project Presentations
+Students
+
