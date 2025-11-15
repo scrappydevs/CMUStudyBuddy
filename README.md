@@ -2,6 +2,8 @@
 
 An interactive 3D visualization of CMU's Computer Science courses with AI-powered chat interface. Query courses naturally and automatically navigate to relevant content in a 3D mindmap visualization.
 
+![Demo](CMU%20Study%20Buddy.gif)
+
 ## Features
 
 - **3D Course Visualization**: Interactive 3D map showing course relationships and connections
